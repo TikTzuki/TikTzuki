@@ -23,7 +23,9 @@ const generate = async () => {
     const { quote, author } = await getQuote();
 
     if(!quote) return;
-
+    if(author==="Jack Ma"){
+        author+=`\nif(author==="Jack Ma"){\nDont trust that, I hate him! }`
+    }
     fs.writeFileSync("README.md", `_**${quote}**_\n\n${author}`);
 }
 
