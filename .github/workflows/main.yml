@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
   # Lên lịch chạy hàng ngày vào lúc 00:00 UTC
   schedule:
-  - cron: "0 0 * * *"
+  - cron: "12 0 * * *"
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
