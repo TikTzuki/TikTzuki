@@ -1,7 +1,3 @@
-_**I keep asking myself these three questions ... What do you have? What do you want? What will you give up?**_
+_**No dream is too big. No challenge is too great. Nothing we want for our future is beyond our reach.**_
 
-Jack Ma
-```javascript
-if ( author==="Jack Ma" )
-  Dont trust that, I hate him!
-```
+Donald Trump
