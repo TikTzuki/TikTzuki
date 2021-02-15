@@ -1,3 +1,3 @@
-_**No dream is too big. No challenge is too great. Nothing we want for our future is beyond our reach.**_
+_**If you don't have confidence, you'll always find a way not to win**_
 
-Donald Trump
+Carl Lewis
