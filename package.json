@@ -1,0 +1,23 @@
+{
+  "name": "tiktzuki",
+  "version": "1.0.0",
+  "description": "_**If you don't have confidence, you'll always find a way not to win**_",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.20.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TikTzuki/TikTzuki.git"
+  },
+  "author": "TikTzuki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TikTzuki/TikTzuki/issues"
+  },
+  "homepage": "https://github.com/TikTzuki/TikTzuki#readme"
+}
