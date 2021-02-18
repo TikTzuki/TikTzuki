@@ -1,3 +1,3 @@
-_**If you're changing the world, you're working on important things. You're excited to get up in the morning.**_
+_**What's the greater risk? Letting go of what people think or letting go of how I feel, what I believe, and who I am?**_
 
-Larry Page
+Brene Brown
