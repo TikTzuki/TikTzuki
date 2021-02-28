@@ -1,3 +1,3 @@
-_**Failure is the condiment that gives success its flavor.**_
+_**Excellence prospers in the absence of excuses.**_
 
-Truman Capote
+Lorii Myers
