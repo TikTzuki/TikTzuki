@@ -1,3 +1,6 @@
-_**Beyond a certain point there is no return. This point has to be reached.**_
+_**One does not accumulate but eliminate.
+It is not daily increase but daily
+decrease. The height of cultivation
+always runs to simplicity.**_
 
-Franz Kafka
+Bruce Lee
