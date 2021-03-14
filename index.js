@@ -21,12 +21,14 @@ const getQuote = async () => {
 
 const generate = async () => {
     const { quote, author } = await getQuote();
+    const  interestingRepositories = fs.readFileSync("InterestingRepositories.md");
 
     if(!quote) return;
     if(author==="Jack Ma"){
         author+=`\nif(author==="Jack Ma"){\nDont trust that, I hate him! }`
     }
-    fs.writeFileSync("README.md", `_**${quote}**_\n\n${author}`);
+    
+    fs.writeFileSync("README.md", `${interestingRepositories}\n\n_**${quote}**_\n\n${author}`);
 }
 
 generate();
