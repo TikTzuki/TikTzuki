@@ -3,6 +3,6 @@
 **Solid Project:** solid/solidproject.org  
 **Linux:** torvalds/linux  
 
-_**The beginning of freedom is the realization that you are not the possessing entity the thinker.**_
+_**I am an optimist. It does not seem too much use being anything else..**_
 
-Eckhart Tolle
+Winston Churchill
