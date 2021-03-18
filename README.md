@@ -3,6 +3,6 @@
 **Solid Project:** solid/solidproject.org  
 **Linux:** torvalds/linux  
 
-_**You will never win if you never begin.**_
+_**A quitter never wins and a winner never quits**_
 
-Helen Rowland
+Napoleon Hill
