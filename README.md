@@ -3,6 +3,6 @@
 **Solid Project:** solid/solidproject.org  
 **Linux:** torvalds/linux  
 
-_**We are each gifted in a unique and important way. It is our privilege and our adventure to discover our own special light**_
+_**You make a living by what you earn; you make a life by what you give.**_
 
-Mary Dunbar
+Winston Churchill
