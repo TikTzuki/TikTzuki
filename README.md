@@ -3,6 +3,6 @@
 **Solid Project:** solid/solidproject.org  
 **Linux:** torvalds/linux  
 
-_**Sometimes you climb out of bed in the morning and you think, I'm not going to make it, but you laugh inside - remembering all the times you've felt that way.**_
+_**It isn't the mountains ahead to climb that wear you out; it's the pebble in your shoe.**_
 
-Charles Bukowski
+Mohamad Ali
