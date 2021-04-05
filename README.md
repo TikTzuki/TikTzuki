@@ -3,6 +3,6 @@
 **Solid Project:** solid/solidproject.org  
 **Linux:** torvalds/linux  
 
-_**Effort only fully releases its reward after a person refuses to quit.**_
+_**The best way to predict the future is to create it.**_
 
-Napoleon Hill
+Abraham Lincoln
