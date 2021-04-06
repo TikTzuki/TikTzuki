@@ -3,6 +3,6 @@
 **Solid Project:** solid/solidproject.org  
 **Linux:** torvalds/linux  
 
-_**The best way to predict the future is to create it.**_
+_**Sustenance! Your health is always the best prescription.**_
 
-Abraham Lincoln
+Lorii Myers
