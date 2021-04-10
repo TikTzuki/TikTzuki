@@ -3,6 +3,6 @@
 **Solid Project:** solid/solidproject.org  
 **Linux:** torvalds/linux  
 
-_**Stop complaining. Start creating.**_
+_**Winning is not everything, but the effort to win is.**_
 
-Dale Patridge
+Zig Ziglar
