@@ -3,6 +3,6 @@
 **Solid Project:** solid/solidproject.org  
 **Linux:** torvalds/linux  
 
-_**Many a false step was made by standing still.**_
+_**It is easy to sit up and take notice, What is difficult is getting up and taking action.**_
 
-Fortune Cookie
+Honore de Balzac
