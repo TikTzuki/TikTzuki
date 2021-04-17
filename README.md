@@ -3,6 +3,6 @@
 **Solid Project:** solid/solidproject.org  
 **Linux:** torvalds/linux  
 
-_**Core passions and aspirations should be consistent and in sync.**_
+_**Persistence is very important. You should not give up unless you are forced to give up.**_
 
-Lorii Myers
+Elon Musk
