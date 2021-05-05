@@ -3,6 +3,6 @@
 **Solid Project:** solid/solidproject.org  
 **Linux:** torvalds/linux  
 
-_**The last time doesn't exist. It's only this time. And everything is going to be different this time. There's only now.**_
+_**Do not be afraid to give up the good for the great.**_
 
-Bill Murray
+Kenny Rogers
