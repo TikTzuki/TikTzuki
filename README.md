@@ -3,6 +3,6 @@
 **Solid Project:** solid/solidproject.org  
 **Linux:** torvalds/linux  
 
-_**Do not be afraid to give up the good for the great.**_
+_**We don't have to do all of it alone. We were never meant to.**_
 
-Kenny Rogers
+Brene Brown
