@@ -3,6 +3,6 @@
 **Solid Project:** solid/solidproject.org  
 **Linux:** torvalds/linux  
 
-_**Vision without action is daydream. Action without vision is nightmare..**_
+_**When you win, say nothing. When you lose, say less.**_
 
-Japanese Proverb
+Paul Brown
