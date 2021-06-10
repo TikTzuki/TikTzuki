@@ -3,6 +3,6 @@
 **Solid Project:** solid/solidproject.org  
 **Linux:** torvalds/linux  
 
-_**Vision without action is daydream. Action without vision is nightmare..**_
+_**From now on we live in a world where man has walked on the Moon. It's not a miracle; we just decided to go.**_
 
-Japanese Proverb
+Tom Hanks
