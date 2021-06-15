@@ -3,6 +3,6 @@
 **Solid Project:** solid/solidproject.org  
 **Linux:** torvalds/linux  
 
-_**Do the best you can until you know better. Then when you know better, do better.**_
+_**He who is not courageous enough to take risks will accomplish nothing in life.**_
 
-Maya Angelou
+Mohamad Ali
