@@ -3,7 +3,12 @@
 **Solid Project:** solid/solidproject.org  
 **Linux:** torvalds/linux  
 ## git command
-Unstage file: 
+### Unstage file: 
 ```
 git restore --staged [file_paths]
+```
+### Changing the latest Git commit message
+```
+git commit --amend -m "New message"
+git push --force remote-name branch-name
 ```
