@@ -14,6 +14,6 @@ git push --force remote-name branch-name
 ```
 
 
-_**Our words are buttressed by our deeds, and our deeds are inspired by our convictions.**_
+_**There's such a thin line between winning and losing.**_
 
-Theodore Hesburgh
+John R. Tunis
