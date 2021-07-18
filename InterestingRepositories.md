@@ -2,7 +2,7 @@
 **Spring Data:** spring-projects/spring-data-book  
 **Solid Project:** solid/solidproject.org  
 **Linux:** torvalds/linux  
-## git command
+## Git commands
 ### Unstage file: 
 ```
 git restore --staged [file_paths]
@@ -12,7 +12,7 @@ git restore --staged [file_paths]
 git commit --amend -m "New message"
 git push --force remote-name branch-name
 ```
-### Setup oracle_client
+## Setup oracle_client
 Download instantclient: \
   https://www.oracle.com/database/technologies/instant-client.html \
 Install packages:
