@@ -2,7 +2,7 @@
 **Spring Data:** spring-projects/spring-data-book  
 **Solid Project:** solid/solidproject.org  
 **Linux:** torvalds/linux  
-## git command
+## Git commands
 ### Unstage file: 
 ```
 git restore --staged [file_paths]
@@ -12,8 +12,15 @@ git restore --staged [file_paths]
 git commit --amend -m "New message"
 git push --force remote-name branch-name
 ```
+## Setup oracle_client
+Download instantclient: \
+  https://www.oracle.com/database/technologies/instant-client.html \
+Install packages:
+```
+sudo apt-get install libaio1 libaio-dev
+```
 
 
-_**It is easy to sit up and take notice, What is difficult is getting up and taking action.**_
+_**The free soul is rare, but you know it when you see it - basically because you feel good, very good, when you are near or with them.**_
 
-Honore de Balzac
+Charles Bukowski
