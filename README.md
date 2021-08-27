@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**The real opportunity for success lies within the person and not in the job.**_
+_**Vulnerability is not winning or losing; it's having the courage to show up and be seen when we have no control over the outcome.**_
 
-Zig Ziglar
+Brene Brown
