@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**We don't have to do all of it alone. We were never meant to.**_
+_**A show of confidence raises the bar**_
 
-Brene Brown
+Lorii Myers
