@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**Vision without action is daydream. Action without vision is nightmare..**_
+_**It is easy to sit up and take notice, What is difficult is getting up and taking action.**_
 
-Japanese Proverb
+Honore de Balzac
