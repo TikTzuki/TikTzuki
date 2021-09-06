@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**It is easy to sit up and take notice, What is difficult is getting up and taking action.**_
+_**There's such a thin line between winning and losing.**_
 
-Honore de Balzac
+John R. Tunis
