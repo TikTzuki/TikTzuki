@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**The real opportunity for success lies within the person and not in the job.**_
+_**Stress is like a pulse, if you have it you are alive.**_
 
-Zig Ziglar
+Steve Maraboli
