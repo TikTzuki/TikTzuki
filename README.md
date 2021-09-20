@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**Do the best you can until you know better. Then when you know better, do better.**_
+_**Effort only fully releases its reward after a person refuses to quit.**_
 
-Maya Angelou
+Napoleon Hill
