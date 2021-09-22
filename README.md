@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**When you recover or discover something that nourishes your soul and brings joy, care enough about yourself to make room for it in your life.**_
+_**Winning is nice if you don't lose your integrity in the process.**_
 
-Jean Shinoda Bolen
+Arnold Horshak
