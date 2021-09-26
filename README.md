@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**There's such a thin line between winning and losing.**_
+_**Stop complaining. Start creating.**_
 
-John R. Tunis
+Dale Patridge
