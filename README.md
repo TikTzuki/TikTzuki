@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**If you're changing the world, you're working on important things. You're excited to get up in the morning.**_
+_**When you win, say nothing. When you lose, say less.**_
 
-Larry Page
+Paul Brown
