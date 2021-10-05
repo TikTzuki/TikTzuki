@@ -13,6 +13,7 @@ git commit --amend -m "New message"
 git push --force remote-name branch-name
 ```
 ## Setup oracle_client
+Guide: https://cx-oracle.readthedocs.io/en/latest/user_guide/installation.html#quick-start-cx-oracle-installation
 Download instantclient: \
   https://www.oracle.com/database/technologies/instant-client.html \
 Install packages:
