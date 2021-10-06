@@ -13,7 +13,6 @@ git commit --amend -m "New message"
 git push --force remote-name branch-name
 ```
 ## Setup oracle_client
-Guide: https://cx-oracle.readthedocs.io/en/latest/user_guide/installation.html#quick-start-cx-oracle-installation \
 Download instantclient: \
   https://www.oracle.com/database/technologies/instant-client.html \
 Install packages:
@@ -22,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**Remember that you are very special, no one can play your role better than you.**_
+_**You will never win if you never begin.**_
 
-Damayanti Patra
+Helen Rowland
