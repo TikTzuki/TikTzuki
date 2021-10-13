@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**If you don't have confidence, you'll always find a way not to win**_
+_**A show of confidence raises the bar**_
 
-Carl Lewis
+Lorii Myers
