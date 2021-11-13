@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**It wasn't raining when Noah built the ark..**_
+_**Winning is nice if you don't lose your integrity in the process.**_
 
-Howard Ruff
+Arnold Horshak
