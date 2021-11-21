@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**Vulnerability is not winning or losing; it's having the courage to show up and be seen when we have no control over the outcome.**_
+_**Vision without action is daydream. Action without vision is nightmare..**_
 
-Brene Brown
+Japanese Proverb
