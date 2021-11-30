@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**Don't be tempted to break momentum-work through it.**_
+_**Luck is a dividend of sweat. The more you sweat, the luckier you get**_
 
-Lorii Myers
+Ray Kroc
