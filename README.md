@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**Luck is a dividend of sweat. The more you sweat, the luckier you get**_
+_**A man who has no imagination has no wings.**_
 
-Ray Kroc
+Mohamad Ali
