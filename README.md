@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**A man who has no imagination has no wings.**_
+_**Winning is nice if you don't lose your integrity in the process.**_
 
-Mohamad Ali
+Arnold Horshak
