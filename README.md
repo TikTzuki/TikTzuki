@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**Winning is nice if you don't lose your integrity in the process.**_
+_**Limitations are like mirages created by your own mind. When you realise that limitation do not exist, those around you will also feel it and allow you inside their space.**_
 
-Arnold Horshak
+Stephen Richards
