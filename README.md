@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**He who is not courageous enough to take risks will accomplish nothing in life.**_
+_**Extend beyond your preconceived limits!**_
 
-Mohamad Ali
+Lorii Myers
