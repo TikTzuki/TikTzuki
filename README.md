@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**The tennis ball doesn't know how old I am. The ball doesn't know if I'm a man or a woman or if I come from a communist country or not. Sport has always broken down these barriers.**_
+_**We don't have to do all of it alone. We were never meant to.**_
 
-Martina Navratilova
+Brene Brown
