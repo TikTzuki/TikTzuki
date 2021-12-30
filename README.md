@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**Named must your fear be before banish it you can.**_
+_**When you win, say nothing. When you lose, say less.**_
 
-Yoda
+Paul Brown
