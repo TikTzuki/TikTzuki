@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**If I work as hard as I can, I wonder how much I can do in a day?**_
+_**You are very powerful, provided you know how powerful you are.**_
 
-Ezra Taft Benson
+Yogi Bhajan
