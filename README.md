@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**If you're changing the world, you're working on important things. You're excited to get up in the morning.**_
+_**It wasn't raining when Noah built the ark..**_
 
-Larry Page
+Howard Ruff
