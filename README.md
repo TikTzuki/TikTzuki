@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**Not every day is going to offer us a chance to save somebody's life, but every day offers us an opportunity to affect one.**_
+_**The free soul is rare, but you know it when you see it - basically because you feel good, very good, when you are near or with them.**_
 
-Mark Bezos
+Charles Bukowski
