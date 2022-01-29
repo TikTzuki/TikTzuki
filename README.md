@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**Some men see things as they are and say why.. I dream things that never were and say why not.**_
+_**People rise to the occasion without hesitation when they feel inspired and challenged.**_
 
-George Bernard Shaw
+Lorii Myers
