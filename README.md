@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**Excellence prospers in the absence of excuses.**_
+_**A quitter never wins and a winner never quits**_
 
-Lorii Myers
+Napoleon Hill
