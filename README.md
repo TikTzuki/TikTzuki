@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**If you don't have confidence, you'll always find a way not to win**_
+_**People who are crazy enough to think they can change the world, are the ones who do.**_
 
-Carl Lewis
+Apple Computers
