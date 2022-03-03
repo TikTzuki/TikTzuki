@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**Don't be tempted to break momentum-work through it.**_
+_**You make a living by what you earn; you make a life by what you give.**_
 
-Lorii Myers
+Winston Churchill
