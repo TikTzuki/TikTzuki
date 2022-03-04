@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**You make a living by what you earn; you make a life by what you give.**_
+_**Let our advance worrying become advance thinking and planning.**_
 
 Winston Churchill
