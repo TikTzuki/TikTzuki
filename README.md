@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**Let our advance worrying become advance thinking and planning.**_
+_**When you win, say nothing. When you lose, say less.**_
 
-Winston Churchill
+Paul Brown
