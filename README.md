@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**If you're changing the world, you're working on important things. You're excited to get up in the morning.**_
+_**Your overnight success story is always a result of everything you have done in your life until that moment.**_
 
-Larry Page
+Bel Pesce
