@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**Vulnerability is not winning or losing; it's having the courage to show up and be seen when we have no control over the outcome.**_
+_**Winning is nice if you don't lose your integrity in the process.**_
 
-Brene Brown
+Arnold Horshak
