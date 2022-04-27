@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**Those who know how to win are much more numerous than those who know how to make proper use of their victories**_
+_**Vision without action is daydream. Action without vision is nightmare..**_
 
-Polybius
+Japanese Proverb
