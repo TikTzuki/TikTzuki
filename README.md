@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**The real opportunity for success lies within the person and not in the job.**_
+_**We lose ourselves in the things we love. We find ourselves there, too.**_
 
-Zig Ziglar
+Dale Patridge
