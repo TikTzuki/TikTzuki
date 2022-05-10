@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**If you are born poor, it is not your mistake. But if you die poor it is your mistake.**_
+_**If you don't have confidence, you'll always find a way not to win**_
 
-Bill Gates
+Carl Lewis
