@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**Not every day is going to offer us a chance to save somebody's life, but every day offers us an opportunity to affect one.**_
+_**Effort only fully releases its reward after a person refuses to quit.**_
 
-Mark Bezos
+Napoleon Hill
