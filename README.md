@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**Life is like a camera: just focus on what is important, capture good times, develop from negative, and if things do not work out, take another shot!**_
+_**If you like what you do, and you're lucky enough to be good at it, do it for that reason.**_
 
-Daireth Winehouse
+Phil Grimshaw
