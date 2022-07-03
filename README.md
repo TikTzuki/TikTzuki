@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**Named must your fear be before banish it you can.**_
+_**When there is no distraction, there is clarity.**_
 
-Yoda
+Lorii Myers
