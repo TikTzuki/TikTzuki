@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**You must be the change you want to see in the world..**_
+_**Perfection is not attainable, but if we chase perfection we can catch excellence..**_
 
-M.K. Gandhi
+Vince Lombardi
