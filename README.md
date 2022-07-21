@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**Never waste your time trying to explain who you are to people who are committed to misunderstanding you.**_
+_**A quitter never wins and a winner never quits**_
 
-Dream Hampton
+Napoleon Hill
