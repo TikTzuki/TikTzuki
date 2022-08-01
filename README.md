@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**Where there is ruin, there is hope for a treasure.**_
+_**You are very powerful, provided you know how powerful you are.**_
 
-Rumi
+Yogi Bhajan
