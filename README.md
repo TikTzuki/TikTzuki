@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**You are very powerful, provided you know how powerful you are.**_
+_**Beyond a certain point there is no return. This point has to be reached.**_
 
-Yogi Bhajan
+Franz Kafka
