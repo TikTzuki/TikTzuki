@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**Excellence prospers in the absence of excuses.**_
+_**Whether you think you can or think you can't, you're right..**_
 
-Lorii Myers
+Henry Ford
