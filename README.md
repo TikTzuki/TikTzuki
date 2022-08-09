@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**Whether you think you can or think you can't, you're right..**_
+_**When you win, say nothing. When you lose, say less.**_
 
-Henry Ford
+Paul Brown
