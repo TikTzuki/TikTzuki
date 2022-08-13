@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**A man who has no imagination has no wings.**_
+_**We don't have to do all of it alone. We were never meant to.**_
 
-Mohamad Ali
+Brene Brown
