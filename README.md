@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**From now on we live in a world where man has walked on the Moon. It's not a miracle; we just decided to go.**_
+_**The man who removes a mountain begins by carrying away small stones..**_
 
-Tom Hanks
+Chinese Proverb
