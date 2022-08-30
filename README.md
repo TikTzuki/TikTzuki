@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**Stop complaining. Start creating.**_
+_**The determination to win is the better part of winning.**_
 
-Dale Patridge
+Daisaku Ikeda
