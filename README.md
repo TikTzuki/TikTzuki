@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**A quitter never wins and a winner never quits**_
+_**You are very powerful, provided you know how powerful you are.**_
 
-Napoleon Hill
+Yogi Bhajan
