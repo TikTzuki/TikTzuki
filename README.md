@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**If we ever stop thinking about the person we want to become, we stop learning and taking risks.**_
+_**When you win, say nothing. When you lose, say less.**_
 
-Sally Blount
+Paul Brown
