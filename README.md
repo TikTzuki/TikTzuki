@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**Winning is not everything, but the effort to win is.**_
+_**Excellence prospers in the absence of excuses.**_
 
-Zig Ziglar
+Lorii Myers
