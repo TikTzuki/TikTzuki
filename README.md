@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**There's such a thin line between winning and losing.**_
+_**Vision without action is daydream. Action without vision is nightmare..**_
 
-John R. Tunis
+Japanese Proverb
