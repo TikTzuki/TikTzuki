@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**Stop complaining. Start creating.**_
+_**Think in terms of opportunities and solutions instead of problems, disappointment, and failure.**_
 
-Dale Patridge
+Lorii Myers
