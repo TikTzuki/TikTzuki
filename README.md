@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**Don't count the days; make the days count.**_
+_**The journey of a thousand miles begins with one step.**_
 
-Mohamad Ali
+Lao Tzu
