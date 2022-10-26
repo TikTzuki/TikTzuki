@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**The journey of a thousand miles begins with one step.**_
+_**What is the one sentence summary of how you change the world? Always work hard on something uncomfortably exciting!**_
 
-Lao Tzu
+Larry Page
