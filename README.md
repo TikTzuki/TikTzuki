@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**A show of confidence raises the bar**_
+_**It wasn't raining when Noah built the ark..**_
 
-Lorii Myers
+Howard Ruff
