@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**If I work as hard as I can, I wonder how much I can do in a day?**_
+_**Don't count the days; make the days count.**_
 
-Ezra Taft Benson
+Mohamad Ali
