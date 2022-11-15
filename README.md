@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**It is easy to sit up and take notice, What is difficult is getting up and taking action.**_
+_**I think it's very important to have a feedback loop, where you're constantly thinking about what you've done and how you could be doing it better. I think that's the single best piece of advice: constantly think about how you could be doing things better and questioning yourself.**_
 
-Honore de Balzac
+Elon Musk
