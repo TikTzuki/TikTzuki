@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**Vision without action is daydream. Action without vision is nightmare..**_
+_**Do the best you can until you know better. Then when you know better, do better.**_
 
-Japanese Proverb
+Maya Angelou
