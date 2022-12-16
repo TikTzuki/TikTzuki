@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**People who are crazy enough to think they can change the world, are the ones who do.**_
+_**What's the greater risk? Letting go of what people think or letting go of how I feel, what I believe, and who I am?**_
 
-Apple Computers
+Brene Brown
