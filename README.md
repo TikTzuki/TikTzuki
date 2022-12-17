@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**What's the greater risk? Letting go of what people think or letting go of how I feel, what I believe, and who I am?**_
+_**Your overnight success story is always a result of everything you have done in your life until that moment.**_
 
-Brene Brown
+Bel Pesce
