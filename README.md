@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**Your life does not get better by chance. It gets better by change.**_
+_**Where there is ruin, there is hope for a treasure.**_
 
-Jim Rohn
+Rumi
