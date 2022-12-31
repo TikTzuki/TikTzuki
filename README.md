@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**If I work as hard as I can, I wonder how much I can do in a day?**_
+_**Extend beyond your preconceived limits!**_
 
-Ezra Taft Benson
+Lorii Myers
