@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**You must have a positive self perception in order to transcend anything.**_
+_**Excellence prospers in the absence of excuses.**_
 
-Steve Maraboli
+Lorii Myers
