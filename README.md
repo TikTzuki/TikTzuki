@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**I know for sure that what we dwell on is who we become.**_
+_**Winners lose much more often than losers. So if you keep losing but you're still trying, keep it up! You.. Re right on track.**_
 
-Oprah Winfrey
+Matthew Keith Groves
