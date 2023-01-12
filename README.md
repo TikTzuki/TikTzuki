@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**The journey of a thousand miles begins with one step.**_
+_**Winning is nice if you don't lose your integrity in the process.**_
 
-Lao Tzu
+Arnold Horshak
