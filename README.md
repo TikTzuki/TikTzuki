@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**Winning is nice if you don't lose your integrity in the process.**_
+_**Winning is not everything, but the effort to win is.**_
 
-Arnold Horshak
+Zig Ziglar
