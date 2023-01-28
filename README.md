@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**I am an optimist. It does not seem too much use being anything else..**_
+_**Stop complaining. Start creating.**_
 
-Winston Churchill
+Dale Patridge
