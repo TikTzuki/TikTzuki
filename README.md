@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**Persistence is very important. You should not give up unless you are forced to give up.**_
+_**If you want to make your dreams come true, the first thing you have to do is wake up.**_
 
-Elon Musk
+J.M. Power
