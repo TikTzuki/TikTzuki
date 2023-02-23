@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**If you cannot do great things, do small things in a great way.**_
+_**Failure is the condiment that gives success its flavor.**_
 
-Napoleon Hill
+Truman Capote
