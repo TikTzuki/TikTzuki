@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**Failure is the condiment that gives success its flavor.**_
+_**Things are not bad in themselves, but our cowardice makes them so.**_
 
-Truman Capote
+Michel de Montaigne
