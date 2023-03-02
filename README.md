@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**People rise to the occasion without hesitation when they feel inspired and challenged.**_
+_**Stress is like a pulse, if you have it you are alive.**_
 
-Lorii Myers
+Steve Maraboli
