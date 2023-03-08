@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**There's such a thin line between winning and losing.**_
+_**Whether you think you can or think you can't, you're right..**_
 
-John R. Tunis
+Henry Ford
