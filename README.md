@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**Whether you think you can or think you can't, you're right..**_
+_**Some men see things as they are and say why.. I dream things that never were and say why not.**_
 
-Henry Ford
+George Bernard Shaw
