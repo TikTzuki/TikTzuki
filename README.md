@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**Some men see things as they are and say why.. I dream things that never were and say why not.**_
+_**Winning is nice if you don't lose your integrity in the process.**_
 
-George Bernard Shaw
+Arnold Horshak
