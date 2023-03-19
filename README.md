@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**If you like what you do, and you're lucky enough to be good at it, do it for that reason.**_
+_**Sustenance! Your health is always the best prescription.**_
 
-Phil Grimshaw
+Lorii Myers
