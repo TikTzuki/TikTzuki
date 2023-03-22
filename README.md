@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**A man can suffer to bring a group of people to success, not the other way.**_
+_**It is easy to sit up and take notice, What is difficult is getting up and taking action.**_
 
-Ganesh
+Honore de Balzac
