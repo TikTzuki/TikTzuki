@@ -21,6 +21,6 @@ sudo apt-get install libaio1 libaio-dev
 ```
 
 
-_**It is easy to sit up and take notice, What is difficult is getting up and taking action.**_
+_**The tennis ball doesn't know how old I am. The ball doesn't know if I'm a man or a woman or if I come from a communist country or not. Sport has always broken down these barriers.**_
 
-Honore de Balzac
+Martina Navratilova
