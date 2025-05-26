@@ -19,3 +19,10 @@ Install packages:
 ```
 sudo apt-get install libaio1 libaio-dev
 ```
+# Jetbrain trick lore
+```
+# linux
+rm -rf ~/.config/JetBrains/IntelliJIdea*/eval/*.evaluation.key ~/.config/JetBrains/IntelliJIdea*/options/other.xml ~/.java/.userPrefs/jetbrains/idea
+# mac os
+rm ~/Library/Application\ Support/JetBrains/IntelliJIdea*/eval/*.evaluation.key ~/Library/Application\ Support/JetBrains/IntelliJIdea*/options/other.xml ~/Library/Preferences/jetbrains.idea.* ~/Library/Preferences/com.apple.java.util.prefs.plist
+```
