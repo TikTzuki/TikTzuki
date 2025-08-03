@@ -1,75 +1,64 @@
-# TikTuzki [![TikTuzki](./assets/images/tik-badge.svg)](https://github.com/TikTzuki/TikTzuki)
+# TikTuzki [![TikTuzki](./imgs/tik-badge.svg)](https://github.com/TikTzuki/TikTzuki)
 
-[<img alt="styled-components" src="./assets/images/gear.png" height="50px" align="right"/>](https://styled-components.com)
-
-> A collection of resources ☕
-
-## Contents
-
-- [Github sources](#github-sources)
-    - [Roadmap](#roadmaps)
-    - [Docker images repos](#docker-images-repos)
-    - [Data structure and algorithms](#data-structure-and-algorithms)
-    - [Springframework](#springframework)
-    - [Microservice](#microservice)
-- [Git commands](#git-commands)
-- [Setup oracle_client](#setup-oracle_client)
+**Software Architect**
 
 ---
 
-### Github sources
+## 🚀 About Me
 
-#### Roadmaps
+👋 I'm **TikTzuki** (Wilson Tran), a results-driven **Backend Engineer** with over 3 years of experience designing and
+scaling backend systems and APIs. My expertise spans **microservices architecture**, **concurrent processing**, and
+**workflow automation**, with a strong focus on **clean code**, **domain-driven design**, and **software architecture**.
 
-* [roadmap.sh](https://github.com/kamranahmedse/developer-roadmap) - Community driven roadmaps, articles and resources
-  for developers.
+I’m actively engaged in technical exploration and open-source contribution, working with languages such as
+**Java**,**Kotlin**, **Rust**, and **Python**. Passionate about continuous learning, I use this space to document my
+growth and share meaningful solutions.
 
-#### Docker images repos
+## ⚙️ Featured Projects
 
-* [Docker Images from Oracle](https://github.com/oracle/docker-images) - This repository contains Dockerfiles and
-  samples to build Docker images for Oracle commercial products.
-* [docker-oracle-xe-11g](https://github.com/wnameless/docker-oracle-xe-11g) - Oracle Express Edition 11g Release 2 on Ubuntu 18.04 LTS.
+- [**IoT Greenhouse**](https://github.com/TikTzuki/prometheus-greenhouse) – Ideal for smart agriculture, indoor farms,
+  or research greenhouses.
+- [**Telegram TDLib**](https://github.com/TikTzuki/telegram-tdlib) – A library for interacting with the Telegram TDLib (
+  Telegram Database Library).
+- [**Auto‑Backup‑Bot**](https://github.com/TikTzuki/learning-lab) – A curated personal sandbox for algorithm practice,
+  language exploration, and system-level experimentation.
 
-#### Data structure and algorithms
+<details>
+<summary>More stuff repos</summary>
 
-* [Java algorithms & data structures](https://github.com/williamfiset/Algorithms) - Algorithms and data structures are
-  fundamental to efficient code and good software design.
+- nvim
+- nio-lab
+- mvc-store
+- room-manager-lite
+- money-bag
+- tik-scripts
+- tiktuzki-charts
+- sgu-project
 
-#### Springframework
+</details>
 
-* [Spring MVC Showcase](https://github.com/spring-attic/spring-mvc-showcase) - Demonstrates the capabilities of the
-  Spring MVC web framework through small, simple examples.
+---
 
-#### Microservice
+## 🧰 Tech Stack & Tools
 
-* [confluent-demo-scene](https://github.com/confluentinc/demo-scene) - Scripts and samples to support Confluent Platform
-  talks. May be rough around the edges. For automated tutorials and QA'd code.
+- **Programming Languages:** Java, Kotlin, Rust, Python, Javascript
+- **Frameworks:** Spring, Axon framework, FastAPI
+- **Databases:** Postgres, Cassandra, MongoDB, OracleDB, Redis, MySQL,
+- **Transport Protocols:** HTTP, WebSocket, MQTT, GraphQL, mDNS, GOSSIP, gRPC
+- **Messaging & Workflow:** RabbitMQ, Kafka, NATS
+- **Cloud & DevOps:** Docker, Kubernetes, Jenkins, Helm
+- **Interests:** Software Architect, Philosophy, Cryptocurrency Trading
 
-### Git commands
+---
 
-#### Unstage file:
+## 🧩 Workflow & Automation
 
-```
-git restore --staged [file_paths]
-```
+- 🧠 Using GitHub Actions to automate testing, deployment, and documentation updates.
+- 🔍 README auto‑generation via code heuristics.
+- 🔄 Scheduled tasks for consistent build and deploy workflows.
 
-#### Changing the latest Git commit message
+---
 
-```
-git commit --amend -m "New message"
-git push --force remote-name branch-name
-```
+## 📫 Connect with Me
 
-### Setup oracle_client
-
-Download instantclient: \
-https://www.oracle.com/database/technologies/instant-client.html \
-Install packages:
-
-```
-sudo apt-get install libaio1 libaio-dev
-```
-
-_**Hang Out with People Who are Better than You.**_
-
-Warren Buffett
+[LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
