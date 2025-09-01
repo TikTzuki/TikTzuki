@@ -1,4 +1,4 @@
-# TikTuzki [![TikTuzki](./imgs/tik-badge.svg)](https://github.com/TikTzuki/TikTzuki)
+# TikTuzki [![TikTuzki](./img/tik-badge.svg)](https://github.com/TikTzuki/TikTzuki)
 
 **Software Architect**
 
@@ -6,7 +6,7 @@
 
 ## 🚀 About Me
 
-👋 I'm **TikTzuki** (Wilson Tran), a results-driven **Backend Engineer** with over 3 years of experience designing and
+👋 I'm **TikTzuki**, a **Backend Engineer** with over 3 years of experience designing and
 scaling backend systems and APIs. My expertise spans **microservices architecture**, **concurrent processing**, and
 **workflow automation**, with a strong focus on **clean code**, **domain-driven design**, and **software architecture**.
 
