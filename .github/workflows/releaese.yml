@@ -22,7 +22,7 @@ jobs:
       - name: Deploy to external repo
         uses: peaceiris/actions-gh-pages@v4
         with:
-#          external_repository: TikTzuki/tiktuzki.githuub.io
+          external_repository: TikTzuki/tiktzuki.githuub.io
           publish_dir: ./dist
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages # or gh-pages
