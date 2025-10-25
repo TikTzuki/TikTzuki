@@ -14,10 +14,10 @@ jobs:
       - name: Checkout source repo
         uses: actions/checkout@v4
 
-      - name: Build project
-        run: |
-          npm ci
-          npm run build
+#      - name: Build project
+#        run: |
+#          npm ci
+#          npm run build
 
       - name: Deploy to external repo
         uses: peaceiris/actions-gh-pages@v4
