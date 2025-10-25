@@ -31,4 +31,25 @@ const generate = async () => {
     fs.writeFileSync("README.md", `${interestingRepositories}\n\n_**${quote}**_\n\n${author}`);
 }
 
-generate();
+/**
+ * {
+ * "q": "Where focus goes, energy flows.",
+ * "a": "Tony Robbins",
+ * "h": "<blockquote>&ldquo;Where focus goes, energy flows.&rdquo; &mdash; <footer>Tony Robbins</footer></blockquote>"
+ * }
+ * ]
+ */
+function get_quote_of_the_day() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            // Access the result here
+            alert(this.responseText);
+        }
+    };
+    xhttp.open("GET", "https://zenquotes.io/api/random", true);
+    xhttp.setRequestHeader("Content-type", "application/json");
+    xhttp.send();
+}
+
+get_quote_of_the_day()

@@ -9,14 +9,14 @@ on:
   workflow_dispatch:
   # Lên lịch chạy hàng ngày vào lúc 00:00 UTC
   schedule:
-  - cron: "12 0 * * *"
+  - cron: "0 * * * *"
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
-    runs-on: Ubuntu-20.04 
+    name: Update README.md with daily quote
+    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
