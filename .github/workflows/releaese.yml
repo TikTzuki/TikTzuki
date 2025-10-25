@@ -24,7 +24,7 @@ jobs:
         with:
           external_repository: TikTzuki/tiktzuki.githuub.io
           publish_dir: ./dist
-          personal_token: ${{ secrets.GH_PAT }}
+          personal_token: ${{ secrets.PERSONAL_TOKEN }}
           publish_branch: gh-pages # or gh-pages
           user_name: github-actions[bot]
           user_email: github-actions[bot]@users.noreply.github.com
