@@ -62,3 +62,6 @@ growth and share meaningful solutions.
 ## 📫 Connect with Me
 
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
+
+
+**<blockquote>&ldquo;Amateurs sit and wait for inspiration, the rest of us just get up and got to work.&rdquo; &mdash; <footer>Stephen King</footer></blockquote>**
