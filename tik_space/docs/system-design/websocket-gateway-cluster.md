@@ -138,11 +138,11 @@ Break down into major components/modules:
 
 | Component                                                   | Description                                                                   |
 |-------------------------------------------------------------|-------------------------------------------------------------------------------|
-| [**Connection**](#Connection-Flow-Diagram)                  | WebSocket setup with endpoint (with listenKey if connect to User data stream) |
-| [**Ping–Pong**](#Ping-Pong-Flow-Diagram)                    | Keep-alive frames: client send ping to server every 10s.                      |
-| [**Subscription**](#Subscription-Flow-Diagram)              | JSON subscribe/unsubscribe/list commands for streams                          |
-| [**Market data Streams**](#Market-Data-Stream-Flow-Diagram) | Trade, kline, ticker, depth, liquidation, mark price, etc.                    |
-| [**User Data**](#User-Data-Flow-Diagram)                    | Separate connection for account/order/position updates via listen key         |
+| [**Connection**](#connection-flow-diagram)                  | WebSocket setup with endpoint (with listenKey if connect to User data stream) |
+| [**Ping–Pong**](#ping-pong-flow-diagram)                    | Keep-alive frames: client send ping to server every 10s.                      |
+| [**Subscription**](#subscription-flow-diagram)              | JSON subscribe/unsubscribe/list commands for streams                          |
+| [**Market data Streams**](#market-data-stream-flow-diagram) | Trade, kline, ticker, depth, liquidation, mark price, etc.                    |
+| [**User Data**](#user-data-private-stream-flow-diagram)     | Separate connection for account/order/position updates via listen key         |
 
 #### Connection Flow Diagram
 
@@ -222,6 +222,11 @@ flowchart TD
     Routing -- " Apply mapping " --> Mapping
 
 ```
+
+#### Subscription Flow Diagram
+
+#### User Data Private Stream Flow Diagram
+
 
 #### Config update event handling
 
@@ -447,12 +452,12 @@ sequenceDiagram
 - if success, publish "peer_left:peer_id" event to redis stream "peer_update_queue"
 - else abort
 
-2. PeerA or PeerB consume "peer_update_queue" event -> rebalance datasource -> update routing config with [Update single config](#Update-single-config) logic & remove "peer-left:peer_id".
+2. PeerA or PeerB consume "peer_update_queue" event -> rebalance datasource -> update routing config with [Update single config](#update-single-config) logic & remove "peer-left:peer_id".
 
 ##### When a peer join - re-balance config algorithm
 
 1. PeerC online, publish "peer_join:peer_id" event to redis stream "peer_update_queue"
-2. PeerA or PeerB consume "peer_update_queue" event -> rebalance datasource -> update routing config with [Update single config](#Update-single-config) logic
+2. PeerA or PeerB consume "peer_update_queue" event -> rebalance datasource -> update routing config with [Update single config](#update-single-config) logic
 
 ### 5.3 Listen key
 

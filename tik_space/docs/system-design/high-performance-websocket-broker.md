@@ -1,43 +1,5 @@
 # High Performance Websocket broker
 
-# Table of Contents
-
-- [High Performance Websocket broker](#high-performance-websocket-broker)
-  - [1. Core Requirements](#1-core-requirements)
-    - [Functional Requirements](#functional-requirements)
-    - [Non-Functional Requirements](#non-functional-requirements)
-    - [Incoming Event Stream Types](#incoming-event-stream-types)
-  - [2. Technology Stack](#2-technology-stack)
-  - [3. Implementation Strategy](#3-implementation-strategy)
-    - [A. WebSocket Gateway (WS Gateway)](#a-websocket-gateway-ws-gateway)
-    - [B. Event Broker](#b-event-broker)
-    - [C. Data Channel Format](#c-data-channel-format)
-  - [4. Scalability & Resilience](#4-scalability--resilience)
-  - [5. Security](#5-security)
-  - [6. Observability](#6-observability)
-  - [Deliverables in MVP](#deliverables-in-mvp)
-  - [7. Acceptance Usecases](#7-acceptance-usecases)
-    - [1. Use Case: WebSocket Handshake with Authorization](#1-use-case-websocket-handshake-with-authorization)
-      - [Flow](#flow)
-      - [Events](#events)
-    - [2. Use Case: Subscribe to Allowed Topics](#-2-use-case-subscribe-to-allowed-topics)
-      - [Example Topics](#example-topics)
-      - [Flow](#flow-1)
-      - [Events](#events-1)
-    - [3. Use Case: Receive Streamed Data from Kafka and Push to Clients](#-3-use-case-receive-streamed-data-from-kafka-and-push-to-clients)
-      - [Flow](#flow-2)
-      - [Events](#events-2)
-    - [4. Use Case: Unsubscribe from a Topic](#-4-use-case-unsubscribe-from-a-topic)
-      - [Actors: Authenticated Client](#actors-authenticated-client)
-      - [Description: Clients can unsubscribe from specific topics to save bandwidth.](#description-clients-can-unsubscribe-from-specific-topics-to-save-bandwidth)
-      - [Flow](#flow-3)
-    - [5. Use Case: Backpressure & Dropping Slow Clients](#-5-use-case-backpressure--dropping-slow-clients)
-    - [6. Use Case: Private Stream for Authenticated User](#-6-use-case-private-stream-for-authenticated-user)
-      - [Flow](#flow-4)
-    - [7. Use Case: Reconnect with Resume Support](#-7-use-case-reconnect-with-resume-support)
-      - [Flow](#flow-5)
-  - [Summary Table](#-summary-table)
-
 **High-performance WebSocket service for streaming events to end users in a Centralized Exchange (CEX)** system, robust, scalable, and low-latency architecture.
 
 ```mermaid

@@ -30,11 +30,10 @@ const config: Config = {
 
     // GitHub pages deployment config.
     // If you aren't using GitHub pages, you don't need these.
-    organizationName: 'TikTzuki', // Usually your GitHub org/user name.
-    projectName: 'tiktzuki.github.io', // Usually your repo name.
+    organizationName: 'facebook', // Usually your GitHub org/user name.
+    projectName: 'docusaurus', // Usually your repo name.
     deploymentBranch: 'master',
     onBrokenLinks: 'throw',
-    onBrokenMarkdownLinks: 'warn',
 
     // Even if you don't use internationalization, you can use this field to set
     // useful metadata like html lang. For example, if your site is Chinese, you
