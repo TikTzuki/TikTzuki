@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="780" viewBox="0 0 1200 780" xmlns="http://www.w3.org/2000/svg">
+    <!-- Styles -->
+    <style>
+        .bg { fill: #0f1724; }
+        .card { fill: #0b1220; stroke: #122030; stroke-width: 1; rx: 8; }
+        .panel-title { font: 700 20px/1 "Inter", "Segoe UI", Roboto, sans-serif; fill: #E6F0FF; }
+        .muted { fill: #94A3B8; font: 400 13px/1 "Inter", sans-serif; }
+        .label { fill: #cfe8ff; font: 600 12px/1 "Inter", sans-serif; }
+        .value { fill: #E6F0FF; font: 600 13px/1 "Inter", sans-serif; }
+        .input { fill: #071226; stroke: #203445; rx: 6; }
+        .dropdown { fill: #071226; stroke: #203445; rx: 6; }
+        .dropdown-arrow { fill: #A8C0FF; font: 600 12px/1 "Inter", sans-serif; }
+        .button { fill: #0b66ff; rx: 6; }
+        .button-text { fill: white; font: 600 13px/1 "Inter", sans-serif; }
+        .small-btn { fill: #1b2b3a; stroke: #2a3e50; rx: 6; }
+        .small-btn-txt { fill: #A8C0FF; font: 600 12px/1 "Inter", sans-serif; }
+        .row-card { fill: #071627; stroke: #123048; rx: 6; }
+        .divider { stroke: #1b2b3a; stroke-width: 1; }
+        .note { fill:#9fb0c8; font: 400 12px/1 "Inter", sans-serif; }
+    </style>
+
+    <!-- Background -->
+    <rect class="bg" x="0" y="0" width="1200" height="780"/>
+
+    <!-- Header -->
+    <g transform="translate(32,28)">
+        <text class="panel-title">Admin — Routing &amp; Mapping Rules</text>
+        <text x="0" y="32" class="muted">Configure data source, mapper chains, fanout topics, WebSocket topics, and per-topic rate limits.</text>
+    </g>
+
+    <!-- Card 2: WebSocket Topics Management -->
+    <g transform="translate(32,100)">
+        <rect class="card" x="0" y="0" width="1136" height="260" rx="10"/>
+
+        <!-- Header -->
+        <g transform="translate(20,20)">
+            <text class="panel-title">WebSocket Topics</text>
+            <text x="0" y="28" class="muted">Manage available WebSocket topics, their rate limits, and auth levels.</text>
+        </g>
+
+        <!-- Column headers -->
+        <g transform="translate(24,70)">
+            <text x="0" y="0" class="label">Topic</text>
+            <text x="320" y="0" class="label">Rate (tokens/sec)</text>
+            <text x="520" y="0" class="label">Burst</text>
+            <text x="680" y="0" class="label">Auth</text>
+        </g>
+
+        <!-- New topic config row -->
+        <g transform="translate(24,90)">
+            <rect class="row-card" x="0" y="0" width="1096" height="48"/>
+            <rect x="12" y="8" width="280" height="32" class="input"/>
+            <text x="22" y="30" class="muted">Enter topic...</text>
+
+            <rect x="320" y="8" width="160" height="32" class="input"/>
+            <text x="330" y="30" class="muted">rate</text>
+
+            <rect x="520" y="8" width="120" height="32" class="input"/>
+            <text x="530" y="30" class="muted">burst</text>
+
+            <rect x="680" y="8" width="120" height="32" class="dropdown"/>
+            <text x="690" y="30" class="muted">auth</text>
+            <text x="780" y="30" class="dropdown-arrow">▼</text>
+
+            <g transform="translate(820,8)">
+                <rect class="button" x="0" y="0" width="100" height="32"/>
+                <text x="50" y="22" class="button-text" text-anchor="middle">Add</text>
+            </g>
+        </g>
+
+        <!-- Row 1 -->
+        <g transform="translate(24,142)">
+            <rect class="row-card" x="0" y="0" width="1096" height="48"/>
+            <rect x="12" y="8" width="280" height="32" class="input"/>
+            <text x="22" y="30" class="value">trade:BTC-USDT</text>
+
+            <rect x="320" y="8" width="160" height="32" class="input"/>
+            <text x="330" y="30" class="value">2000</text>
+
+            <rect x="520" y="8" width="120" height="32" class="input"/>
+            <text x="530" y="30" class="value">4000</text>
+
+            <!-- Auth view-only -->
+            <text x="690" y="30" class="value">public</text>
+
+            <g transform="translate(820,8)">
+                <rect x="0" y="0" width="70" height="32" class="small-btn"/>
+                <text x="35" y="22" class="small-btn-txt" text-anchor="middle">Save</text>
+            </g>
+
+            <g transform="translate(900,8)">
+                <rect x="0" y="0" width="80" height="32" class="small-btn"/>
+                <text x="40" y="22" class="small-btn-txt" text-anchor="middle">Remove</text>
+            </g>
+        </g>
+
+        <!-- Row 2 -->
+        <g transform="translate(24,194)">
+            <rect class="row-card" x="0" y="0" width="1096" height="48"/>
+            <rect x="12" y="8" width="280" height="32" class="input"/>
+            <text x="22" y="30" class="value">depth:ETH-USDT</text>
+
+            <rect x="320" y="8" width="160" height="32" class="input"/>
+            <text x="330" y="30" class="value">500</text>
+
+            <rect x="520" y="8" width="120" height="32" class="input"/>
+            <text x="530" y="30" class="value">1000</text>
+
+            <!-- Auth view-only -->
+            <text x="690" y="30" class="value">private</text>
+
+            <g transform="translate(820,8)">
+                <rect x="0" y="0" width="70" height="32" class="small-btn"/>
+                <text x="35" y="22" class="small-btn-txt" text-anchor="middle">Save</text>
+            </g>
+
+            <g transform="translate(900,8)">
+                <rect x="0" y="0" width="80" height="32" class="small-btn"/>
+                <text x="40" y="22" class="small-btn-txt" text-anchor="middle">Remove</text>
+            </g>
+        </g>
+    </g>
+</svg>

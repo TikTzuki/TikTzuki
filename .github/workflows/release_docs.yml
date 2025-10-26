@@ -1,4 +1,4 @@
-name: GitHub Page
+name: Release Docs to www.tiktuzki.com
 
 on:
   push:
@@ -11,20 +11,27 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout source repo
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-#      - name: Build project
-#        run: |
-#          npm ci
-#          npm run build
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: 'yarn'
+          cache-dependency-path: '${{ github.workspace }}/tik_space/yarn.lock'
+
+      - name: Install dependencies
+        run: |
+          cd ${{ github.workspace }}/tik_space
+          yarn install
+          yarn build
 
       - name: Deploy to tiktuzki.com
         uses: peaceiris/actions-gh-pages@v4
         with:
           external_repository: TikTzuki/tiktzuki.github.io
-          publish_dir: ./dist
+          publish_dir: ${{ github.workspace }}/tik_space/build
           personal_token: ${{ secrets.PERSONAL_TOKEN }}
-          publish_branch: gh-pages # or gh-pages
+          publish_branch: gh-pages
           user_name: github-actions[bot]
           user_email: github-actions[bot]@users.noreply.github.com

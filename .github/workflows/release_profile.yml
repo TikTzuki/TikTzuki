@@ -3,9 +3,9 @@
 name: Scheduled Release Profile
 
 on:
-  # Cho phép chạy bằng tay từ giao diện Github
+  # Allow manual execution from Github interface
   workflow_dispatch:
-  # Lên lịch chạy hàng ngày vào lúc 00:00 UTC
+  # Schedule to run daily at 00:00 UTC
   schedule:
     - cron: "0 0 * * *"
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -24,7 +24,7 @@ jobs:
           node-version: 22
 
       - name: Run update_profile script
-        # Chạy script để gọi API lấy quote sau đó sửa file README.md
+        # Run script to call API to get quote then update README.md file
         run: |
           cd ${{ github.workspace }}/update_profile
           if [ -f package-lock.json ]; then npm ci; elif [ -f yarn.lock ]; then yarn install --frozen-lockfile || true; else npm install || true; fi

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="720" viewBox="0 0 1200 720" xmlns="http://www.w3.org/2000/svg">
+    <!-- Styles -->
+    <style>
+        .bg { fill: #0f1724; }
+        .card { fill: #0b1220; stroke: #122030; stroke-width: 1; rx: 8; }
+        .panel-title { font: 700 20px/1 "Inter", "Segoe UI", Roboto, sans-serif; fill: #E6F0FF; }
+        .muted { fill: #94A3B8; font: 400 13px/1 "Inter", sans-serif; }
+        .label { fill: #cfe8ff; font: 600 12px/1 "Inter", sans-serif; }
+        .value { fill: #E6F0FF; font: 600 13px/1 "Inter", sans-serif; }
+        .input { fill: #071226; stroke: #203445; rx: 6; }
+        .dropdown { fill: #071226; stroke: #203445; rx: 6; }
+        .dropdown-arrow { fill: #A8C0FF; font: 600 12px/1 "Inter", sans-serif; }
+        .button { fill: #0b66ff; rx: 6; }
+        .button-text { fill: white; font: 600 13px/1 "Inter", sans-serif; }
+        .small-btn { fill: #1b2b3a; stroke: #2a3e50; rx: 6; }
+        .small-btn-txt { fill: #A8C0FF; font: 600 12px/1 "Inter", sans-serif; }
+        .row-card { fill: #071627; stroke: #123048; rx: 6; }
+        .divider { stroke: #1b2b3a; stroke-width: 1; }
+        .note { fill:#9fb0c8; font: 400 12px/1 "Inter", sans-serif; }
+    </style>
+
+    <!-- Background -->
+    <rect class="bg" x="0" y="0" width="1200" height="720"/>
+
+    <!-- Header -->
+    <g transform="translate(32,28)">
+        <text class="panel-title">Admin — Routing &amp; Mapping Rules</text>
+        <text x="0" y="32" class="muted">Configure data source, mapper chains, fanout topics, WebSocket topics, and per-topic rate limits.</text>
+    </g>
+
+    <!-- Card -->
+    <g transform="translate(32,80)">
+        <rect class="card" x="0" y="0" width="1136" height="560" rx="10"/>
+
+        <!-- Data source row -->
+        <g transform="translate(20,18)">
+            <text class="label">Data Source</text>
+            <rect class="input" x="0" y="18" width="240" height="36"/>
+            <text x="12" y="42" class="value">Kafka</text>
+
+            <text x="300" y="12" class="label">Topic / Subject Prefix</text>
+            <rect class="input" x="300" y="18" width="300" height="36"/>
+            <text x="312" y="42" class="muted">e.g. trades.*, depth.*</text>
+
+            <text x="620" y="12" class="label">Connector</text>
+            <rect class="dropdown" x="620" y="18" width="200" height="36"/>
+            <text x="632" y="42" class="muted">kafka-consumer-1</text>
+            <text x="800" y="42" class="dropdown-arrow">▼</text>
+
+            <text x="840" y="12" class="label">Version</text>
+            <text x="852" y="42" class="value">2</text>
+
+            <g transform="translate(960,18)">
+                <rect x="0" y="0" width="100" height="36" class="small-btn"/>
+                <text x="50" y="24" class="small-btn-txt" text-anchor="middle">Delete</text>
+            </g>
+
+            <g transform="translate(1070,18)">
+                <rect x="0" y="0" width="100" height="36" class="small-btn"/>
+                <text x="50" y="24" class="small-btn-txt" text-anchor="middle">Test Source</text>
+            </g>
+        </g>
+
+        <!-- Divider -->
+        <line class="divider" x1="16" y1="80" x2="1120" y2="80"/>
+
+        <!-- Column headers -->
+        <g transform="translate(24, 100)">
+            <text x="0" y="0" class="label">Mapper</text>
+            <text x="220" y="0" class="label">Fanout topic</text>
+            <text x="460" y="0" class="label">WebSocket topic</text>
+            <text x="700" y="0" class="label">Auth</text>
+            <text x="840" y="0" class="label">Rate limit</text>
+        </g>
+
+        <!-- Add Rule Row (inputs for new rule) -->
+        <g transform="translate(24, 115)">
+            <rect class="row-card" x="0" y="0" width="1096" height="72"/>
+
+            <rect x="12" y="12" width="180" height="36" class="input"/>
+            <text x="22" y="36" class="muted">new-mapper</text>
+
+            <rect x="212" y="12" width="200" height="36" class="input"/>
+            <text x="222" y="36" class="muted">fanout.*</text>
+
+            <rect x="432" y="12" width="220" height="36" class="dropdown"/>
+            <text x="442" y="36" class="muted">select topic</text>
+            <text x="640" y="36" class="dropdown-arrow">▼</text>
+
+            <rect x="690" y="12" width="120" height="36" class="input"/>
+            <text x="700" y="36" class="muted">auth</text>
+
+            <rect x="850" y="12" width="120" height="36" class="input"/>
+            <text x="860" y="36" class="muted">rate / burst</text>
+
+            <g transform="translate(1000,18)">
+                <rect x="0" y="0" width="80" height="36" class="small-btn"/>
+                <text x="40" y="24" class="small-btn-txt" text-anchor="middle">+ Add</text>
+            </g>
+        </g>
+
+        <!-- Existing Rows -->
+        <g transform="translate(24,204)">
+            <rect class="row-card" x="0" y="0" width="1096" height="72"/>
+            <rect x="12" y="12" width="180" height="36" class="input"/>
+            <text x="22" y="36" class="value">trade-map-v1</text>
+
+            <rect x="212" y="12" width="200" height="36" class="input"/>
+            <text x="222" y="36" class="muted">fanout.trade.BTC-USDT</text>
+
+            <rect x="432" y="12" width="220" height="36" class="dropdown"/>
+            <text x="442" y="36" class="muted">trade:BTC-USDT</text>
+            <text x="640" y="36" class="dropdown-arrow">▼</text>
+
+            <text x="690" y="36" class="value">public</text>
+
+            <text x="850" y="36" class="value">2000 / 4000</text>
+            <text x="850" y="52" class="note">rate / burst</text>
+
+            <g transform="translate(1000,18)">
+                <rect x="0" y="0" width="24" height="24" class="small-btn"/>
+                <text x="12" y="16" class="small-btn-txt" text-anchor="middle">✎</text>
+            </g>
+            <g transform="translate(1030,18)">
+                <rect x="0" y="0" width="24" height="24" class="small-btn"/>
+                <text x="12" y="16" class="small-btn-txt" text-anchor="middle">✖</text>
+            </g>
+        </g>
+
+        <g transform="translate(24,296)">
+            <rect class="row-card" x="0" y="0" width="1096" height="72"/>
+            <rect x="12" y="12" width="180" height="36" class="input"/>
+            <text x="22" y="36" class="value">depth-map-coalesce</text>
+
+            <rect x="212" y="12" width="200" height="36" class="input"/>
+            <text x="222" y="36" class="muted">fanout.depth.ETH-USDT</text>
+
+            <rect x="432" y="12" width="220" height="36" class="dropdown"/>
+            <text x="442" y="36" class="muted">depth:ETH-USDT</text>
+            <text x="640" y="36" class="dropdown-arrow">▼</text>
+
+            <text x="690" y="36" class="value">private</text>
+
+            <text x="850" y="36" class="value">500 / 1000</text>
+            <text x="850" y="52" class="note">rate / burst</text>
+
+            <g transform="translate(1000,18)">
+                <rect x="0" y="0" width="24" height="24" class="small-btn"/>
+                <text x="12" y="16" class="small-btn-txt" text-anchor="middle">✎</text>
+            </g>
+            <g transform="translate(1030,18)">
+                <rect x="0" y="0" width="24" height="24" class="small-btn"/>
+                <text x="12" y="16" class="small-btn-txt" text-anchor="middle">✖</text>
+            </g>
+        </g>
+
+        <g transform="translate(24,388)">
+            <rect class="row-card" x="0" y="0" width="1096" height="72"/>
+            <rect x="12" y="12" width="180" height="36" class="input"/>
+            <text x="22" y="36" class="value">ticker-map-v2</text>
+
+            <rect x="212" y="12" width="200" height="36" class="input"/>
+            <text x="222" y="36" class="muted">fanout.ticker.*</text>
+
+            <rect x="432" y="12" width="220" height="36" class="dropdown"/>
+            <text x="442" y="36" class="muted">ticker:{symbol}</text>
+            <text x="640" y="36" class="dropdown-arrow">▼</text>
+
+            <text x="690" y="36" class="value">public</text>
+
+            <text x="850" y="36" class="value">50 / 200</text>
+            <text x="850" y="52" class="note">rate / burst</text>
+
+            <g transform="translate(1000,18)">
+                <rect x="0" y="0" width="24" height="24" class="small-btn"/>
+                <text x="12" y="16" class="small-btn-txt" text-anchor="middle">✎</text>
+            </g>
+            <g transform="translate(1030,18)">
+                <rect x="0" y="0" width="24" height="24" class="small-btn"/>
+                <text x="12" y="16" class="small-btn-txt" text-anchor="middle">✖</text>
+            </g>
+        </g>
+
+        <!-- Footer controls -->
+        <g transform="translate(24,488)">
+            <rect class="button" x="0" y="0" width="120" height="36"/>
+            <text x="60" y="24" class="button-text" text-anchor="middle">Save Changes</text>
+
+            <rect x="140" y="0" width="120" height="36" class="small-btn"/>
+            <text x="200" y="24" class="small-btn-txt" text-anchor="middle">Revert</text>
+
+            <text x="380" y="8" class="muted">Notes:</text>
+            <text x="380" y="26" class="note">• Rate limit uses token-bucket. token/sec = refill rate, burst = bucket capacity.</text>
+        </g>
+    </g>
+</svg>
