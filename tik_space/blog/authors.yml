@@ -1,25 +1,13 @@
-yangshun:
-  name: Yangshun Tay
-  title: Ex-Meta Staff Engineer, Co-founder GreatFrontEnd
-  url: https://linkedin.com/in/yangshun
-  image_url: https://github.com/yangshun.png
+tik:
+  name: TikTuzki
+  title: Backend Engineer | Open Source Enthusiast
+  url: https://www.linkedin.com/in/tiktuzki
+  image_url: https://avatars.githubusercontent.com/u/46244883?s=400&u=ff2c6883f7bf688766d25e208665f7cfb295f372&v=4
   page: true
-  socials:
-    x: yangshunz
-    linkedin: yangshun
-    github: yangshun
-    newsletter: https://www.greatfrontend.com
-
-slorber:
-  name: Sébastien Lorber
-  title: Docusaurus maintainer
-  url: https://sebastienlorber.com
-  image_url: https://github.com/slorber.png
-  page:
+#  page:
     # customize the url of the author page at /blog/authors/<permalink>
-    permalink: '/all-sebastien-lorber-articles'
+#    permalink: '/all-sebastien-lorber-articles'
   socials:
-    x: sebastienlorber
-    linkedin: sebastienlorber
-    github: slorber
-    newsletter: https://thisweekinreact.com
+    x: https://x.com/TikTuzki
+    linkedin: https://www.linkedin.com/in/tiktuzki
+    github: https://github.com/TikTzuki

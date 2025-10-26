@@ -1,6 +1,7 @@
 ---
 id: intro
 title: Introduction
+sidebar_position: 0
 ---
 
 Welcome to the docs for this site. This page exists to satisfy links that reference `/docs/intro`.

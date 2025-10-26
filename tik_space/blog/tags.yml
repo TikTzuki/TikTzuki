@@ -1,19 +1,39 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+ai:
+  label: AI
+  permalink: /ai
+  description: Notes and guides for integrating MCP with Atlassian tools.
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+k8s:
+  label: Kubernetes
+  permalink: /k8s
+  description: Kubernetes deployment, configuration and orchestration notes.
 
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
+microservices:
+  label: Microservices
+  permalink: /microservices
+  description: Microservices design patterns and implementation notes.
 
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+decentralized-network:
+  label: Decentralized Network
+  permalink: /de-network
+  description: Decentralized network protocols, architectures and implementations.
+
+system-design:
+  label: System Design
+  permalink: /system-design
+  description: System design templates, patterns and case studies.
+
+cryptography:
+  label: Cryptography
+  permalink: /cryptography
+  description: Cryptography notes, papers and reference material.
+
+trading:
+  label: Trading
+  permalink: /trading
+  description: Introductory resources for trading concepts and strategies.
+
+archive:
+  label: Archive
+  permalink: /archive
+  description: Older guides, experiments and archived notes.
