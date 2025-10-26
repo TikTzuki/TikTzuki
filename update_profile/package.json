@@ -1,10 +1,11 @@
 {
-  "name": "tiktzuki",
+  "name": "update_profile",
   "version": "1.0.0",
   "description": "_**If you don't have confidence, you'll always find a way not to win**_",
+  "type": "module",
   "main": "index.js",
   "dependencies": {
-    "axios": "^0.20.0"
+    "axios": "^1.12.2"
   },
   "devDependencies": {},
   "scripts": {
@@ -14,7 +15,7 @@
     "type": "git",
     "url": "git+https://github.com/TikTzuki/TikTzuki.git"
   },
-  "author": "TikTzuki",
+  "author": "TikTuzki",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/TikTzuki/TikTzuki/issues"

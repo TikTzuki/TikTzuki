@@ -1,0 +1,41 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Scheduled Release Profile
+
+on:
+  # Cho phép chạy bằng tay từ giao diện Github
+  workflow_dispatch:
+  # Lên lịch chạy hàng ngày vào lúc 00:00 UTC
+  schedule:
+    - cron: "0 0 * * *"
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    name: Update README.md with daily quote
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+
+      - name: Run update_profile script
+        # Chạy script để gọi API lấy quote sau đó sửa file README.md
+        run: |
+          cd ${{ github.workspace }}/update_profile
+          if [ -f package-lock.json ]; then npm ci; elif [ -f yarn.lock ]; then yarn install --frozen-lockfile || true; else npm install || true; fi
+          node index.js
+
+      - name: Commit and push changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: TikTuzki
+          author_email: tranphanthanhlong18@gmail.com
+          message: "Updated README.md with daily quote"
+          add: "."
+          branch: master
+          push: true

@@ -19,7 +19,7 @@ jobs:
 #          npm ci
 #          npm run build
 
-      - name: Deploy to external repo
+      - name: Deploy to tiktuzki.com
         uses: peaceiris/actions-gh-pages@v4
         with:
           external_repository: TikTzuki/tiktzuki.github.io
