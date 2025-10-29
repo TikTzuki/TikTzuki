@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;The only thing worse than being blind is having sight but no vision.&rdquo; &mdash; <footer>Helen Keller</footer></blockquote>**
+**<blockquote>&ldquo;Today I begin a new life. I will greet this day with love in my heart.&rdquo; &mdash; <footer>Og Mandino</footer></blockquote>**
