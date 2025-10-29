@@ -1,6 +1,7 @@
 name: Release Docs to www.tiktuzki.com
 
 on:
+  workflow_dispatch:
   push:
     branches: [ master ]
 permissions:
