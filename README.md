@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;Today I begin a new life. I will greet this day with love in my heart.&rdquo; &mdash; <footer>Og Mandino</footer></blockquote>**
+**<blockquote>&ldquo;We must accept finite disappointment, but never lose infinite hope.&rdquo; &mdash; <footer>Martin Luther King, Jr.</footer></blockquote>**
