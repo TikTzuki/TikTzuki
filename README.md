@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;We must accept finite disappointment, but never lose infinite hope.&rdquo; &mdash; <footer>Martin Luther King, Jr.</footer></blockquote>**
+**<blockquote>&ldquo;Wisdom is doing now what you are going to be happy with later on.&rdquo; &mdash; <footer>Joyce Meyer</footer></blockquote>**
