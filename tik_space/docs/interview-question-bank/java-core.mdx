@@ -1,0 +1,514 @@
+# Java Core Interview Questions
+
+## Object-Oriented Programming (OOP)
+
+### 1. What are the four pillars of OOP?
+**Answer:**
+- **Encapsulation**: Bundling data and methods that operate on that data within a single unit (class), hiding internal implementation details
+- **Inheritance**: Mechanism where a new class derives properties and behavior from an existing class
+- **Polymorphism**: Ability of objects to take multiple forms (method overloading and overriding)
+- **Abstraction**: Hiding complex implementation details and showing only essential features
+
+### 2. What is the difference between Abstract Class and Interface?
+**Answer:**
+
+| Feature | Abstract Class | Interface |
+|---------|---------------|-----------|
+| Methods | Can have both abstract and concrete methods | Only abstract methods (before Java 8), default/static methods (Java 8+) |
+| Variables | Can have instance variables | Only constants (public static final) |
+| Constructor | Can have constructors | Cannot have constructors |
+| Multiple Inheritance | Single inheritance only | Can implement multiple interfaces |
+| Access Modifiers | Can use any access modifier | Methods are public by default |
+
+### 3. What is method overloading vs method overriding?
+**Answer:**
+- **Overloading**: Multiple methods with same name but different parameters in the same class (compile-time polymorphism)
+- **Overriding**: Subclass provides specific implementation of a method already defined in parent class (runtime polymorphism)
+
+```java
+// Overloading
+class Calculator {
+    int add(int a, int b) { return a + b; }
+    double add(double a, double b) { return a + b; }
+}
+
+// Overriding
+class Animal {
+    void sound() { System.out.println("Animal makes sound"); }
+}
+class Dog extends Animal {
+    @Override
+    void sound() { System.out.println("Dog barks"); }
+}
+```
+
+## Memory Management
+
+### 4. Explain Java Memory Model (Heap vs Stack)
+**Answer:**
+- **Stack Memory**:
+  - Stores primitive values and references to objects
+  - LIFO (Last-In-First-Out) structure
+  - Thread-specific, faster access
+  - Automatically managed, cleared when method completes
+
+- **Heap Memory**:
+  - Stores actual objects
+  - Shared among all threads
+  - Managed by Garbage Collector
+  - Slower access compared to stack
+
+### 5. What is Garbage Collection and how does it work?
+**Answer:**
+Garbage Collection automatically deallocates memory by removing objects that are no longer referenced. Key concepts:
+- **Mark and Sweep**: GC marks reachable objects, then sweeps/removes unmarked ones
+- **Generational Collection**: Young generation (Eden, S0, S1) and Old generation
+- Objects that survive multiple GC cycles are promoted to old generation
+- Can be triggered by `System.gc()` but not guaranteed
+
+### 6. What are String, StringBuilder, and StringBuffer?
+**Answer:**
+- **String**: Immutable, thread-safe, stored in String pool
+- **StringBuilder**: Mutable, NOT thread-safe, faster for single-threaded operations
+- **StringBuffer**: Mutable, thread-safe (synchronized), slower than StringBuilder
+
+```java
+String s = "hello"; // Immutable
+s = s + " world"; // Creates new String object
+
+StringBuilder sb = new StringBuilder("hello");
+sb.append(" world"); // Modifies same object
+```
+
+## Collections Framework
+
+### 7. What is the difference between ArrayList and LinkedList?
+**Answer:**
+
+| Feature | ArrayList | LinkedList |
+|---------|-----------|------------|
+| Implementation | Dynamic array | Doubly linked list |
+| Access Time | O(1) for get/set | O(n) for get/set |
+| Insert/Delete | O(n) in middle | O(1) if node known |
+| Memory | Less overhead | More overhead (node pointers) |
+| Use Case | Frequent access | Frequent insertion/deletion |
+
+### 8. HashMap vs HashTable vs ConcurrentHashMap
+**Answer:**
+
+| Feature | HashMap | HashTable | ConcurrentHashMap |
+|---------|---------|-----------|-------------------|
+| Thread-Safe | No | Yes (synchronized) | Yes (lock striping) |
+| Null Keys/Values | Allows one null key, multiple null values | Not allowed | Not allowed |
+| Performance | Fast | Slow (full lock) | Better than HashTable |
+| Legacy | Modern (Java 1.2) | Legacy (Java 1.0) | Modern (Java 1.5) |
+
+### 9. How does HashMap work internally?
+**Answer:**
+- Uses array of buckets, each bucket is a linked list (or tree in Java 8+)
+- Hash function determines bucket index: `index = hashCode() & (n-1)`
+- Collisions handled by chaining (linked list/tree)
+- Load factor (0.75 default): when exceeded, capacity doubles (rehashing)
+- Java 8+: Converts to TreeNode when bucket size > 8 for O(log n) access
+
+```java
+// Simplified internal structure
+class HashMap<K,V> {
+    Node<K,V>[] table; // Array of buckets
+
+    static class Node<K,V> {
+        final int hash;
+        final K key;
+        V value;
+        Node<K,V> next;
+    }
+}
+```
+
+## Multithreading & Concurrency
+
+### 10. What are the ways to create a thread in Java?
+**Answer:**
+1. **Extend Thread class**
+```java
+class MyThread extends Thread {
+    public void run() { System.out.println("Thread running"); }
+}
+new MyThread().start();
+```
+
+2. **Implement Runnable interface**
+```java
+class MyRunnable implements Runnable {
+    public void run() { System.out.println("Thread running"); }
+}
+new Thread(new MyRunnable()).start();
+```
+
+3. **Implement Callable interface** (returns result)
+```java
+Callable<String> callable = () -> "Result";
+ExecutorService executor = Executors.newSingleThreadExecutor();
+Future<String> future = executor.submit(callable);
+```
+
+### 11. Explain synchronized keyword and locks
+**Answer:**
+- **synchronized method**: Locks entire method on object's monitor
+- **synchronized block**: Locks specific code block, more granular control
+- **Lock interface**: More flexible than synchronized (tryLock, timed lock, interruptible)
+
+```java
+// Synchronized method
+public synchronized void method() { }
+
+// Synchronized block
+synchronized(this) { }
+
+// ReentrantLock
+Lock lock = new ReentrantLock();
+lock.lock();
+try {
+    // critical section
+} finally {
+    lock.unlock();
+}
+```
+
+### 12. What is volatile keyword?
+**Answer:**
+- Ensures visibility of changes across threads
+- Prevents thread caching of variable values
+- No atomicity guarantee for compound operations
+- Lighter alternative to synchronized for simple flags
+
+```java
+private volatile boolean flag = false;
+```
+
+### 13. What is the difference between wait() and sleep()?
+**Answer:**
+
+| Feature | wait() | sleep() |
+|---------|--------|---------|
+| Class | Object class | Thread class |
+| Lock Release | Releases lock | Holds lock |
+| Wakeup | notify()/notifyAll() | After time expires |
+| Usage | Inter-thread communication | Pause execution |
+| Synchronized | Must be in synchronized block | Can be called anywhere |
+
+## Exception Handling
+
+### 14. Checked vs Unchecked Exceptions
+**Answer:**
+- **Checked Exceptions**: Must be caught or declared (IOException, SQLException)
+  - Compile-time checking
+  - Extend Exception class (but not RuntimeException)
+
+- **Unchecked Exceptions**: Not required to handle (NullPointerException, ArrayIndexOutOfBoundsException)
+  - Runtime checking
+  - Extend RuntimeException class
+
+```java
+// Checked exception - must handle
+try {
+    FileReader fr = new FileReader("file.txt");
+} catch (FileNotFoundException e) { }
+
+// Unchecked exception - optional to handle
+int[] arr = new int[5];
+arr[10] = 5; // ArrayIndexOutOfBoundsException
+```
+
+### 15. What is try-with-resources?
+**Answer:**
+Java 7+ feature for automatic resource management. Resources implementing AutoCloseable are automatically closed.
+
+```java
+try (FileReader fr = new FileReader("file.txt");
+     BufferedReader br = new BufferedReader(fr)) {
+    return br.readLine();
+} // Automatically closes resources
+```
+
+## Java 8+ Features
+
+### 16. What are Lambda Expressions?
+**Answer:**
+Concise way to represent anonymous functions (functional programming).
+
+```java
+// Before Java 8
+Runnable r1 = new Runnable() {
+    @Override
+    public void run() { System.out.println("Hello"); }
+};
+
+// Java 8+
+Runnable r2 = () -> System.out.println("Hello");
+
+// With parameters
+List<Integer> list = Arrays.asList(1, 2, 3);
+list.forEach(n -> System.out.println(n));
+```
+
+### 17. What is Stream API?
+**Answer:**
+Functional approach to process collections with operations like filter, map, reduce.
+
+```java
+List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+
+// Filter even numbers and square them
+List<Integer> result = numbers.stream()
+    .filter(n -> n % 2 == 0)
+    .map(n -> n * n)
+    .collect(Collectors.toList());
+
+// Sum using reduce
+int sum = numbers.stream()
+    .reduce(0, (a, b) -> a + b);
+```
+
+### 18. What are Optional and its benefits?
+**Answer:**
+Container object to handle null values explicitly, avoiding NullPointerException.
+
+```java
+Optional<String> optional = Optional.ofNullable(getName());
+
+// Check and get
+if (optional.isPresent()) {
+    String name = optional.get();
+}
+
+// Or provide default
+String name = optional.orElse("Default");
+
+// Or throw exception
+String name = optional.orElseThrow(() -> new RuntimeException());
+
+// Map and chain
+optional.map(String::toUpperCase)
+        .ifPresent(System.out::println);
+```
+
+## Design Patterns & Best Practices
+
+### 19. What is Singleton Pattern? How to implement it correctly?
+**Answer:**
+Ensures only one instance of a class exists. Thread-safe implementations:
+
+```java
+// Eager initialization
+public class Singleton {
+    private static final Singleton INSTANCE = new Singleton();
+    private Singleton() {}
+    public static Singleton getInstance() { return INSTANCE; }
+}
+
+// Lazy initialization with double-checked locking
+public class Singleton {
+    private static volatile Singleton instance;
+    private Singleton() {}
+
+    public static Singleton getInstance() {
+        if (instance == null) {
+            synchronized (Singleton.class) {
+                if (instance == null) {
+                    instance = new Singleton();
+                }
+            }
+        }
+        return instance;
+    }
+}
+
+// Bill Pugh Singleton (best approach)
+public class Singleton {
+    private Singleton() {}
+
+    private static class SingletonHelper {
+        private static final Singleton INSTANCE = new Singleton();
+    }
+
+    public static Singleton getInstance() {
+        return SingletonHelper.INSTANCE;
+    }
+}
+```
+
+### 20. What is equals() and hashCode() contract?
+**Answer:**
+When overriding equals(), must also override hashCode() to maintain contract:
+1. If `a.equals(b)` is true, then `a.hashCode() == b.hashCode()`
+2. If `a.hashCode() == b.hashCode()`, `a.equals(b)` may or may not be true
+3. If `a.equals(b)` is false, hashCodes may or may not be different
+
+```java
+@Override
+public boolean equals(Object o) {
+    if (this == o) return true;
+    if (o == null || getClass() != o.getClass()) return false;
+    Person person = (Person) o;
+    return Objects.equals(name, person.name) &&
+           Objects.equals(age, person.age);
+}
+
+@Override
+public int hashCode() {
+    return Objects.hash(name, age);
+}
+```
+
+## Advanced Topics
+
+### 21. What is Java Reflection?
+**Answer:**
+Runtime inspection and manipulation of classes, methods, fields.
+
+```java
+Class<?> clazz = Class.forName("com.example.MyClass");
+Method method = clazz.getMethod("methodName", String.class);
+Object result = method.invoke(instance, "parameter");
+
+Field field = clazz.getDeclaredField("privateField");
+field.setAccessible(true);
+field.set(instance, value);
+```
+
+### 22. What are Generics and Type Erasure?
+**Answer:**
+- **Generics**: Type parameters for compile-time type safety
+- **Type Erasure**: Generic type information removed at runtime (backward compatibility)
+
+```java
+// Generic class
+public class Box<T> {
+    private T value;
+    public void set(T value) { this.value = value; }
+    public T get() { return value; }
+}
+
+// Bounded type parameter
+public <T extends Comparable<T>> T max(T a, T b) {
+    return a.compareTo(b) > 0 ? a : b;
+}
+
+// Wildcard
+List<? extends Number> list = new ArrayList<Integer>();
+```
+
+### 23. What is the difference between Comparable and Comparator?
+**Answer:**
+
+| Feature | Comparable | Comparator |
+|---------|------------|------------|
+| Package | java.lang | java.util |
+| Method | compareTo(T o) | compare(T o1, T o2) |
+| Usage | Natural ordering | Custom ordering |
+| Implementation | Modify class itself | External class |
+| Sorting | Collections.sort(list) | Collections.sort(list, comparator) |
+
+```java
+// Comparable - natural ordering
+class Person implements Comparable<Person> {
+    public int compareTo(Person other) {
+        return this.age - other.age;
+    }
+}
+
+// Comparator - custom ordering
+Comparator<Person> nameComparator = (p1, p2) ->
+    p1.getName().compareTo(p2.getName());
+Collections.sort(people, nameComparator);
+```
+
+### 24. What is the difference between fail-fast and fail-safe iterators?
+**Answer:**
+- **Fail-fast**: Throws ConcurrentModificationException if collection is modified during iteration (ArrayList, HashMap)
+- **Fail-safe**: Works on clone, doesn't throw exception (ConcurrentHashMap, CopyOnWriteArrayList)
+
+```java
+// Fail-fast
+List<String> list = new ArrayList<>();
+list.add("A");
+for (String s : list) {
+    list.add("B"); // ConcurrentModificationException
+}
+
+// Fail-safe
+List<String> list = new CopyOnWriteArrayList<>();
+list.add("A");
+for (String s : list) {
+    list.add("B"); // No exception
+}
+```
+
+### 25. Explain Java Memory Leaks and how to prevent them
+**Answer:**
+Memory leak occurs when objects are no longer used but still referenced, preventing GC.
+
+Common causes:
+1. **Static fields holding references**
+2. **Unclosed resources** (connections, streams)
+3. **Inner class references** (implicit reference to outer class)
+4. **ThreadLocal variables** not removed
+5. **Listeners and callbacks** not unregistered
+
+Prevention:
+```java
+// Use try-with-resources
+try (Connection conn = getConnection()) {
+    // use connection
+}
+
+// Clear ThreadLocal
+threadLocal.remove();
+
+// Weak references for caches
+Map<Key, WeakReference<Value>> cache = new WeakHashMap<>();
+
+// Unregister listeners
+eventSource.removeListener(listener);
+```
+
+## Practice Questions
+
+**Review this code**
+```java
+List<Integer> numbers = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5, 6));
+
+Iterator<Integer> iterator = numbers.iterator();
+while (iterator.hasNext()) {
+    Integer num = iterator.next();
+    if (num % 2 == 0) {
+        iterator.remove(); // Safe removal through iterator
+        break;
+    }
+}
+System.out.println(numbers);
+```
+
+###############################
+
+**Review this code**
+```java
+List<Integer> numbers = new ArrayList<>();
+numbers.add(1);
+numbers.add(2);
+numbers.add(3);
+numbers.add(4);
+numbers.add(5);
+numbers.add(6);
+
+int arr_size = numbers.size();
+
+for (int i = 0; i < arr_size; i++) {
+  if (numbers.get(i) % 2 == 0) {
+    numbers.remove(i);
+  }
+}
+
+System.out.println(numbers);
+```

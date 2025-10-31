@@ -158,9 +158,3 @@ function extended_gcd(a, b):
 ```
 
 If gcd = 1, then `x` is the modular inverse of `a mod b`.
-
----
-
-Do you want me to also **draw a tree-style diagram** that shows how the substitutions work step by step (kind of like a flowchart), so it’s easier to see the backward substitution?
-
----

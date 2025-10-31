@@ -37,5 +37,4 @@ jobs:
           author_email: tranphanthanhlong18@gmail.com
           message: "Updated README.md with daily quote"
           add: "."
-          branch: master
           push: true
