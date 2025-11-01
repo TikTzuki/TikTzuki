@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;Wisdom is doing now what you are going to be happy with later on.&rdquo; &mdash; <footer>Joyce Meyer</footer></blockquote>**
+**<blockquote>&ldquo;Just trust that everything is unfolding the way it is supposed to. Don't resist... Great things are waiting for you around the corner.&rdquo; &mdash; <footer>Sonia Ricotti</footer></blockquote>**
