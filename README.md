@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;Just trust that everything is unfolding the way it is supposed to. Don't resist... Great things are waiting for you around the corner.&rdquo; &mdash; <footer>Sonia Ricotti</footer></blockquote>**
+**<blockquote>&ldquo;Humans and prosperity never endure side by side for long.&rdquo; &mdash; <footer>Herodotus</footer></blockquote>**
