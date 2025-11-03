@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;Humans and prosperity never endure side by side for long.&rdquo; &mdash; <footer>Herodotus</footer></blockquote>**
+**<blockquote>&ldquo;The things I carry are my thoughts. That's it. They are the only weight. My thoughts determine whether I am free and light or burdened.&rdquo; &mdash; <footer>Kamal Ravikant</footer></blockquote>**
