@@ -2,25 +2,9 @@
 
 Usefully commands:
 ```shell
-cd ~/Library/Application\ Support
-cd JetBrains
-cd IntelliJIdea2024.1
-cd options
-rm other.xml
-rm -rf IntelliJIdea2024.1
-cd Library/Application\ Support
-source /Applications/Cursor.app/Contents/Resources/app/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-rc.zsh
-cd ~/Library/Preferences/
-ls | grep java
-cat com.apple.java.util.prefs.plist
-rm com.apple.java.util.prefs.plist
-rm com.jetbrains.intellij.plist
-rm com.jetbrains.goland.plist
-jetbrains.go.252.plist
-rm jetbrains.go.252.plist
-rm jetbrains.go.csat.plist
-cd Library/Application\ Support/JetBrains
-rm -rf IntelliJIdea2024.1
+rm ~/Library/Application\ Support/JetBrains/IntelliJIdea2024.1/options/other.xml
+rm ~/Library/Preferences/com.apple.java.util.prefs.plist
+rm ~/Library/Preferences/com.jetbrains.intellij.plist
 ```
 
 Spring Boot - Kafka - Protobuf: (
