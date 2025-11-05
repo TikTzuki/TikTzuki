@@ -15,7 +15,7 @@
 
 ![moving-average](https://img.shields.io/badge/Moving_Average-Indicator-purple)
 
-###### OHLCV candlestick
+### OHLCV candlestick
 
 OHLCV data explained
 
@@ -25,7 +25,7 @@ OHLCV data explained
 - Close: The final price at the end of the interval.
 - Volume: The total number of units (like shares or contracts) traded during the interval.
 
-###### Pin Bar
+### Pin Bar
 
 A Pin Bar (short for “Pinocchio Bar”) is a single candlestick that shows a sharp rejection of price at one end of the
 candle’s range — it has:
@@ -42,7 +42,9 @@ The long wick shows that the market tested a price level but then reversed stron
 
 🔻 Bearish Pin Bar (Sellers’ Rejection)
 
-###### Dark Cloud Cover - Bearish reversal pattern
+## Candlestick Patterns
+
+### Dark Cloud Cover - Bearish reversal pattern
 
 ![dark-cloud-cover](img/dark_cloud_cover.png)
 
@@ -54,7 +56,7 @@ may be imminent.
 Traders often look for confirmation of the reversal in the subsequent trading session, such as a third bearish candle or
 a breakout of key support levels, before entering a short position.
 
-###### Piercing Line - Bullish reversal pattern
+### Piercing Line - Bullish reversal pattern
 
 ![piercing-line](img/piercing_line.png)
 
@@ -67,7 +69,7 @@ Trading considerations
 - Invalidation: The pattern is not valid if the second candle fails to close above the midpoint of the first, or if
   there was no preceding downtrend in the first place.
 
-###### Harami Pattern
+### Harami Pattern
 
 ![harami-pattern](img/harami.png)
 
@@ -89,7 +91,7 @@ Harami Candlestick Sell Signal
 
 - A somewhat opposite two candlestick reversal pattern is the Bearish Engulfing Pattern
 
-#### Engulfing Pattern
+### Engulfing Pattern
 
 ![bearish-engulfing-pattern](img/bearish_engulfing.png)
 
@@ -125,7 +127,7 @@ presented below are ordered from the most aggressive to most conservative:
 - Thirdly, a trader might wait after the bullish engulfing pattern for another signal, mainly a price break above the
   downward resistance line (see: Support & Resistance), before entering a buy order.
 
-#### Bullish + Bearish Fractal S/R Break
+### Fractal S/R Break Pattern
 
 ![fractal-sr-break](img/fractal_breakout.png)
 
@@ -143,7 +145,7 @@ Bearish Fractal S/R Break:
 - Price breaks below a previous bullish fractal (support).
 - Indicates that the market has broken a prior local low → bearish breakdown signal.
 
-#### Inside Bar Pattern
+### Inside Bar Pattern
 
 ![inside-bar-pattern](img/inside_bar.png)
 Breakout Signal
@@ -162,7 +164,7 @@ Inside bars often occur during strong trends — the market pauses before contin
 - In an uptrend, an inside bar breakout upward confirms continuation.
 - In a downtrend, an inside bar breakout downward confirms continuation.
 
-#### Outside Bar Pattern
+### Outside Bar Pattern
 
 ![outside-bar-pattern](img/outside_bar.png)
 
@@ -178,7 +180,7 @@ Continuation Signal
 When this pattern appears in the direction of the existing trend, it often confirms trend continuation — the dominant
 side has reaffirmed control.
 
-#### Shaved Bar Pattern
+### Shaved Bar Pattern
 
 ![shaved-bar-pattern](img/shaved_bar.png)
 
@@ -194,7 +196,7 @@ Trend Strength
 
 - Multiple consecutive shaved bars indicate trend acceleration — market moving with conviction.
 
-#### Reversal Bar Pattern
+### Reversal Bar Pattern
 
 ![reversal-bar-pattern](img/reversal_bar.png)
 
@@ -210,7 +212,7 @@ They often appear at:
 - Fibonacci levels
 - Supply/demand areas
 
-#### Moving Average
+## Moving Average
 
 | **Type**   | **Full Name**                | **Description / Key Trait**                                           |
 |------------|------------------------------|-----------------------------------------------------------------------|
