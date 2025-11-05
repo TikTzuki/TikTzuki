@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;Wisdom is doing now what you are going to be happy with later on.&rdquo; &mdash; <footer>Joyce Meyer</footer></blockquote>**
+**<blockquote>&ldquo;Go for it now. The future is promised to no one. &rdquo; &mdash; <footer>Wayne Dyer</footer></blockquote>**
