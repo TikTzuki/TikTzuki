@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;Talk sense to a fool and he calls you foolish.&rdquo; &mdash; <footer>Euripides</footer></blockquote>**
+**<blockquote>&ldquo;Go for it now. The future is promised to no one. &rdquo; &mdash; <footer>Wayne Dyer</footer></blockquote>**
