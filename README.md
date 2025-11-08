@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;Prefer to be defeated in the presence of the wise than to excel among fools.&rdquo; &mdash; <footer>Dogen</footer></blockquote>**
+**<blockquote>&ldquo;If you run you stand a chance of losing, but if you don't run you've already lost.&rdquo; &mdash; <footer>Barack Obama</footer></blockquote>**
