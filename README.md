@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;The merit of all things lies in their difficulty.&rdquo; &mdash; <footer>Alexandre Dumas</footer></blockquote>**
+**<blockquote>&ldquo;The biggest adventure you can ever take is to live the life of your dreams. &rdquo; &mdash; <footer>Oprah Winfrey</footer></blockquote>**
