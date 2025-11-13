@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;You must find the place inside yourself where nothing is impossible.&rdquo; &mdash; <footer>Deepak Chopra</footer></blockquote>**
+**<blockquote>&ldquo;Nothing is permanent in this wicked world - not even our troubles.&rdquo; &mdash; <footer>Charlie Chaplin</footer></blockquote>**
