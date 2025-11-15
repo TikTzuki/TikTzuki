@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;Whatever your heart clings to and confides in, that is really your God.&rdquo; &mdash; <footer>Martin Luther</footer></blockquote>**
+**<blockquote>&ldquo;Better late than never.&rdquo; &mdash; <footer>Spencer Johnson</footer></blockquote>**
