@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;Employ your time in improving yourself by other men's writings, so that you shall gain easily what others have labored hard for.&rdquo; &mdash; <footer>Socrates</footer></blockquote>**
+**<blockquote>&ldquo;If you can't imagine it, you can't have it.&rdquo; &mdash; <footer>Toni Morrison</footer></blockquote>**
