@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;If you can't imagine it, you can't have it.&rdquo; &mdash; <footer>Toni Morrison</footer></blockquote>**
+**<blockquote>&ldquo;It is not that we have too little time to do all the things we need to do , it is that we feel the need to do too many things in the time we have.&rdquo; &mdash; <footer>Gary Keller</footer></blockquote>**
