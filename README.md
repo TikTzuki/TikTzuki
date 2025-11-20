@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;No man is more cheated than the selfish man.&rdquo; &mdash; <footer>Henry Ward Beecher</footer></blockquote>**
+**<blockquote>&ldquo;I have never in my life learned anything from any man who agreed with me.&rdquo; &mdash; <footer>Dudley Field Malone</footer></blockquote>**
