@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;I have never in my life learned anything from any man who agreed with me.&rdquo; &mdash; <footer>Dudley Field Malone</footer></blockquote>**
+**<blockquote>&ldquo;Give credit where credit is due: simply said, if you want loyalty and best effort, you must be thoughtful.  &rdquo; &mdash; <footer>Estee Lauder</footer></blockquote>**
