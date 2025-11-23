@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;Never put off to tomorrow what you can do to-day.&rdquo; &mdash; <footer>Thomas Jefferson</footer></blockquote>**
+**<blockquote>&ldquo;It always seems impossible until it's done.&rdquo; &mdash; <footer>Nelson Mandela</footer></blockquote>**
