@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;We must embrace pain and burn it as fuel for our journey.&rdquo; &mdash; <footer>Kenji Miyazawa</footer></blockquote>**
+**<blockquote>&ldquo;Those who are easily shocked should be shocked more often.&rdquo; &mdash; <footer>Mae West</footer></blockquote>**
