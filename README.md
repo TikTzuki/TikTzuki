@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;Those who are easily shocked should be shocked more often.&rdquo; &mdash; <footer>Mae West</footer></blockquote>**
+**<blockquote>&ldquo;Change yourself - you are in control.&rdquo; &mdash; <footer>Mahatma Gandhi</footer></blockquote>**
