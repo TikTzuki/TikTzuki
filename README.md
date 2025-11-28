@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;Change yourself - you are in control.&rdquo; &mdash; <footer>Mahatma Gandhi</footer></blockquote>**
+**<blockquote>&ldquo;If we did all the things we are capable of, we would literally astound ourselves.&rdquo; &mdash; <footer>Thomas Edison</footer></blockquote>**
