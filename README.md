@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;If we did all the things we are capable of, we would literally astound ourselves.&rdquo; &mdash; <footer>Thomas Edison</footer></blockquote>**
+**<blockquote>&ldquo;Sometimes you have to lose all you have to find out who you truly are.&rdquo; &mdash; <footer>Roy T. Bennett</footer></blockquote>**
