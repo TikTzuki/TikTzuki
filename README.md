@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;I pay attention to every minute of the day.&rdquo; &mdash; <footer>Steve Harvey</footer></blockquote>**
+**<blockquote>&ldquo;Knowing yourself is the beginning of all wisdom.&rdquo; &mdash; <footer>Aristotle</footer></blockquote>**
