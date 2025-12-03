@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;When the fish is caught we pay no more attention to the trap.&rdquo; &mdash; <footer>Huang Po</footer></blockquote>**
+**<blockquote>&ldquo;To lead the people, walk behind them.&rdquo; &mdash; <footer>Lao Tzu</footer></blockquote>**
