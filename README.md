@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;Happiness is not a goal...it's a by-product of a life well lived.&rdquo; &mdash; <footer>Eleanor Roosevelt</footer></blockquote>**
+**<blockquote>&ldquo;A pessimist is one who makes difficulties of his opportunities and an optimist is one who makes opportunities of his difficulties.&rdquo; &mdash; <footer>Harry S. Truman</footer></blockquote>**
