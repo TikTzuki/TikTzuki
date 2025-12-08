@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;A pessimist is one who makes difficulties of his opportunities and an optimist is one who makes opportunities of his difficulties.&rdquo; &mdash; <footer>Harry S. Truman</footer></blockquote>**
+**<blockquote>&ldquo;Silence is a source of great strength.&rdquo; &mdash; <footer>Lao Tzu</footer></blockquote>**
