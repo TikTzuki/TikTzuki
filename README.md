@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;Silence is a source of great strength.&rdquo; &mdash; <footer>Lao Tzu</footer></blockquote>**
+**<blockquote>&ldquo;Enlightenment is intimacy with all things.&rdquo; &mdash; <footer>Dogen</footer></blockquote>**
