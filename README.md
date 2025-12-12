@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;Fear can hold you prisoner. Hope can set you free.&rdquo; &mdash; <footer>Stephen King</footer></blockquote>**
+**<blockquote>&ldquo;Never was anything great achieved without danger.&rdquo; &mdash; <footer>Niccolo Machiavelli</footer></blockquote>**
