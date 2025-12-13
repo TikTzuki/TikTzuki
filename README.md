@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;Never was anything great achieved without danger.&rdquo; &mdash; <footer>Niccolo Machiavelli</footer></blockquote>**
+**<blockquote>&ldquo;The privilege of a lifetime is to become who you truly are.&rdquo; &mdash; <footer>Carl Jung</footer></blockquote>**
