@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;The privilege of a lifetime is to become who you truly are.&rdquo; &mdash; <footer>Carl Jung</footer></blockquote>**
+**<blockquote>&ldquo;No one can confidently say that he will still be living tomorrow.&rdquo; &mdash; <footer>Euripides</footer></blockquote>**
