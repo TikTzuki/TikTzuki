@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;No one can confidently say that he will still be living tomorrow.&rdquo; &mdash; <footer>Euripides</footer></blockquote>**
+**<blockquote>&ldquo;Love is the absence of judgment.&rdquo; &mdash; <footer>Dalai Lama</footer></blockquote>**
