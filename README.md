@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;The purpose of life is to live it, to taste experience to the utmost, to reach out eagerly and without fear for newer and richer experience.&rdquo; &mdash; <footer>Eleanor Roosevelt</footer></blockquote>**
+**<blockquote>&ldquo;He who violates another's honor loses his own.&rdquo; &mdash; <footer>Publilius Syrus</footer></blockquote>**
