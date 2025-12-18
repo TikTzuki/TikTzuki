@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;He who violates another's honor loses his own.&rdquo; &mdash; <footer>Publilius Syrus</footer></blockquote>**
+**<blockquote>&ldquo;Reality is nothing but a collective hunch.&rdquo; &mdash; <footer>Lily Tomlin</footer></blockquote>**
