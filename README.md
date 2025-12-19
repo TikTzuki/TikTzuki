@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;Reality is nothing but a collective hunch.&rdquo; &mdash; <footer>Lily Tomlin</footer></blockquote>**
+**<blockquote>&ldquo;Life is not a problem to be solved, but a reality to be experienced.&rdquo; &mdash; <footer>Soren Kierkegaard</footer></blockquote>**
