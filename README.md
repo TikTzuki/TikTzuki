@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;Life is not a problem to be solved, but a reality to be experienced.&rdquo; &mdash; <footer>Soren Kierkegaard</footer></blockquote>**
+**<blockquote>&ldquo;Freedom is the only worthy goal in life. It is won by disregarding things that lie beyond our control.&rdquo; &mdash; <footer>Epictetus</footer></blockquote>**
