@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;Freedom is the only worthy goal in life. It is won by disregarding things that lie beyond our control.&rdquo; &mdash; <footer>Epictetus</footer></blockquote>**
+**<blockquote>&ldquo;Forget mistakes. Forget failure. Forget everything except what you are going to do now and do it. Today is your lucky day!&rdquo; &mdash; <footer>Og Mandino</footer></blockquote>**
