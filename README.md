@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;Forget mistakes. Forget failure. Forget everything except what you are going to do now and do it. Today is your lucky day!&rdquo; &mdash; <footer>Og Mandino</footer></blockquote>**
+**<blockquote>&ldquo;The joy of life comes from our encounters with new experiences.&rdquo; &mdash; <footer>Christopher McCandless</footer></blockquote>**
