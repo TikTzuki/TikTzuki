@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;The joy of life comes from our encounters with new experiences.&rdquo; &mdash; <footer>Christopher McCandless</footer></blockquote>**
+**<blockquote>&ldquo;All know the way; few actually walk it. &rdquo; &mdash; <footer>Bodhidharma</footer></blockquote>**
