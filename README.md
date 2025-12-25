@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;A mountain never yields to the wind no matter how strong it is.&rdquo; &mdash; <footer>Zen Proverb</footer></blockquote>**
+**<blockquote>&ldquo;Stress happens when the mind resists what is.&rdquo; &mdash; <footer>Dan Millman</footer></blockquote>**
