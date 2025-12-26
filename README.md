@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;Stress happens when the mind resists what is.&rdquo; &mdash; <footer>Dan Millman</footer></blockquote>**
+**<blockquote>&ldquo;Far more crucial than what we know or do not know is what we do not want to know.&rdquo; &mdash; <footer>Eric Hoffer</footer></blockquote>**
