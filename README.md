@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;Success is an iceberg.&rdquo; &mdash; <footer>Unknown</footer></blockquote>**
+**<blockquote>&ldquo;Success is good at any age, but the sooner you find it, the longer you will enjoy it.&rdquo; &mdash; <footer>Napoleon Hill</footer></blockquote>**
