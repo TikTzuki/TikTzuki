@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;Successful people ask better questions, and as a result, they get better answers.&rdquo; &mdash; <footer>Tony Robbins</footer></blockquote>**
+**<blockquote>&ldquo;Do the hard jobs first. The easy jobs will take care of themselves.&rdquo; &mdash; <footer>Dale Carnegie</footer></blockquote>**
