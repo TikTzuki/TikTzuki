@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;Humor isn't for everyone. It's only for people who want to have fun, enjoy life, and feel alive.&rdquo; &mdash; <footer>Anne Wilson Schaef</footer></blockquote>**
+**<blockquote>&ldquo;Nothing is more creative...nor destructive...than a brilliant mind with a purpose.&rdquo; &mdash; <footer>Dan Brown</footer></blockquote>**
