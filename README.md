@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;Nothing is more creative...nor destructive...than a brilliant mind with a purpose.&rdquo; &mdash; <footer>Dan Brown</footer></blockquote>**
+**<blockquote>&ldquo;Be kind whenever possible. It is always possible.&rdquo; &mdash; <footer>Dalai Lama</footer></blockquote>**
