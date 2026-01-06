@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;Absence makes the heart grow fonder.&rdquo; &mdash; <footer>Eleanor Roosevelt</footer></blockquote>**
+**<blockquote>&ldquo;For fast-acting relief try slowing down.&rdquo; &mdash; <footer>Lily Tomlin</footer></blockquote>**
