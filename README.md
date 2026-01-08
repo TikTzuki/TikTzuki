@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;If light is in your heart, you will find your way home.  &rdquo; &mdash; <footer>Rumi</footer></blockquote>**
+**<blockquote>&ldquo;Because of your smile, you make life more beautiful.&rdquo; &mdash; <footer>Thich Nhat Hanh</footer></blockquote>**
