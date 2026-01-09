@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;Because of your smile, you make life more beautiful.&rdquo; &mdash; <footer>Thich Nhat Hanh</footer></blockquote>**
+**<blockquote>&ldquo;Truth is not something outside to be discovered, it is something inside to be realized.&rdquo; &mdash; <footer>Osho</footer></blockquote>**
