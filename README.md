@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;Never argue with stupid people, they will drag you down to their level and then beat you with experience.&rdquo; &mdash; <footer>Mark Twain</footer></blockquote>**
+**<blockquote>&ldquo;Fallacies do not cease to be fallacies because they become fashions.&rdquo; &mdash; <footer>Gilbert Chesterton</footer></blockquote>**
