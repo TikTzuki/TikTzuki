@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;Fallacies do not cease to be fallacies because they become fashions.&rdquo; &mdash; <footer>Gilbert Chesterton</footer></blockquote>**
+**<blockquote>&ldquo;Life itself is the most wonderful fairy tale.&rdquo; &mdash; <footer>Hans Christian Andersen</footer></blockquote>**
