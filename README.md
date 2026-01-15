@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;You are never too old to set another goal or to dream a new dream.&rdquo; &mdash; <footer>Les Brown</footer></blockquote>**
+**<blockquote>&ldquo;If you chase two rabbits, you catch none.&rdquo; &mdash; <footer>Confucius</footer></blockquote>**
