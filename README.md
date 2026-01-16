@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;If you chase two rabbits, you catch none.&rdquo; &mdash; <footer>Confucius</footer></blockquote>**
+**<blockquote>&ldquo;The important thing is not what one is born with but what use one makes of that equipment.&rdquo; &mdash; <footer>Alfred Adler</footer></blockquote>**
