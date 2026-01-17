@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;The important thing is not what one is born with but what use one makes of that equipment.&rdquo; &mdash; <footer>Alfred Adler</footer></blockquote>**
+**<blockquote>&ldquo;To earn more you must learn more.&rdquo; &mdash; <footer>Brian Tracy</footer></blockquote>**
