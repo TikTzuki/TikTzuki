@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;To earn more you must learn more.&rdquo; &mdash; <footer>Brian Tracy</footer></blockquote>**
+**<blockquote>&ldquo;When you get up in the morning, you have two choices - either to be happy or to be unhappy. Just choose to be happy.&rdquo; &mdash; <footer>Norman Vincent Peale</footer></blockquote>**
