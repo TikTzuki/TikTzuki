@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;When you get up in the morning, you have two choices - either to be happy or to be unhappy. Just choose to be happy.&rdquo; &mdash; <footer>Norman Vincent Peale</footer></blockquote>**
+**<blockquote>&ldquo;If the only prayer you ever say in your entire life is thank you, it will be enough.&rdquo; &mdash; <footer>Meister Eckhart</footer></blockquote>**
