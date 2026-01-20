@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;If the only prayer you ever say in your entire life is thank you, it will be enough.&rdquo; &mdash; <footer>Meister Eckhart</footer></blockquote>**
+**<blockquote>&ldquo;Take interest and even delight in doing the small things well.&rdquo; &mdash; <footer>Jim Rohn</footer></blockquote>**
