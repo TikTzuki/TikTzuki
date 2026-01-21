@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;Take interest and even delight in doing the small things well.&rdquo; &mdash; <footer>Jim Rohn</footer></blockquote>**
+**<blockquote>&ldquo;Be careful the environment you choose for it will shape you; be careful the friends you choose for you will become like them.&rdquo; &mdash; <footer>W. Clement Stone</footer></blockquote>**
