@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;Be careful the environment you choose for it will shape you; be careful the friends you choose for you will become like them.&rdquo; &mdash; <footer>W. Clement Stone</footer></blockquote>**
+**<blockquote>&ldquo;The path is difficult to ensure worthiness. The lazy look elsewhere, The persevering find riches.&rdquo; &mdash; <footer>Ming-Dao Deng</footer></blockquote>**
