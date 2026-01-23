@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;The path is difficult to ensure worthiness. The lazy look elsewhere, The persevering find riches.&rdquo; &mdash; <footer>Ming-Dao Deng</footer></blockquote>**
+**<blockquote>&ldquo;Unless you change how you are, you will always have what you got.&rdquo; &mdash; <footer>Jim Rohn</footer></blockquote>**
