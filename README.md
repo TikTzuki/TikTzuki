@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;Unless you change how you are, you will always have what you got.&rdquo; &mdash; <footer>Jim Rohn</footer></blockquote>**
+**<blockquote>&ldquo;Zen insists that the whole trouble is just our failure to realize that there is no problem.&rdquo; &mdash; <footer>Bruce Lee</footer></blockquote>**
