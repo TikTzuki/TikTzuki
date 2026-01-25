@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;Zen insists that the whole trouble is just our failure to realize that there is no problem.&rdquo; &mdash; <footer>Bruce Lee</footer></blockquote>**
+**<blockquote>&ldquo;Live life as though nobody is watching, and express yourself as though everyone is listening.&rdquo; &mdash; <footer>Nelson Mandela</footer></blockquote>**
