@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;Live life as though nobody is watching, and express yourself as though everyone is listening.&rdquo; &mdash; <footer>Nelson Mandela</footer></blockquote>**
+**<blockquote>&ldquo;When everything seems to be going against you, remember that the airplane takes off against the wind, not with it. &rdquo; &mdash; <footer>Henry Ford</footer></blockquote>**
