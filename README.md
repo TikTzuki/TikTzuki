@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;When everything seems to be going against you, remember that the airplane takes off against the wind, not with it. &rdquo; &mdash; <footer>Henry Ford</footer></blockquote>**
+**<blockquote>&ldquo;Life is like underwear, should be changed twice a day.  &rdquo; &mdash; <footer>Ray Bradbury</footer></blockquote>**
