@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;Life is like underwear, should be changed twice a day.  &rdquo; &mdash; <footer>Ray Bradbury</footer></blockquote>**
+**<blockquote>&ldquo;Experience is a comb which nature gives us when we are bald. &rdquo; &mdash; <footer>Chinese Proverb</footer></blockquote>**
