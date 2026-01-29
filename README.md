@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;Experience is a comb which nature gives us when we are bald. &rdquo; &mdash; <footer>Chinese Proverb</footer></blockquote>**
+**<blockquote>&ldquo;Tall oaks grow from little acorns.&rdquo; &mdash; <footer>Andrew Carnegie</footer></blockquote>**
