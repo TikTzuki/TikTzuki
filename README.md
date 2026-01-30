@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;Tall oaks grow from little acorns.&rdquo; &mdash; <footer>Andrew Carnegie</footer></blockquote>**
+**<blockquote>&ldquo;Do not use life to give life to death. Do not use death to bring death to life.&rdquo; &mdash; <footer>Zhuangzi</footer></blockquote>**
