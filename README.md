@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;Do not use life to give life to death. Do not use death to bring death to life.&rdquo; &mdash; <footer>Zhuangzi</footer></blockquote>**
+**<blockquote>&ldquo;Don't allow your mind to tell your heart what to do. The mind gives up easily.&rdquo; &mdash; <footer>Paulo Coelho</footer></blockquote>**
