@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;Don't allow your mind to tell your heart what to do. The mind gives up easily.&rdquo; &mdash; <footer>Paulo Coelho</footer></blockquote>**
+**<blockquote>&ldquo;If you can't, you must. If you must, you can.&rdquo; &mdash; <footer>Tony Robbins</footer></blockquote>**
