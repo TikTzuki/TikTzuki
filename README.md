@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;You use a glass mirror to see your face; you use works of art to see your soul.&rdquo; &mdash; <footer>George Bernard Shaw</footer></blockquote>**
+**<blockquote>&ldquo;Desire is suffering.&rdquo; &mdash; <footer>Naval Ravikant</footer></blockquote>**
