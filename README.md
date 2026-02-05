@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;Getting lost along your path is a part of finding the path you are meant to be on.&rdquo; &mdash; <footer>Robin Sharma</footer></blockquote>**
+**<blockquote>&ldquo;Life is ours to be spent, not to be saved. &rdquo; &mdash; <footer>D. H. Lawrence</footer></blockquote>**
