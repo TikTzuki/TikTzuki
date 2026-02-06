@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;Life is ours to be spent, not to be saved. &rdquo; &mdash; <footer>D. H. Lawrence</footer></blockquote>**
+**<blockquote>&ldquo;Life must be rich and full of loving-it's no good otherwise, no good at all, for anyone.  &rdquo; &mdash; <footer>Jack Kerouac</footer></blockquote>**
