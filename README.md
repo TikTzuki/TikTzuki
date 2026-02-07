@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;Life must be rich and full of loving-it's no good otherwise, no good at all, for anyone.  &rdquo; &mdash; <footer>Jack Kerouac</footer></blockquote>**
+**<blockquote>&ldquo;What a book a devil's chaplain might write on the clumsy, wasteful, blundering, low, and horribly cruel work of nature!&rdquo; &mdash; <footer>Charles Darwin</footer></blockquote>**
