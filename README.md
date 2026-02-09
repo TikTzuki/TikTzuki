@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;Common sense is not so common. &rdquo; &mdash; <footer>Voltaire</footer></blockquote>**
+**<blockquote>&ldquo;If it entertains you now but will bore you someday, it's a distraction. Keep looking.&rdquo; &mdash; <footer>Naval Ravikant</footer></blockquote>**
