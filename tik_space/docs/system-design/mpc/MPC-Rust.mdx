@@ -1,0 +1,422 @@
+---
+sidebar_position: 1
+---
+
+# MPC-based Crypto-Custody Design (Rust)
+
+## Terms
+
+### Protocols
+
+#### Round-based Protocol
+
+In a round-based protocol, **n** parties send messages to and receive messages from other parties within rounds. At every round, a party may send a P2P or broadcast message and receives all broadcast/P2P messages from others. After receiving enough round messages, it either proceeds to the next round or finishes the protocol.
+
+#### GG18
+
+Gennaro and Goldfeder (2018) — enables multiple parties to jointly generate ECDSA keys and signatures without revealing private shares. Supports *(t+1)-of-n* signing.
+
+#### GG20
+
+Gennaro and Goldfeder (2020) — improved protocol that adds robustness by identifying malicious parties if signing fails. Requires only a broadcast channel for communication.
+
+#### CGGMP24
+
+State-of-the-art ECDSA TSS protocol supporting 1-round signing (requires 3 preprocessing rounds), identifiable abort, and key refresh.
+
+---
+
+## Scopes
+
+A complete MPC-based crypto asset custody system in Rust should cover:
+
+| Area | Description |
+|------|-------------|
+| **Key Generation** | Distributed ECDSA key generation using GG20 protocol |
+| **Secure Storage** | Each party stores its secret share securely (encrypted local file, HSM) |
+| **Signing** | Distributed signing protocol, requiring threshold parties to cooperate |
+| **Communication** | Secure, authenticated, encrypted messaging (over NATS) |
+| **Access Control** | Party authentication, authorization, and audit logging |
+| **Recovery & Rotation** | Key share recovery, rotation, and party join/leave handling |
+| **Transaction Policy** | Rules for transaction approval (multi-party approval, limits) |
+
+---
+
+## MPC System Design
+
+:::info Recommended Approach
+Implement a modern threshold-ECDSA stack (prefer CGGMP24 / audited implementations) built on a tokio async runtime, using `async-nats` for messaging, `k256` for curve primitives, and integrate HSM/PKCS#11 or encrypted local storage for secret-share persistence. Use threshold libraries rather than inventing low-level zero-knowledge subprotocols from scratch.
+
+**Sources:** [DFNS CGGMP24][1], [ZenGo-X multi-party ECDSA][2]
+:::
+
+---
+
+### 1. Protocol Choice & Justification
+
+| Protocol | Recommendation | Notes |
+|----------|---------------|-------|
+| **CGGMP24** | Primary | Modern threshold ECDSA; DFNS published reviewed Rust implementation used in production ([dfns.co][1]) |
+| **GG20** | Alternative | Acceptable but be aware of historical attacks; review and adapt to known mitigations ([GitHub][2]) |
+
+---
+
+### 2. High-Level Architecture
+
+```
+Operator/API → Orchestrator → NATS → Party Agents → HSM/Local secure store
+```
+
+| Component | Description |
+|-----------|-------------|
+| **MPC Node / Party Agent** | Implements protocol state machine for DKG, Threshold Sign, refresh/reshare, recovery. Stores local secret share. Connects to NATS. Exposes admin gRPC/REST |
+| **Orchestrator** | Subscribes to requests, initiates signing sessions, enforces transaction policy. Not in possession of any secret — only coordination |
+| **Transaction Policy Engine** | Holds policy rules: thresholds, whitelists, amount limits, time windows, approval workflows |
+| **Messaging Layer** | **NATS** (`async-nats`) for authenticated, encrypted pub/sub + request/reply ([Crates.io][3], [Docs.rs][4]) |
+| **Storage & Key Backup** | Encrypted files (`age`, `libsodium`) or HSM/PKCS#11. Optional encrypted escrow for share backups |
+| **Auditing & Logging** | Immutable event log (append-only). All protocol steps emit auditable messages (no secrets) |
+| **Admin UI / API** | For operator requests, recovery flows, rotation, party join/leave |
+
+---
+
+### 3. Rust Ecosystem & Crates
+
+#### MPC / Threshold ECDSA
+
+| Crate | Link |
+|-------|------|
+| CGGMP24 (DFNS) | [Crates.io][5], [dfns.co][1] |
+| multi-party-ecdsa (ZenGo-X) | [GitHub][2] |
+
+#### Curve / Crypto Primitives
+
+| Crate | Purpose |
+|-------|---------|
+| `k256` | Pure-Rust secp256k1 ([Docs.rs][8], [iqlusion blog][9]) |
+| `rand`, `subtle`, `zeroize` | Secret hygiene |
+
+#### Storage & HSM
+
+| Crate | Purpose |
+|-------|---------|
+| `pkcs11` / `tss-esapi` | HSM / TPM interfacing |
+| `age` / `ring` | File encryption |
+
+---
+
+### 4. Module Layout (Rust Workspace)
+
+```
+mpc-node/
+  Cargo.toml (workspace)
+  crates/
+    mpc-protocol/        # wraps threshold ECDSA library & protocol state machines
+    party-agent/         # binary: runs on each custodian
+    orchestrator/        # binary: orchestrates sessions, enforces policy
+    messaging/           # NATS client helpers + message schemas
+    storage/             # encrypted local storage + HSM integration
+    policy/              # transaction policy engine
+    audit/               # audit events + sink (Kafka/DB)
+    api/                 # REST/gRPC server for operators (auth)
+```
+
+#### Core Responsibilities
+
+| Crate | Responsibility |
+|-------|---------------|
+| **mpc-protocol** | Types `KeyGenSession`, `SignSession`, `ReshareSession`. Exposes async functions for protocol rounds |
+| **party-agent** | Connects to NATS, listens for protocol messages, holds `LocalSecretShare` |
+| **messaging** | Typed NATS subjects and message envelopes (JSON/Protobuf), auth tokens, session IDs |
+| **storage** | `SecretStore` trait with `EncryptedFileStore` and `HsmStore` implementations |
+| **policy** | DSL for rules: `Threshold=3`, `DailyLimit=1000 BTC`, `RequireApprovalsFrom=[role:treasury]` |
+
+---
+
+### 5. Messaging & Session Flow (NATS)
+
+#### Subject Naming
+
+| Purpose | Subject Pattern |
+|---------|----------------|
+| Direct messages | `mpc.{session_id}.party.{party_id}` |
+| Broadcast | `mpc.{session_id}.broadcast` |
+| Keygen | `mpc.keygen.{key_id}.party.{party_id}` |
+| Signing | `mpc.sign.{tx_id}.party.{party_id}` |
+| Control | `mpc.session.{session_id}.control` |
+
+#### Message Envelope
+
+```protobuf
+message MpcEnvelope {
+  string session_id = 1;
+  uint32 round = 2;
+  bytes payload = 3; // proto of protocol-specific message
+  bytes sig = 4;     // optional transport-level signature
+  uint64 timestamp = 5;
+}
+```
+
+---
+
+### 6. Key Generation (MPC KeyGen) Flow
+
+1. **Operator** requests a new key via `orchestrator`
+2. `orchestrator` creates `session_id`, determines participants and threshold `t`, publishes `mpc.keygen.{keyid}.start`
+3. Each `party-agent` loads local `SecretStore` slot for this `keyid`
+4. `mpc-protocol::KeyGenSession::start(...)` runs DKG rounds with messages exchanged over NATS
+5. On success, each `party-agent` stores its secret share encrypted and emits audit event `KeyGenerated{key_id, public_key, party_id}`
+
+---
+
+### 7. Signing (MPC Sign) Flow
+
+1. Submit transaction to `orchestrator` → validates against `policy`
+2. If policy passes, create `sign_session` and publish `mpc.sign.{txid}.start`
+3. Parties run `mpc-protocol::SignSession::prepare(...)` — pre-sign rounds (nonce generation, commitments)
+4. Exchange signing round messages, each party verifies ZK proofs and message authenticity
+5. Each party produces a signature share; aggregated into canonical ECDSA signature
+6. Coordinator returns signature to operator; transaction broadcast
+
+:::caution Security Note
+Never reconstruct the private key; only reconstruct the signature.
+:::
+
+---
+
+### 8. Storage, HSM & Secure Share Handling
+
+#### Interface
+
+```rust
+#[async_trait]
+pub trait SecretStore {
+    async fn put_share(&self, key_id: &str, share: &[u8]) -> Result<()>;
+    async fn get_share(&self, key_id: &str) -> Result<Vec<u8>>;
+    async fn delete_share(&self, key_id: &str) -> Result<()>;
+}
+```
+
+#### Implementations
+
+| Implementation | Description |
+|---------------|-------------|
+| `EncryptedFileStore` | Encrypt with `age` or AEAD key held in local secure enclave or OS keystore |
+| `HsmStore` | Uses `pkcs11` crate or vendor SDK to store share or perform operations inside HSM |
+
+#### Backups
+
+- Escrow encrypted backups split into Shamir shares stored in separate locations
+- Recovery: quorum of recovery parties to reconstruct share
+
+---
+
+### 9. Access Control, Authentication & Audit
+
+| Layer | Approach |
+|-------|----------|
+| **AuthN** | mTLS certs or NATS creds per party. Short-lived operator tokens for API access |
+| **AuthZ** | Orchestrator enforces role-based rules (operator, auditor, approver) |
+| **Audit** | Append-only ledger of protocol events. Sign each audit record for tamper evidence |
+
+---
+
+### 10. Recovery & Rotation
+
+| Scenario | Approach |
+|----------|----------|
+| **Rotation** | Proactive resharing without changing public key (`ReshareSession`) |
+| **Key rotation** | Full DKG when changing the public key is needed |
+| **Party join/leave** | Reshare to new `(n, t)` set. Require higher threshold for join/leave approval |
+| **Loss recovery** | Key escrow (encrypted shares) split among independent recovery parties |
+
+---
+
+### 11. Transaction Policy Examples
+
+```
+Threshold = 3 of 5
+DailyLimit: { coin: BTC, amount: 100.0 }
+RequireRoleApprovals: ["treasury_head", "compliance"]
+TimeLock: approvals must be gathered within 24 hours
+```
+
+Enforce policy before starting sign session.
+
+---
+
+### 12. Testing, Audits & Hardening
+
+- **Unit tests** for protocol state transitions (simulate dropped messages, replays)
+- **Integration tests** with `n` local party-agents using in-memory NATS
+- **Fuzzing** on messages and ZK-proof bytes
+- **Formal review** by external cryptographers/security firm
+- **Pen tests** and red-team (particularly messaging & replay attacks)
+- **Track crate advisories** for known vulnerabilities
+
+---
+
+### 13. Example Code Snippets
+
+<details>
+    <summary><strong>Cargo.toml (top-level dependencies)</strong></summary>
+
+    ```toml
+    [dependencies]
+    tokio = {version = "1", features = ["rt-multi-thread","macros"]}
+    async-nats = "0.42" # NATS async client
+    serde = {version = "1", features = ["derive"]}
+    prost = "0.11" # if using protobufs
+    k256 = "0.11" # secp256k1 primitives
+    zeroize = "1.5"
+    tracing = "0.1"
+    anyhow = "1.0"
+    ```
+
+</details>
+
+<details>
+    <summary><strong>Minimal NATS pub/sub helper</strong></summary>
+
+    ```rust
+    use async_nats::ConnectOptions;
+    use prost::Message;
+    use tokio::time::{timeout, Duration};
+
+    pub async fn connect_nats(
+    endpoint: &str, creds_path: Option
+    <&str>
+        ) -> anyhow::Result
+        <async_nats:
+        :Client> {
+        let client = if let Some(creds) = creds_path {
+        ConnectOptions::with_credentials(creds).connect(endpoint).await?
+    } else {
+        async_nats::connect(endpoint).await?
+    };
+        Ok(client)
+    }
+
+        pub async fn publish_envelope(
+        client: &async_nats::Client, subject: &str, data: &[u8]
+        ) -> anyhow::Result
+        <
+        ()> {
+        client.publish(subject.into(), data.into()).await ?;
+        Ok(())
+    }
+        ```
+
+</details>
+
+<details>
+    <summary><strong>Stub for starting a sign session</strong></summary>
+
+    ```rust
+    async fn handle_start_sign(session_id: String, tx: Transaction) -> anyhow::Result
+    <
+    ()> {
+    // 1) Validate operator signature & policy locally
+    // 2) Initiate sign session in mpc-protocol crate
+    let mut session = mpc_protocol::SignSession::new(session_id, tx)?;
+    loop {
+    let outgoing = session.next_message().await?;
+    publish_envelope(
+    &client,
+    &format!("mpc.sign.{}.broadcast", session.session_id()),
+    &outgoing
+    ).await?;
+    if session.is_finished() {break;}
+}
+    let signature = session.final_signature()?;
+    // return signature to orchestrator (via NATS or API)
+    Ok(())
+}
+    ```
+
+</details>
+
+---
+
+### 14. Security Trade-offs & Practical Notes
+
+- **Use audited crates** (DFNS CGGMP24, ZenGo-X) — avoid rolling your own cryptography ([dfns.co][1], [GitHub][2])
+- **Performance**: threshold ECDSA is more expensive than single-key ECDSA; benchmark `k256` vs libsecp FFI ([GitHub][11], [iqlusion blog][9])
+- **Attacks to watch**: replay attacks, message tampering, rogue-key attacks. Ensure protocol proofs bind to session IDs
+- **Transport**: NATS is fast but requires careful setup (mTLS, creds, account limits) ([Crates.io][3], [Docs.rs][4])
+
+---
+
+### 15. Deployment Checklist
+
+- [ ] Pick and vendor-lock chosen threshold crate after security review
+- [ ] Build Docker images for `party-agent` with minimal OS surface and seccomp
+- [ ] Deploy NATS cluster with TLS, accounts, and monitoring
+- [ ] Provision HSMs or secure enclaves per party if required
+- [ ] Run integration testnet with simulated failures (network partition, message loss)
+- [ ] Schedule third-party crypto audit
+
+---
+
+### 16. Implementation Plan (6 Milestones)
+
+| # | Milestone | Description |
+|---|-----------|-------------|
+| 1 | **Prototype** | Wire `party-agent` + `orchestrator` using `multi-party-ecdsa` or `CGGMP24` in local NATS cluster. Implement `EncryptedFileStore` |
+| 2 | **Integration tests** | 3-of-5 signing and keygen tests, simulate recovery and rotation |
+| 3 | **Security review** | Crypto audit on protocol usage and implementation |
+| 4 | **HSM integration** | Implement `HsmStore` and test key sealing/unsealing |
+| 5 | **Policy engine & UI** | Operator workflows and approval flows |
+| 6 | **Production rollout** | Harden, monitor, and staged rollout |
+
+---
+
+### 17. References
+
+| Resource | Link |
+|----------|------|
+| DFNS CGGMP24 (Rust) | [dfns.co][1] |
+| ZenGo-X multi-party-ecdsa | [GitHub][2] |
+| async-nats crate | [Crates.io][3], [Docs.rs][10] |
+| k256 crate (secp256k1) | [Docs.rs][8], [Crates.io][12] |
+
+---
+
+## MPC over NATS Architecture
+
+- Run your own **private NATS cluster** (not public NGS) for security
+- Each node:
+- Connects via **mTLS** (certs signed by your CA)
+- Subscribes to a subject named after its ID (`mpc.node.<id>`)
+- Publishes MPC messages directly to the recipient's subject
+- For group broadcasts: use a shared subject (`mpc.round.<round_id>`)
+- Add **application-level AEAD encryption** (ChaCha20-Poly1305 or AES-GCM) per MPC message so that even if NATS is compromised, contents stay secret
+
+**Example flow:**
+- Node A → publishes encrypted share to `mpc.node.2`
+- Node B → subscribed to `mpc.node.2`, receives, decrypts, processes
+- For broadcast (e.g., commitments), Node A → publishes to `mpc.round.5`, all nodes receive it
+
+---
+
+## Key Share Storage Best Practices
+
+| Party | Storage | Details |
+|-------|---------|---------|
+| Party A | AWS KMS/HSM | No export permission |
+| Party B | Azure HSM | Isolated key vault |
+| Party C | Intel SGX enclave | On-premises |
+
+Each share is encrypted at rest, protected by per-party infrastructure, and only accessible by the MPC runtime.
+
+[1]  https://www.dfns.co/article/cggmp21-in-rust-at-last "CGGMP21 In Rust, At Last"
+[2]  https://github.com/ZenGo-X/multi-party-ecdsa "ZenGo-X/multi-party-ecdsa"
+[3]  https://crates.io/crates/async-nats "async-nats - crates.io"
+[4]  https://docs.rs/nats/latest/nats/struct.Options.html "Options in nats - Rust"
+[5]  https://crates.io/crates/CGGMP24 "CGGMP24 - crates.io"
+[6]  https://github.com/axelarnetwork/tofn "axelarnetwork/tofn"
+[7]  https://github.com/boltlabs-inc/tss-ecdsa "boltlabs-inc/tss-ecdsa"
+[8]  https://docs.rs/k256 "k256 - Rust"
+[9]  https://iqlusion.blog/k256-crate-pure-rust-projective-secp256k1-library "k256 pure Rust secp256k1"
+[10]  https://docs.rs/nats "nats - Rust"
+[11]  https://github.com/tarcieri/rust-secp256k1-ecdsa-bench "Rust secp256k1 ECDSA benchmarks"
+[12]  https://crates.io/crates/k256 "k256 - crates.io"

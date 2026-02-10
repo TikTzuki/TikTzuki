@@ -2,9 +2,14 @@
 sidebar_position: 2
 ---
 
-Below is a pragmatic pattern for application‑level AEAD for an MPC system over NATS:
+# AEAD for MPC over NATS
 
-Core goals:
+Application-level AEAD pattern for an MPC system over NATS.
+
+---
+
+## Core Goals
+
 - Pairwise (or group) secure channels layered above NATS subjects
 - Forward secrecy via ephemeral X25519 ECDH + HKDF
 - Explicit AAD binding (session id, round, party ids, algorithm)
@@ -13,32 +18,67 @@ Core goals:
 - Periodic rekey / key rotation
 - Separation of signing (authN) and AEAD (conf+auth)
 
-Design outline:
-1. Identity keys: Long‑term Ed25519 (sign) + ephemeral X25519 (KEX).
-2. Handshake:
-- Each party publishes its ephemeral public key on a control subject.
-- After all are collected, derive a master_secret (e.g. concat sorted shared secrets; or pairwise for scalability).
-- HKDF(master_secret, info=sorted_party_ids||protocol_label) → base key material.
-3. Session keys:
-- For pairwise: derive per (A,B) sub-key using HKDF with info = "PAIR"+"A|B".
-- For group broadcast: derive group key with info = "GROUP".
-4. AEAD session object (like existing `AeadSession`) manages:
-- session_id (random 4 bytes)
-- atomic counter (nonce suffix)
-- key bytes
-5. AAD content example: version || session_id || round || sender_party_id || algorithm_tag
-6. Replay:
-- Keep highest counter seen per (session_id, sender). Reject lower or duplicate.
-7. Rotation:
-- Trigger after N messages or time T or near counter wrap. Perform fresh ephemeral ECDH and rebuild sessions.
-8. NATS subjects:
-- Control / handshake: mpc.ctrl.\<session_uuid>
-- Pairwise encrypted: mpc.sec.pair.\<A>.\<B>
-- Group broadcast: mpc.sec.group.\<group_id>
-9. Signing:
-- Sign the plaintext metadata header (or handshake payload) with Ed25519 to authenticate before AEAD encryption for defense in depth.
+---
 
-Code sketch (simplified) showing: handshake aggregation, session derivation, send/receive with AEAD wrapper. Omitted: error handling details, persistence, batching.
+## Design Outline
+
+### 1. Identity Keys
+
+Long-term Ed25519 (sign) + ephemeral X25519 (KEX).
+
+### 2. Handshake
+
+- Each party publishes its ephemeral public key on a control subject
+- After all are collected, derive a `master_secret` (e.g., concat sorted shared secrets; or pairwise for scalability)
+- `HKDF(master_secret, info=sorted_party_ids||protocol_label)` → base key material
+
+### 3. Session Keys
+
+| Mode | Derivation |
+|------|-----------|
+| Pairwise | `HKDF` with `info = "PAIR" + "A|B"` |
+| Group broadcast | `HKDF` with `info = "GROUP"` |
+
+### 4. AEAD Session Object
+
+Manages:
+- `session_id` (random 4 bytes)
+- Atomic counter (nonce suffix)
+- Key bytes
+
+### 5. AAD Content
+
+```
+version || session_id || round || sender_party_id || algorithm_tag
+```
+
+### 6. Replay Protection
+
+Keep highest counter seen per `(session_id, sender)`. Reject lower or duplicate.
+
+### 7. Key Rotation
+
+Trigger after N messages or time T or near counter wrap. Perform fresh ephemeral ECDH and rebuild sessions.
+
+### 8. NATS Subjects
+
+| Purpose | Subject Pattern |
+|---------|----------------|
+| Control / Handshake | `mpc.ctrl.<session_uuid>` |
+| Pairwise encrypted | `mpc.sec.pair.<A>.<B>` |
+| Group broadcast | `mpc.sec.group.<group_id>` |
+
+### 9. Signing
+
+Sign the plaintext metadata header (or handshake payload) with Ed25519 to authenticate before AEAD encryption for defense in depth.
+
+---
+
+## Code Sketch
+
+:::caution
+Simplified — omits error handling details, persistence, batching.
+:::
 
 ```rust
 use std::{collections::HashMap, sync::{Arc, RwLock}};
@@ -117,7 +157,6 @@ impl AeadSession {
     pub fn encrypt(&mut self, plaintext: &[u8], aad_ctx: &[u8]) -> Result<Vec<u8>> {
         let cnt = self.next_counter();
         let nonce = self.nonce(cnt);
-        // Using chacha20poly1305
         use chacha20poly1305::{ChaCha20Poly1305, aead::{Aead, KeyInit}, Key, Nonce};
         let key = Key::from_slice(&self.key);
         let aead = ChaCha20Poly1305::new(key);
@@ -163,7 +202,6 @@ impl AeadSession {
 }
 
 pub struct SessionStore {
-    // key: channel id (pairwise or group)
     map: RwLock<HashMap<String, AeadSession>>,
     highest: RwLock<HashMap<String, u64>>, // replay tracking
 }
@@ -198,7 +236,6 @@ impl SessionStore {
 
 // Derive a base key from collected handshakes (group mode)
 pub fn derive_group_key(bundles: &[HandshakeBundle]) -> Result<Vec<u8>> {
-    // For simplicity: concatenate sorted pub keys; in production use pairwise shared secrets & KDF tree
     let mut pubs: Vec<&[u8]> = bundles.iter().map(|b| &b.eph_pub[..]).collect();
     pubs.sort();
     let mut material = Vec::new();
@@ -210,7 +247,10 @@ pub fn derive_group_key(bundles: &[HandshakeBundle]) -> Result<Vec<u8>> {
 }
 
 // Example send (pairwise)
-pub async fn send_pairwise(nc: &Client, store: Arc<SessionStore>, a: &PartyId, b: &PartyId, round: u32, payload: &[u8]) -> Result<()> {
+pub async fn send_pairwise(
+    nc: &Client, store: Arc<SessionStore>,
+    a: &PartyId, b: &PartyId, round: u32, payload: &[u8]
+) -> Result<()> {
     let chan = format!("pair:{}:{}", a.0, b.0);
     let aad = build_aad(a, round);
     let frame = store.encrypt(&chan, &aad, payload)?;
@@ -221,30 +261,41 @@ pub async fn send_pairwise(nc: &Client, store: Arc<SessionStore>, a: &PartyId, b
 
 fn build_aad(sender: &PartyId, round: u32) -> Vec<u8> {
     let mut v = Vec::with_capacity(1 + sender.0.len() + 4);
-    v.push(0x01); // AAD schema version
+    v.push(0x01);
     v.extend_from_slice(sender.0.as_bytes());
     v.extend_from_slice(&round.to_be_bytes());
     v
 }
 
-pub async fn recv_pairwise(store: Arc<SessionStore>, a: &PartyId, b: &PartyId, msg: &Message) -> Result<Vec<u8>> {
+pub async fn recv_pairwise(
+    store: Arc<SessionStore>,
+    a: &PartyId, b: &PartyId, msg: &Message
+) -> Result<Vec<u8>> {
     let chan = format!("pair:{}:{}", a.0, b.0);
-    let prefix = [0x01u8]; // expect AAD version prefix
+    let prefix = [0x01u8];
     store.decrypt(&chan, &msg.payload, &prefix)
 }
 ```
 
-Key rotation:
+---
+
+## Key Rotation
+
 - Re-run ephemeral X25519 exchange
 - Derive fresh keys
 - Call `AeadSession::new` and replace in `SessionStore`
 - Invalidate old session after grace window
 
-Hardening suggestions:
+---
+
+## Hardening Suggestions
+
 - Use constant-time compares (`subtle`) for IDs
 - Limit frame size and enforce max
 - Add timestamp / round window checks
-- Consider per-message ephemeral key (heavier) if stronger Forward Secrecy required
+- Consider per-message ephemeral key (heavier) if stronger forward secrecy required
 - Add optional post-quantum KEM hybrid later
 
+:::note
 This pattern layers cleanly over NATS without modifying transport while providing deterministic nonce construction and replay defense.
+:::

@@ -1,0 +1,155 @@
+# WebSocket Gateway API Design
+
+:::info
+Reference API designs from **Binance** and **HashKey** WebSocket endpoints.
+:::
+
+---
+
+## Endpoints
+
+### Binance
+
+#### Spot
+
+- `wss://stream.binance.com:443`
+- Raw stream: `/ws/<streamName>`
+- Combined streams: `/stream?streams=<streamName1>/<streamName2>/<streamName3>`
+
+#### USD-M Futures
+
+- Base: `wss://ws-fapi.binance.com/ws-fapi/v1`
+- Market Data:
+- Raw stream: `wss://fstream.binance.com/ws/bnbusdt@aggTrade`
+- Combined: `wss://fstream.binance.com/stream?streams=bnbusdt@aggTrade/btcusdt@markPrice`
+- User Data Stream:
+- `wss://fstream.binance.com/ws/<listenKey>`
+
+#### Coin-M Futures
+
+- Base: `wss://ws-dapi.binance.com/ws-dapi/v1`
+- Market Data:
+- `wss://dstream.binance.com/ws/bnbusdt@aggTrade`
+- `wss://dstream.binance.com/stream?streams=bnbusdt@aggTrade/btcusdt@markPrice`
+- User Data Stream:
+- `wss://dstream.binance.com/ws/<listenKey>`
+
+---
+
+### HashKey
+
+| Stream | Endpoint |
+|--------|----------|
+| Public (v1) | `wss://stream-glb.sim.hashkeydev.com/quote/ws/v1` |
+| Private | `wss://stream-glb.sim.hashkeydev.com/api/v1/ws/{listenKey}` |
+| Public (v2, public only) | `wss://stream-glb.sim.hashkeydev.com/quote/ws/v2` |
+
+---
+
+## WebSocket API General Info
+
+:::tip Connection Rules
+- Base endpoint: `wss://ws-fapi.binance.com/ws-fapi/v1`
+- Testnet: `wss://testnet.binancefuture.com/ws-fapi/v1`
+- Connections are valid for **24 hours** — expect disconnection after that
+:::
+
+### Ping/Pong
+
+- Server sends a **ping frame every 3 minutes**
+- If no pong is received within **10 minutes**, connection is disconnected
+- On receiving ping, send pong with a copy of ping's payload immediately
+- Unsolicited pong frames are allowed but won't prevent disconnection (recommend empty payload)
+
+### General Rules
+
+- Signature payload: all request params (except signature) sorted alphabetically by name
+- Lists returned in **chronological order** unless noted otherwise
+- All timestamps in **milliseconds (UTC)** unless noted otherwise
+- All field names and values are **case-sensitive**
+- `INT` parameters (e.g., `timestamp`): expected as JSON integers
+- `DECIMAL` parameters (e.g., `price`): expected as JSON strings
+- Private streams require a **separate WebSocket connection**
+
+---
+
+## Heartbeat Check
+
+Client initiates a periodic heartbeat message (ping) every **10 seconds** to keep the connection alive.
+
+---
+
+## Public Streams
+
+### Spot Topics
+
+| Topic | Key |
+|-------|-----|
+| Kline | `kline_$interval` (e.g., `kline_15m`) |
+| Realtimes | `realtimes` |
+| Trade | `trade` |
+| Depth | `depth` |
+| BBO (Best Bid/Offer) | `bbo` |
+
+### Futures Public Topics
+
+Endpoint: `wss://bws-glb.global.sim.hashkeydev.com/ws/quote/v1?lang=en-us`
+
+| Topic |
+|-------|
+| `diffMergedDepth` |
+| `trade` |
+| `markPrice` |
+| `index` |
+| `kline_15m` |
+
+:::note
+Spot and Futures symbols are available on the **same stream**.
+:::
+
+---
+
+## Private Streams (User Data Streams)
+
+### ListenKey Lifecycle
+
+| Operation | Effect |
+|-----------|--------|
+| `POST` | Creates a new listenKey (valid for 60 min). If active key exists, returns it and extends validity |
+| `PUT` | Resets validity to 60 minutes |
+| `DELETE` | Closes the stream and invalidates the listenKey |
+
+### Rules
+
+- One user has **one listenKey** at a time, used for all private streams
+- Payloads are guaranteed to be **in order** during heavy periods — use `E` (event time) field for ordering
+- Connections valid for **24 hours**
+
+### Spot Private Topics
+
+| Topic |
+|-------|
+| `order` |
+| `balance` |
+
+### Futures Private Topics
+
+Endpoint: `wss://bws-glb.global.sim.hashkeydev.com/api/ws/user?lang=en-us&orgId=9001`
+
+| Topic |
+|-------|
+| `futures_position` |
+| `futures_tradeable` |
+| `futures_order` |
+| `futures_symbol_suspend_plan` |
+| `balance` |
+| `futures_plan_order` |
+
+### General Private Topics
+
+| Topic |
+|-------|
+| Account Update |
+| Order Update |
+| Ticket Push |
+| Position Push |

@@ -1,0 +1,90 @@
+# Fundamentals
+
+A curated collection of useful references, tutorials, and tools for backend engineering and DevOps.
+
+---
+
+## IDEA - Usefully cli
+
+```shell
+rm ~/Library/Application\ Support/JetBrains/IntelliJIdea2024.1/options/other.xml
+rm ~/Library/Preferences/com.apple.java.util.prefs.plist
+rm ~/Library/Preferences/com.jetbrains.intellij.plist
+```
+
+---
+
+## Spring & Microservices
+
+| Topic | Link |
+|-------|------|
+| Spring Boot + Kafka + Protobuf | [GitHub](https://github.com/hal90210/spring-kafka-protobuf/tree/master/src/main/java/com/improving/springprotobuf) |
+| Spring Cloud Supported Versions | [GitHub Wiki](https://github.com/spring-cloud/spring-cloud-release/wiki/Supported-Versions) |
+| Microservices with Spring Cloud + Docker (Netflix Stack) | [Dev Genius](https://blog.devgenius.io/microservice-implementation-using-spring-cloud-with-docker-netflix-stack-76a367a5cf05) |
+| Spring Security without WebSecurityConfigurerAdapter | [Spring Blog](https://spring.io/blog/2022/02/21/spring-security-without-the-websecurityconfigureradapter) |
+| Spring Boot OAuth2 with Keycloak | [Medium](https://ravthiru.medium.com/springboot-oauth2-with-keycloak-as-provider-c31b2897e913) |
+| Spring Boot with ReactJS (Gradle) | [YouTube](https://www.youtube.com/watch?v=2GPvZEfzy8A) |
+| Scaling WebSockets in Spring Services | [Medium](https://medium.com/javarevisited/scaling-websockets-in-spring-services-27023f59868c) |
+
+---
+
+## Messaging & Event Streaming
+
+| Topic | Link |
+|-------|------|
+| Scalable System with RabbitMQ, Java & MySQL | [Dev Genius](https://blog.devgenius.io/scalable-system-implementation-using-rabbitmq-java-and-mysql-2d5fe0fa182e) |
+| Using Postgres as a Message Queue | [Java Advent](https://www.javaadvent.com/2022/12/using-postgres-as-a-message-queue.html) |
+| Integrating Oracle and Kafka | [GitHub](https://github.com/confluentinc/demo-scene/blob/master/oracle-and-kafka/demo_integrating_oracle_kafka.adoc) |
+
+---
+
+## Observability & Monitoring
+
+| Topic | Link |
+|-------|------|
+| ELK Stack from Scratch with Docker | [Viblo](https://viblo.asia/p/an-elk-stack-from-scratch-with-docker-gGJ596zjKX2) |
+| Distributed Tracing with Zipkin, Sleuth & ELK | [Medium](https://medium.com/swlh/distributed-tracing-in-micoservices-using-spring-zipkin-sleuth-and-elk-stack-5665c5fbecf) |
+
+---
+
+## CQRS & Event Sourcing
+
+| Topic | Link |
+|-------|------|
+| Axon Hotel Demo | [GitHub](https://github.com/AxonIQ/hotel-demo) |
+
+---
+
+## Miscellaneous
+
+| Topic | Link |
+|-------|------|
+| Mixing Java & Python | [PDF](https://elib.dlr.de/59394/1/Mixing_Python_and_Java.pdf) |
+
+---
+
+## Notable Docker Images & Projects
+
+| Name | Repository |
+|------|-----------|
+| Docker Oracle XE 11g | `wnameless/docker-oracle-xe-11g` |
+| Spring Data Book | `spring-projects/spring-data-book` |
+| Solid Project | `solid/solidproject.org` |
+
+---
+
+## Velero Backup (Kubernetes)
+
+:::info
+[Velero CLI Configuration Docs](https://velero.io/docs/v1.17/customize-installation/#optional-velero-cli-configurations)
+:::
+
+```shell
+velero install \
+  --provider aws \
+  --plugins velero/velero-plugin-for-aws:v1.9.0 \
+  --bucket velero-backup \
+  --secret-file ./credentials-velero \
+  --use-restic \
+  --backup-location-config region=minio,s3ForcePathStyle="true",s3Url=http://minio-service.minio:9000
+```
