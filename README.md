@@ -1,30 +1,30 @@
-# TikTuzki [![TikTuzki](./img/tik-badge.svg)](https://github.com/TikTzuki/TikTzuki)
+# TikTzuki [![TikTuzki](./img/tik-badge.svg)](https://github.com/TikTzuki/TikTzuki)
 
-**Software Architect**
+**Software Architect | Backend Engineer**
 
 ---
 
-## 🚀 About Me
+## About
 
-👋 I'm **TikTzuki**, a **Backend Engineer** with over 3 years of experience designing and
-scaling backend systems and APIs. My expertise spans **microservices architecture**, **concurrent processing**, and
-**workflow automation**, with a strong focus on **clean code**, **domain-driven design**, and **software architecture**.
+Backend Engineer with 3+ years of experience designing and scaling distributed systems, APIs, and event-driven
+architectures. Core competencies include microservices design, concurrent processing, and workflow automation, grounded
+in domain-driven design and clean architecture principles.
 
-I’m actively engaged in technical exploration and open-source contribution, working with languages such as
-**Java**,**Kotlin**, **Rust**, and **Python**. Passionate about continuous learning, I use this space to document my
-growth and share meaningful solutions.
+Actively contributing to open-source projects across **Java**, **Kotlin**, **Rust**, and **Python**. This repository
+serves as a central hub for technical documentation, architectural references, and engineering knowledge.
 
-## ⚙️ Featured Projects
+---
 
-- [**IoT Greenhouse**](https://github.com/TikTzuki/prometheus-greenhouse) – Ideal for smart agriculture, indoor farms,
-  or research greenhouses.
-- [**Telegram TDLib**](https://github.com/TikTzuki/telegram-tdlib) – A library for interacting with the Telegram TDLib (
-  Telegram Database Library).
-- [**Auto‑Backup‑Bot**](https://github.com/TikTzuki/learning-lab) – A curated personal sandbox for algorithm practice,
-  language exploration, and system-level experimentation.
+## Featured Projects
+
+| Project                                                                 | Description                                                                          |
+|-------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
+| [**IoT Greenhouse**](https://github.com/TikTzuki/prometheus-greenhouse) | Environmental monitoring and control system for smart agriculture and indoor farming |
+| [**Telegram TDLib**](https://github.com/TikTzuki/telegram-tdlib)        | Client library for the Telegram Database Library (TDLib)                             |
+| [**Learning Lab**](https://github.com/TikTzuki/learning-lab)            | Algorithm practice, language exploration, and system-level experimentation           |
 
 <details>
-<summary>More stuff repos</summary>
+<summary>Other repositories</summary>
 
 - nvim
 - nio-lab
@@ -39,29 +39,36 @@ growth and share meaningful solutions.
 
 ---
 
-## 🧰 Tech Stack & Tools
+## Tech Stack
 
-- **Programming Languages:** Java, Kotlin, Rust, Python, Javascript
-- **Frameworks:** Spring, Axon framework, FastAPI
-- **Databases:** Postgres, Cassandra, MongoDB, OracleDB, Redis, MySQL,
-- **Transport Protocols:** HTTP, WebSocket, MQTT, GraphQL, mDNS, GOSSIP, gRPC
-- **Messaging & Workflow:** RabbitMQ, Kafka, NATS
-- **Cloud & DevOps:** Docker, Kubernetes, Jenkins, Helm
-- **Interests:** Software Architect, Philosophy, Cryptocurrency Trading
+**Languages:** Java, Kotlin, Rust, Python, JavaScript
 
----
+**Frameworks:** Spring, Axon Framework, FastAPI
 
-## 🧩 Workflow & Automation
+**Tech:** Keycloak, Prometheus, Grafana, ELK Stack
 
-- 🧠 Using GitHub Actions to automate testing, deployment, and documentation updates.
-- 🔍 README auto‑generation via code heuristics.
-- 🔄 Scheduled tasks for consistent build and deploy workflows.
+**Data Stores:** PostgreSQL, Cassandra, MongoDB, OracleDB, Redis, MySQL
+
+**Protocols:** HTTP, WebSocket, MQTT, GraphQL, mDNS, Gossip, gRPC
+
+**Messaging:** RabbitMQ, Kafka, NATS
+
+**Infrastructure:** Docker, Kubernetes, Jenkins, Helm
 
 ---
 
-## 📫 Connect with Me
+## Automation
 
-[LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
+- CI/CD pipelines via GitHub Actions for testing, deployment, and documentation
+- README auto-generation via code heuristics
+- Scheduled workflows for consistent build and release cycles
 
+---
 
-**<blockquote>&ldquo;If they wrote it to make money, don't read it.&rdquo; &mdash; <footer>Naval Ravikant</footer></blockquote>**
+## Contact
+
+[LinkedIn](https://www.linkedin.com/in/tiktuzki/) &middot; tiktuzki@gmail.com
+
+---
+
+> *"If they wrote it to make money, don't read it."* — Naval Ravikant
