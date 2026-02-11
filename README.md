@@ -6,7 +6,7 @@
 
 ## About
 
-Backend Engineer with 3+ years of experience designing and scaling distributed systems, APIs, and event-driven
+Backend Engineer with 5+ years of experience designing and scaling distributed systems, APIs, and event-driven
 architectures. Core competencies include microservices design, concurrent processing, and workflow automation, grounded
 in domain-driven design and clean architecture principles.
 
