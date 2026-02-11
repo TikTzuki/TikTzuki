@@ -64,4 +64,4 @@ growth and share meaningful solutions.
 [LinkedIn](https://www.linkedin.com/in/tiktuzki/) • tiktuzki@gmail.com
 
 
-**<blockquote>&ldquo;If they wrote it to make money, don't read it.&rdquo; &mdash; <footer>Naval Ravikant</footer></blockquote>**
+**<blockquote>&ldquo;There is no such thing as a great talent without great willpower.&rdquo; &mdash; <footer>Honore de Balzac</footer></blockquote>**
