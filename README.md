@@ -72,3 +72,6 @@ serves as a central hub for technical documentation, architectural references, a
 ---
 
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
+
+
+**<blockquote>&ldquo;Quality is more important than quantity. One home run is much better than two doubles.&rdquo; &mdash; <footer>Steve Jobs</footer></blockquote>**
