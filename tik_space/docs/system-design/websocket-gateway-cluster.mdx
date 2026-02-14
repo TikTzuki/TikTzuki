@@ -26,7 +26,7 @@ This SDD covers the architecture, design, and implementation of a high-performan
 **In Scope:**
 
 - Integration with external event sources (Kafka, NATS, Redis Streams) to deliver event streams (Depth, Realtime, Kline, BBO) to clients via WebSocket
-- Support for massive concurrency (100K+ connections), low-latency delivery (<100ms), horizontal scalability, and optional multi-region deployment
+- Support for massive concurrency (100K+ connections), low-latency delivery (\<100ms), horizontal scalability, and optional multi-region deployment
 - Authentication (API-KEY/ListenKey), routing logic, transformation/mapping layers, fault tolerance, and observability
 - Management layer (admin dashboard), deployment strategies (Kubernetes), and integration with external systems
 - Detailed use cases: handshake/auth, topic subscription/unsubscription, trade actions, event streaming, backpressure handling, private streams, and resume support
@@ -57,7 +57,7 @@ graph TD
 | Metric | Target |
 |--------|--------|
 | Concurrent Connections | >= 100,000 |
-| Latency (P95) | <= 100ms |
+| Latency (P95) | \<= 100ms |
 | Throughput | >= 50,000 msg/s per gateway node |
 | Availability | 99.99% uptime |
 | Scalability | Horizontal scaling with zero downtime, shared domain across multiple clusters |

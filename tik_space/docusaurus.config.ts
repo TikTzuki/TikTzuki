@@ -40,7 +40,11 @@ const config: Config = {
     // may want to replace "en" with "zh-Hans".
     i18n: {
         defaultLocale: 'en',
-        locales: ['en'],
+        locales: ['en', 'vi'],
+        localeConfigs: {
+            en: {label: 'English', htmlLang: 'en-GB'},
+            vi: {label: 'Tiếng Việt', direction: 'ltr'},
+        },
     },
 
     presets: [
@@ -103,6 +107,10 @@ const config: Config = {
                     label: 'Docs',
                 },
                 {to: '/blog', label: 'Blog', position: 'left'},
+                {
+                    type: 'localeDropdown',
+                    position: 'right',
+                },
                 {
                     href: 'https://github.com/TikTzuki',
                     label: 'GitHub',
