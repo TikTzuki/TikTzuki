@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;Of all men's miseries the bitterest is this: to know so much and to have control over nothing. &rdquo; &mdash; <footer>Herodotus</footer></blockquote>**
+**<blockquote>&ldquo;Don't be afraid that you do not know something. Be afraid of not learning about it.&rdquo; &mdash; <footer>Zen Proverb</footer></blockquote>**
