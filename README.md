@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;Don't be afraid that you do not know something. Be afraid of not learning about it.&rdquo; &mdash; <footer>Zen Proverb</footer></blockquote>**
+**<blockquote>&ldquo;If you aren't sure which way to do something, do it both ways and see which works better.&rdquo; &mdash; <footer>John Carmack</footer></blockquote>**
