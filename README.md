@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;If you aren't sure which way to do something, do it both ways and see which works better.&rdquo; &mdash; <footer>John Carmack</footer></blockquote>**
+**<blockquote>&ldquo;Whatever you believe with feeling becomes your reality. &rdquo; &mdash; <footer>Brian Tracy</footer></blockquote>**
