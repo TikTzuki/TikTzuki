@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;Whatever you believe with feeling becomes your reality. &rdquo; &mdash; <footer>Brian Tracy</footer></blockquote>**
+**<blockquote>&ldquo;When you judge others, you do not define them, you define yourself.&rdquo; &mdash; <footer>Earl Nightingale</footer></blockquote>**
