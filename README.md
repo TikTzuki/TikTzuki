@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;When you judge others, you do not define them, you define yourself.&rdquo; &mdash; <footer>Earl Nightingale</footer></blockquote>**
+**<blockquote>&ldquo;Heal the past, live the present, dream the future.&rdquo; &mdash; <footer>Mary Engelbreit</footer></blockquote>**
