@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;Heal the past, live the present, dream the future.&rdquo; &mdash; <footer>Mary Engelbreit</footer></blockquote>**
+**<blockquote>&ldquo;Unless you're ashamed of yourself now and then, you're not honest.&rdquo; &mdash; <footer>William Faulkner</footer></blockquote>**
