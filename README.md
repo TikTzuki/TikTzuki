@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;A wise person should have money in their head, but not in their heart.&rdquo; &mdash; <footer>Jonathan Swift</footer></blockquote>**
+**<blockquote>&ldquo;You must conceive it in your heart and mind before you can receive it. If you believe then all things are possible.&rdquo; &mdash; <footer>Norman Vincent Peale</footer></blockquote>**
