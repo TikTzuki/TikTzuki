@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;Believe you can and you're halfway there.&rdquo; &mdash; <footer>Theodore Roosevelt</footer></blockquote>**
+**<blockquote>&ldquo;We make a living by what we get, but we make a life by what we give.&rdquo; &mdash; <footer>Unknown</footer></blockquote>**
