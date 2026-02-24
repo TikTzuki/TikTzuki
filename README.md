@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;We make a living by what we get, but we make a life by what we give.&rdquo; &mdash; <footer>Unknown</footer></blockquote>**
+**<blockquote>&ldquo;The question is not what you look at, but what you see.&rdquo; &mdash; <footer>Henry David Thoreau</footer></blockquote>**
