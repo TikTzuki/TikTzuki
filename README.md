@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;The question is not what you look at, but what you see.&rdquo; &mdash; <footer>Henry David Thoreau</footer></blockquote>**
+**<blockquote>&ldquo;First comes the shy wish. Then you must have the heart to have the dream. Then, you work, and work.  &rdquo; &mdash; <footer>Estee Lauder</footer></blockquote>**
