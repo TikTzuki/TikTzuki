@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;First comes the shy wish. Then you must have the heart to have the dream. Then, you work, and work.  &rdquo; &mdash; <footer>Estee Lauder</footer></blockquote>**
+**<blockquote>&ldquo;Do the difficult things while they are easy and do the great things while they are small.&rdquo; &mdash; <footer>Lao Tzu</footer></blockquote>**
