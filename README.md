@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;The world is changed by your example, not by your opinion.&rdquo; &mdash; <footer>Paulo Coelho</footer></blockquote>**
+**<blockquote>&ldquo;Don't ever be afraid to put yourself in a lesser position so that you can learn something from someone who knows more.&rdquo; &mdash; <footer>Steve Harvey</footer></blockquote>**
