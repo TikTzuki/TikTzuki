@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;The two most powerful warriors are patience and time.&rdquo; &mdash; <footer>Leo Tolstoy</footer></blockquote>**
+**<blockquote>&ldquo;Living a life that has a greater purpose and living up to it is the ultimate degree that we should strive for.&rdquo; &mdash; <footer>Gurbaksh Chahal</footer></blockquote>**
