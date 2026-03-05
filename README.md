@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;Living a life that has a greater purpose and living up to it is the ultimate degree that we should strive for.&rdquo; &mdash; <footer>Gurbaksh Chahal</footer></blockquote>**
+**<blockquote>&ldquo;All problems are illusions of the mind.&rdquo; &mdash; <footer>Eckhart Tolle</footer></blockquote>**
