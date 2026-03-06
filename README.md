@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;All problems are illusions of the mind.&rdquo; &mdash; <footer>Eckhart Tolle</footer></blockquote>**
+**<blockquote>&ldquo;My favorite things in life don't cost any money. It's really clear that the most precious resource we all have is time.&rdquo; &mdash; <footer>Steve Jobs</footer></blockquote>**
