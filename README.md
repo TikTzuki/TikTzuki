@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;Against the assault of laughter nothing can stand.&rdquo; &mdash; <footer>Mark Twain</footer></blockquote>**
+**<blockquote>&ldquo;Receive without complaint, Work with fate.&rdquo; &mdash; <footer>Ming-Dao Deng</footer></blockquote>**
