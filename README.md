@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;As long as a human being worries about when he will die, and what he has that is his, all of his works are zero.&rdquo; &mdash; <footer>Kabir</footer></blockquote>**
+**<blockquote>&ldquo;Never spend your money before you have earned it.&rdquo; &mdash; <footer>Thomas Jefferson</footer></blockquote>**
