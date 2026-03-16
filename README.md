@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;Never spend your money before you have earned it.&rdquo; &mdash; <footer>Thomas Jefferson</footer></blockquote>**
+**<blockquote>&ldquo;I love fools' experiments. I am always making them.&rdquo; &mdash; <footer>Charles Darwin</footer></blockquote>**
