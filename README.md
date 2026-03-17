@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;I love fools' experiments. I am always making them.&rdquo; &mdash; <footer>Charles Darwin</footer></blockquote>**
+**<blockquote>&ldquo;Success is going from failure to failure without losing your enthusiasm&rdquo; &mdash; <footer>Winston Churchill</footer></blockquote>**
