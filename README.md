@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;You can often change your circumstances by changing your attitude.&rdquo; &mdash; <footer>Eleanor Roosevelt</footer></blockquote>**
+**<blockquote>&ldquo;Peace is letting it be. Letting life flow, letting emotions flow through you.&rdquo; &mdash; <footer>Kamal Ravikant</footer></blockquote>**
