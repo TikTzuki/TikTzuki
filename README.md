@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;Every moment you get is a gift. Spend it on things that matter. Don't spend it by dwelling on unhappy things.&rdquo; &mdash; <footer>Celestine Chua</footer></blockquote>**
+**<blockquote>&ldquo;Life reflects your own thoughts back to you.&rdquo; &mdash; <footer>Napoleon Hill</footer></blockquote>**
