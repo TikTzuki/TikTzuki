@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;No experience is a cause of success or failure. We do not suffer from the shock of our experiences, so-called trauma - but we make out of them just what suits our purposes.&rdquo; &mdash; <footer>Alfred Adler</footer></blockquote>**
+**<blockquote>&ldquo;The pursuit of mastery bears gifts. &rdquo; &mdash; <footer>Gary Keller</footer></blockquote>**
