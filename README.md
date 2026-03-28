@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;Most people fail in life because they major in minor things.&rdquo; &mdash; <footer>Tony Robbins</footer></blockquote>**
+**<blockquote>&ldquo;It is never too late to be what you might have been.&rdquo; &mdash; <footer>George Eliot</footer></blockquote>**
