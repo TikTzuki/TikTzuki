@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;We think too much and feel too little.&rdquo; &mdash; <footer>Charlie Chaplin</footer></blockquote>**
+**<blockquote>&ldquo;The greatest gift that you can give to others is the gift of unconditional love and acceptance. &rdquo; &mdash; <footer>Brian Tracy</footer></blockquote>**
