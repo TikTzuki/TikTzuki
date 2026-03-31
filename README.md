@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;The greatest gift that you can give to others is the gift of unconditional love and acceptance. &rdquo; &mdash; <footer>Brian Tracy</footer></blockquote>**
+**<blockquote>&ldquo;It is important that we forgive ourselves for making mistakes. We need to learn from our errors and move on.&rdquo; &mdash; <footer>Steve Maraboli</footer></blockquote>**
