@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;It is important that we forgive ourselves for making mistakes. We need to learn from our errors and move on.&rdquo; &mdash; <footer>Steve Maraboli</footer></blockquote>**
+**<blockquote>&ldquo;At the center of your being you have the answer; you know who you are and you know what you want.&rdquo; &mdash; <footer>Lao Tzu</footer></blockquote>**
