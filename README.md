@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;When you have a dream, you've got to grab it and never let go.&rdquo; &mdash; <footer>Carol Burnett</footer></blockquote>**
+**<blockquote>&ldquo;Try to be a rainbow in someone's cloud.&rdquo; &mdash; <footer>Maya Angelou</footer></blockquote>**
