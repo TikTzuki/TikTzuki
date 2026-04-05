@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;Try to be a rainbow in someone's cloud.&rdquo; &mdash; <footer>Maya Angelou</footer></blockquote>**
+**<blockquote>&ldquo;Every time you are tempted to react in the same old way, ask if you want to be a prisoner of the past or a pioneer of the future.&rdquo; &mdash; <footer>Deepak Chopra</footer></blockquote>**
