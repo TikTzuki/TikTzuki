@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;Anyone who dreams of an uncommon life eventually discovers there is no choice but to seek an uncommon approach to living it.&rdquo; &mdash; <footer>Gary Keller</footer></blockquote>**
+**<blockquote>&ldquo;In any moment of decision, the best thing you can do is the right thing. The worst thing you can do is nothing.&rdquo; &mdash; <footer>Theodore Roosevelt</footer></blockquote>**
