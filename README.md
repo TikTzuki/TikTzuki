@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;I have no methods; all I do is accept people as they are.&rdquo; &mdash; <footer>Joan Rivers</footer></blockquote>**
+**<blockquote>&ldquo;Life should be touched, not strangled.  &rdquo; &mdash; <footer>Ray Bradbury</footer></blockquote>**
