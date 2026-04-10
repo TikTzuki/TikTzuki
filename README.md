@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;Life should be touched, not strangled.  &rdquo; &mdash; <footer>Ray Bradbury</footer></blockquote>**
+**<blockquote>&ldquo;Always render more and better service than is expected of you, no matter what your task may be.&rdquo; &mdash; <footer>Og Mandino</footer></blockquote>**
