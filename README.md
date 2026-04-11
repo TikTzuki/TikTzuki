@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;Always render more and better service than is expected of you, no matter what your task may be.&rdquo; &mdash; <footer>Og Mandino</footer></blockquote>**
+**<blockquote>&ldquo;Happiness is an effect of doing what you love, not an end goal to be achieved.&rdquo; &mdash; <footer>Celestine Chua</footer></blockquote>**
