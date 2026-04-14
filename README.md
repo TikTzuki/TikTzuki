@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;We are willing to believe anything other than the truth.&rdquo; &mdash; <footer>Carlos Ruiz Zafon</footer></blockquote>**
+**<blockquote>&ldquo;Forever is composed of now's.&rdquo; &mdash; <footer>Emily Dickinson</footer></blockquote>**
