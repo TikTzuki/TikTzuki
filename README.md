@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;When something is important enough, you do it even if the odds are not in your favor.&rdquo; &mdash; <footer>Elon Musk</footer></blockquote>**
+**<blockquote>&ldquo;Being wrong opens us up to the possibility of change.&rdquo; &mdash; <footer>Mark Manson</footer></blockquote>**
