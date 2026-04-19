@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;Being wrong opens us up to the possibility of change.&rdquo; &mdash; <footer>Mark Manson</footer></blockquote>**
+**<blockquote>&ldquo;Never allow a person to tell you no who doesn't have the power to say yes.&rdquo; &mdash; <footer>Eleanor Roosevelt</footer></blockquote>**
