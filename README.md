@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;A man who cannot tolerate small misfortunes can never accomplish great things.&rdquo; &mdash; <footer>Chinese Proverb</footer></blockquote>**
+**<blockquote>&ldquo;As you grow older you will discover that you have two hands. One for helping yourself, the other for helping others.&rdquo; &mdash; <footer>Audrey Hepburn</footer></blockquote>**
