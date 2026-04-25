@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;If you think adventure is dangerous, try routine; it is lethal.&rdquo; &mdash; <footer>Paulo Coelho</footer></blockquote>**
+**<blockquote>&ldquo;It's easier to lose than to win.  &rdquo; &mdash; <footer>Wayne Gretzky</footer></blockquote>**
