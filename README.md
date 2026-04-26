@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;It's easier to lose than to win.  &rdquo; &mdash; <footer>Wayne Gretzky</footer></blockquote>**
+**<blockquote>&ldquo;How you think when you lose determines how long it will be until you win.&rdquo; &mdash; <footer>Gilbert Chesterton</footer></blockquote>**
