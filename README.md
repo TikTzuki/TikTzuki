@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;How you think when you lose determines how long it will be until you win.&rdquo; &mdash; <footer>Gilbert Chesterton</footer></blockquote>**
+**<blockquote>&ldquo;The day is for honest men, the night for thieves.&rdquo; &mdash; <footer>Euripides</footer></blockquote>**
