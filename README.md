@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;If you focus on success, you'll have stress. But if you pursue excellence, success will be guaranteed.&rdquo; &mdash; <footer>Deepak Chopra</footer></blockquote>**
+**<blockquote>&ldquo;Do not look upon this world with fear and loathing. Bravely face whatever the gods offer.&rdquo; &mdash; <footer>Morihei Ueshiba</footer></blockquote>**
