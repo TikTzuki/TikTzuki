@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;Do not look upon this world with fear and loathing. Bravely face whatever the gods offer.&rdquo; &mdash; <footer>Morihei Ueshiba</footer></blockquote>**
+**<blockquote>&ldquo;To arrive at the simplest truth requires years of contemplation.&rdquo; &mdash; <footer>Isaac Newton</footer></blockquote>**
