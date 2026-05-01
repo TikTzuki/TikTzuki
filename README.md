@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;To arrive at the simplest truth requires years of contemplation.&rdquo; &mdash; <footer>Isaac Newton</footer></blockquote>**
+**<blockquote>&ldquo;Success is stumbling from failure to failure with no loss of enthusiasm.&rdquo; &mdash; <footer>Winston Churchill</footer></blockquote>**
