@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;Success is stumbling from failure to failure with no loss of enthusiasm.&rdquo; &mdash; <footer>Winston Churchill</footer></blockquote>**
+**<blockquote>&ldquo;Only those who dare to fail greatly can ever achieve greatly.&rdquo; &mdash; <footer>Robert F. Kennedy</footer></blockquote>**
