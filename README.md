@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;Only those who dare to fail greatly can ever achieve greatly.&rdquo; &mdash; <footer>Robert F. Kennedy</footer></blockquote>**
+**<blockquote>&ldquo;The swift wind of compromise is a lot more devastating than the sudden jolt of misfortune. &rdquo; &mdash; <footer>Charles Swindoll</footer></blockquote>**
