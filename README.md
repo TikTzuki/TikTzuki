@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;The swift wind of compromise is a lot more devastating than the sudden jolt of misfortune. &rdquo; &mdash; <footer>Charles Swindoll</footer></blockquote>**
+**<blockquote>&ldquo;The wiser you get, the less you care to look like a fool.&rdquo; &mdash; <footer>Maxime Lagace</footer></blockquote>**
