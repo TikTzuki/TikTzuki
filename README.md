@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;If you've made a mistake, it's better just to laugh at it.&rdquo; &mdash; <footer>Zen Proverb</footer></blockquote>**
+**<blockquote>&ldquo;There are people who have money and people who are rich.&rdquo; &mdash; <footer>Coco Chanel</footer></blockquote>**
