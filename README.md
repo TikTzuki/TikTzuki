@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;There are people who have money and people who are rich.&rdquo; &mdash; <footer>Coco Chanel</footer></blockquote>**
+**<blockquote>&ldquo;It is better to be looked over than overlooked.&rdquo; &mdash; <footer>Mae West</footer></blockquote>**
