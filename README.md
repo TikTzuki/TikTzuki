@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;It will never rain roses: when we want to have more roses, we must plant more roses.&rdquo; &mdash; <footer>George Eliot</footer></blockquote>**
+**<blockquote>&ldquo;The future doesn't belong to the faint-hearted; it belongs to the brave.&rdquo; &mdash; <footer>Ronald Reagan</footer></blockquote>**
