@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;The future doesn't belong to the faint-hearted; it belongs to the brave.&rdquo; &mdash; <footer>Ronald Reagan</footer></blockquote>**
+**<blockquote>&ldquo;Anything worth doing is worth doing slowly.&rdquo; &mdash; <footer>Mae West</footer></blockquote>**
