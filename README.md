@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;Anything worth doing is worth doing slowly.&rdquo; &mdash; <footer>Mae West</footer></blockquote>**
+**<blockquote>&ldquo;Sometimes, the only way to evolve is to open ourselves fully.&rdquo; &mdash; <footer>Kamal Ravikant</footer></blockquote>**
