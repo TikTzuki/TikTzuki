@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;Sometimes, the only way to evolve is to open ourselves fully.&rdquo; &mdash; <footer>Kamal Ravikant</footer></blockquote>**
+**<blockquote>&ldquo;Even in the grave, all is not lost.&rdquo; &mdash; <footer>Edgar Allan Poe</footer></blockquote>**
