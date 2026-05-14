@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;Life comes at us in waves. We can't predict or control those waves, but we can learn to surf.&rdquo; &mdash; <footer>Dan Millman</footer></blockquote>**
+**<blockquote>&ldquo;No matter what happens, always be yourself.&rdquo; &mdash; <footer>Dale Carnegie</footer></blockquote>**
