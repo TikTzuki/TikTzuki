@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;No matter what happens, always be yourself.&rdquo; &mdash; <footer>Dale Carnegie</footer></blockquote>**
+**<blockquote>&ldquo;You are never too old to set another goal or to dream a new dream.&rdquo; &mdash; <footer>Les Brown</footer></blockquote>**
