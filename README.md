@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;You are never too old to set another goal or to dream a new dream.&rdquo; &mdash; <footer>Les Brown</footer></blockquote>**
+**<blockquote>&ldquo;Do not bite at the bait of pleasure, till you know there is no hook beneath it.&rdquo; &mdash; <footer>Thomas Jefferson</footer></blockquote>**
