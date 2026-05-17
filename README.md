@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;Do not bite at the bait of pleasure, till you know there is no hook beneath it.&rdquo; &mdash; <footer>Thomas Jefferson</footer></blockquote>**
+**<blockquote>&ldquo;You play the hand you're dealt. I think the game's worthwhile.  &rdquo; &mdash; <footer>Christopher Reeve</footer></blockquote>**
