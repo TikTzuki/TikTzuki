@@ -74,4 +74,4 @@ serves as a central hub for technical documentation, architectural references, a
 > *"If they wrote it to make money, don't read it."* — Naval Ravikant
 
 
-**<blockquote>&ldquo;You play the hand you're dealt. I think the game's worthwhile.  &rdquo; &mdash; <footer>Christopher Reeve</footer></blockquote>**
+**<blockquote>&ldquo;Nothing in the world is ever completely wrong. Even a stopped clock is right twice a day.&rdquo; &mdash; <footer>Paulo Coelho</footer></blockquote>**
