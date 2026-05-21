@@ -76,4 +76,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;Friends ask you questions; enemies question you.&rdquo; &mdash; <footer>Criss Jami</footer></blockquote>**
+**<blockquote>&ldquo;If we have no peace, it is because we have forgotten that we belong to each other.&rdquo; &mdash; <footer>Mother Teresa</footer></blockquote>**
