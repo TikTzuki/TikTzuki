@@ -76,4 +76,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;Attitude is a little thing that makes a big difference.&rdquo; &mdash; <footer>Winston Churchill</footer></blockquote>**
+**<blockquote>&ldquo;You are now, and you do become, what you think about.&rdquo; &mdash; <footer>Earl Nightingale</footer></blockquote>**
