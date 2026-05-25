@@ -76,4 +76,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;No one can compete with you on being you. Most of life is a search for who and what needs you the most.&rdquo; &mdash; <footer>Naval Ravikant</footer></blockquote>**
+**<blockquote>&ldquo;When you stop questioning, you stop learning.&rdquo; &mdash; <footer>Lolly Daskal</footer></blockquote>**
