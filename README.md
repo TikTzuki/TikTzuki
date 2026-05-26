@@ -76,4 +76,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;When you stop questioning, you stop learning.&rdquo; &mdash; <footer>Lolly Daskal</footer></blockquote>**
+**<blockquote>&ldquo;Enlightenment is intimacy with all things.&rdquo; &mdash; <footer>Dogen</footer></blockquote>**
