@@ -76,4 +76,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;The scariest monsters are the ones that lurk within our souls.&rdquo; &mdash; <footer>Edgar Allan Poe</footer></blockquote>**
+**<blockquote>&ldquo;A moving door hinge never corrodes. Flowing water never grows stagnant.&rdquo; &mdash; <footer>Ming-Dao Deng</footer></blockquote>**
