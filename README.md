@@ -76,4 +76,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;A moving door hinge never corrodes. Flowing water never grows stagnant.&rdquo; &mdash; <footer>Ming-Dao Deng</footer></blockquote>**
+**<blockquote>&ldquo;Teachers open the door. You enter by yourself.&rdquo; &mdash; <footer>Chinese Proverb</footer></blockquote>**
