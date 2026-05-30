@@ -76,4 +76,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;Teachers open the door. You enter by yourself.&rdquo; &mdash; <footer>Chinese Proverb</footer></blockquote>**
+**<blockquote>&ldquo;The only way out is through.&rdquo; &mdash; <footer>Robert Frost</footer></blockquote>**
