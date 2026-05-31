@@ -76,4 +76,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;The only way out is through.&rdquo; &mdash; <footer>Robert Frost</footer></blockquote>**
+**<blockquote>&ldquo;Mistake is a mistake only if you make it twice.&rdquo; &mdash; <footer>Robin Sharma</footer></blockquote>**
