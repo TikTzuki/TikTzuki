@@ -76,4 +76,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;Mistake is a mistake only if you make it twice.&rdquo; &mdash; <footer>Robin Sharma</footer></blockquote>**
+**<blockquote>&ldquo;It does not do to dwell on dreams and forget to live, remember that.&rdquo; &mdash; <footer>Albus Dumbledore</footer></blockquote>**
