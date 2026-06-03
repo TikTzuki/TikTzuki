@@ -76,4 +76,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;Fear of death is fear of surrender to Infinity. Learn to surrender, to exist at Infinity while alive, and fear of death dissolves.&rdquo; &mdash; <footer>Adi Da Samraj</footer></blockquote>**
+**<blockquote>&ldquo;Your time is limited, so don&#039;t waste it living someone elses. life. Don&#039;t be trapped by dogma - which is living with the results of other people&#039;s thinking.&rdquo; &mdash; <footer>Steve Jobs</footer></blockquote>**
