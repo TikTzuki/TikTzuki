@@ -76,4 +76,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;Your time is limited, so don&#039;t waste it living someone elses. life. Don&#039;t be trapped by dogma - which is living with the results of other people&#039;s thinking.&rdquo; &mdash; <footer>Steve Jobs</footer></blockquote>**
+**<blockquote>&ldquo;Wake up and smile! Wake up and be grateful!&rdquo; &mdash; <footer>Steve Harvey</footer></blockquote>**
