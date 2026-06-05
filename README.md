@@ -76,4 +76,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;Wake up and smile! Wake up and be grateful!&rdquo; &mdash; <footer>Steve Harvey</footer></blockquote>**
+**<blockquote>&ldquo;The most important battle is one to conquer yourself.&rdquo; &mdash; <footer>Yanni</footer></blockquote>**
