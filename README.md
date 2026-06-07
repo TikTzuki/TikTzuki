@@ -76,4 +76,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;The man who asks a question is a fool for a minute, the man who does not ask is a fool for life.&rdquo; &mdash; <footer>Confucius</footer></blockquote>**
+**<blockquote>&ldquo;A tiger doesn&#039;t lose sleep over the opinion of sheep.&rdquo; &mdash; <footer>Shahir Zag</footer></blockquote>**
