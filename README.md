@@ -77,3 +77,5 @@ serves as a central hub for technical documentation, architectural references, a
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
+
+**<blockquote>&ldquo;Take good advice, make sure it is good advice, then do it your way.&rdquo; &mdash; <footer>Vidal Sassoon</footer></blockquote>**
