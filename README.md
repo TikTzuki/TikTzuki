@@ -78,4 +78,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;You can&#039;t climb the ladder of success with your hands in your pockets.&rdquo; &mdash; <footer>Arnold Schwarzenegger</footer></blockquote>**
+**<blockquote>&ldquo;Life is either a daring adventure, or it is nothing.&rdquo; &mdash; <footer>Helen Keller</footer></blockquote>**
