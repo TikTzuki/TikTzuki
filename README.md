@@ -78,4 +78,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;Life is either a daring adventure, or it is nothing.&rdquo; &mdash; <footer>Helen Keller</footer></blockquote>**
+**<blockquote>&ldquo;To become what you are not, behave as you do not.&rdquo; &mdash; <footer>T.S. Eliot</footer></blockquote>**
