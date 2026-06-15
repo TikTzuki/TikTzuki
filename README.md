@@ -78,4 +78,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;Do every act of your life as if it were your last.&rdquo; &mdash; <footer>Marcus Aurelius</footer></blockquote>**
+**<blockquote>&ldquo;A lot of people have gone further than they thought they could because someone else thought they could.&rdquo; &mdash; <footer>Zig Ziglar</footer></blockquote>**
