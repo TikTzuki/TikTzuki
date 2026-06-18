@@ -80,4 +80,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;Heart is what separates the good from the great.&rdquo; &mdash; <footer>Michael Jordan</footer></blockquote>**
+**<blockquote>&ldquo;There are more people who wish to be loved than there are who are willing to love.&rdquo; &mdash; <footer>Nicolas Chamfort</footer></blockquote>**
