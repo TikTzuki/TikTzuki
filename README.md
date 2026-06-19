@@ -80,4 +80,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;There are more people who wish to be loved than there are who are willing to love.&rdquo; &mdash; <footer>Nicolas Chamfort</footer></blockquote>**
+**<blockquote>&ldquo;The pessimist sees difficulty in every opportunity. The optimist sees opportunity in every difficulty.&rdquo; &mdash; <footer>Winston Churchill</footer></blockquote>**
