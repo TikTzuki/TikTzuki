@@ -80,4 +80,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;The pessimist sees difficulty in every opportunity. The optimist sees opportunity in every difficulty.&rdquo; &mdash; <footer>Winston Churchill</footer></blockquote>**
+**<blockquote>&ldquo;Friendship is like money, easier made than kept.&rdquo; &mdash; <footer>Samuel Butler</footer></blockquote>**
