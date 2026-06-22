@@ -80,4 +80,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;My instinct is always to seek out challenges as opposed to avoiding them.&rdquo; &mdash; <footer>Josh Waitzkin</footer></blockquote>**
+**<blockquote>&ldquo;Lust, anger and greed are the three gates to self-destructive hell.&rdquo; &mdash; <footer>Bhagavad Gita</footer></blockquote>**
