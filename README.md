@@ -80,4 +80,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;Lust, anger and greed are the three gates to self-destructive hell.&rdquo; &mdash; <footer>Bhagavad Gita</footer></blockquote>**
+**<blockquote>&ldquo;Courage is knowing what not to fear.&rdquo; &mdash; <footer>Plato</footer></blockquote>**
