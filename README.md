@@ -80,4 +80,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;He who permits himself to tell a lie once, finds it much easier to do it the second time.&rdquo; &mdash; <footer>Thomas Jefferson</footer></blockquote>**
+**<blockquote>&ldquo;Don&#039;t set your own goals by what other people make important.&rdquo; &mdash; <footer>Lolly Daskal</footer></blockquote>**
