@@ -80,4 +80,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;Don&#039;t set your own goals by what other people make important.&rdquo; &mdash; <footer>Lolly Daskal</footer></blockquote>**
+**Stare at the abyss long enough, and it starts to stare back at you...**
