@@ -81,3 +81,5 @@ serves as a central hub for technical documentation, architectural references, a
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
+
+**<blockquote>&ldquo;So long as we are being remembered, we remain alive.&rdquo; &mdash; <footer>Carlos Ruiz Zafon</footer></blockquote>**
