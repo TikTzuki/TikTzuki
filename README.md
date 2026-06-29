@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;In a world of change, the learners shall inherit the earth, while the learned shall find themselves perfectly suited for a world that no longer exists.&rdquo; &mdash; <footer>Eric Hoffer</footer></blockquote>**
+**<blockquote>&ldquo;Letting go means to come to the realization that some people are a part of your history, but not a part of your destiny.&rdquo; &mdash; <footer>Steve Maraboli</footer></blockquote>**
