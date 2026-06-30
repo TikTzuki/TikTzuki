@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;Letting go means to come to the realization that some people are a part of your history, but not a part of your destiny.&rdquo; &mdash; <footer>Steve Maraboli</footer></blockquote>**
+**<blockquote>&ldquo;A zen master&#039;s life is one continuous mistake.&rdquo; &mdash; <footer>Dogen</footer></blockquote>**
