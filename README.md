@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;All great truths begin as blasphemies.&rdquo; &mdash; <footer>George Bernard Shaw</footer></blockquote>**
+**<blockquote>&ldquo;There is no truth except the truth that exists within you. Everything else is what someone is telling you.&rdquo; &mdash; <footer>Neale Donald Walsch</footer></blockquote>**
