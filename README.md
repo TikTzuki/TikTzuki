@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;There is no truth except the truth that exists within you. Everything else is what someone is telling you.&rdquo; &mdash; <footer>Neale Donald Walsch</footer></blockquote>**
+**<blockquote>&ldquo;Genius is one percent inspiration and ninety-nine percent perspiration.&rdquo; &mdash; <footer>Thomas Edison</footer></blockquote>**
