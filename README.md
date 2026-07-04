@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;Genius is one percent inspiration and ninety-nine percent perspiration.&rdquo; &mdash; <footer>Thomas Edison</footer></blockquote>**
+**<blockquote>&ldquo;The real measure of your wealth is how much you&#039;d be worth if you lost all your money.&rdquo; &mdash; <footer>Unknown</footer></blockquote>**
