@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;Believe in yourself. You are braver than you think, more talented than you know, and capable of more than you imagine.&rdquo; &mdash; <footer>Roy T. Bennett</footer></blockquote>**
+**<blockquote>&ldquo;A man is not called wise because he talks and talks again; but if he is peaceful, loving and fearless then he is in truth called wise.&rdquo; &mdash; <footer>Buddha</footer></blockquote>**
