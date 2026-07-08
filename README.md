@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;A man is not called wise because he talks and talks again; but if he is peaceful, loving and fearless then he is in truth called wise.&rdquo; &mdash; <footer>Buddha</footer></blockquote>**
+**<blockquote>&ldquo;Remain calm, serene, always in command of yourself. You will then find out how easy it is to get along.&rdquo; &mdash; <footer>Paramahansa Yogananda</footer></blockquote>**
