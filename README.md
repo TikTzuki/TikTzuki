@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;Remain calm, serene, always in command of yourself. You will then find out how easy it is to get along.&rdquo; &mdash; <footer>Paramahansa Yogananda</footer></blockquote>**
+**<blockquote>&ldquo;We are like islands in the sea, separate on the surface but connected in the deep.&rdquo; &mdash; <footer>William James</footer></blockquote>**
