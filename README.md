@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;A man who acquires the ability to take full possession of his own mind may take possession of anything else to which he is justly entitled.&rdquo; &mdash; <footer>Andrew Carnegie</footer></blockquote>**
+**<blockquote>&ldquo;You live by what you thrill to, and there&#039;s the end of it.&rdquo; &mdash; <footer>D. H. Lawrence</footer></blockquote>**
