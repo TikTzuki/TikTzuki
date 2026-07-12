@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;You live by what you thrill to, and there&#039;s the end of it.&rdquo; &mdash; <footer>D. H. Lawrence</footer></blockquote>**
+**<blockquote>&ldquo;We suffer more often in imagination than in reality.&rdquo; &mdash; <footer>Seneca</footer></blockquote>**
