@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;All we have to decide is what to do with the time that is given to us.&rdquo; &mdash; <footer>J.R.R. Tolkien</footer></blockquote>**
+**<blockquote>&ldquo;I learned that courage was not the absence of fear, but the triumph over it. The brave man is not he who does not feel afraid, but he who conquers that fear.&rdquo; &mdash; <footer>Nelson Mandela</footer></blockquote>**
