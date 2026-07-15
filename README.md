@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;I learned that courage was not the absence of fear, but the triumph over it. The brave man is not he who does not feel afraid, but he who conquers that fear.&rdquo; &mdash; <footer>Nelson Mandela</footer></blockquote>**
+**<blockquote>&ldquo;Intuition is the ear of the soul.&rdquo; &mdash; <footer>Neale Donald Walsch</footer></blockquote>**
