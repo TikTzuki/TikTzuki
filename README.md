@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;Learn to enjoy every minute of your life. Be happy now. Don&#039;t wait for something outside of yourself to make you happy in the future.&rdquo; &mdash; <footer>Earl Nightingale</footer></blockquote>**
+**<blockquote>&ldquo;Happiness is a choice, not a result. Nothing will make you happy until you choose to be happy.&rdquo; &mdash; <footer>Ralph Marston</footer></blockquote>**
