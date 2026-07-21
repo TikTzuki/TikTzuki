@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;A self that goes on changing is a self that goes on living.&rdquo; &mdash; <footer>Virginia Woolf</footer></blockquote>**
+**<blockquote>&ldquo;Charms strike the sight, but merit wins the soul.&rdquo; &mdash; <footer>Alexander Pope</footer></blockquote>**
