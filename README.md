@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;Catch, then, O catch the transient hour; Improve each moment as it flies!&rdquo; &mdash; <footer>St. Jerome</footer></blockquote>**
+**<blockquote>&ldquo;Health is the greatest of all possessions.&rdquo; &mdash; <footer>Jonathan Swift</footer></blockquote>**
