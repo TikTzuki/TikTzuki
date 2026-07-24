@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;Health is the greatest of all possessions.&rdquo; &mdash; <footer>Jonathan Swift</footer></blockquote>**
+**<blockquote>&ldquo;Everything is created twice, first in the mind and then in reality.&rdquo; &mdash; <footer>Robin Sharma</footer></blockquote>**
