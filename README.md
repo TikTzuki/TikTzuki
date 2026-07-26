@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;Success usually comes to those who are too busy to be looking for it.&rdquo; &mdash; <footer>Colin R. Davis</footer></blockquote>**
+**<blockquote>&ldquo;There are no contests in the Art of Peace. A true warrior is invincible because he or she contests with nothing.&rdquo; &mdash; <footer>Morihei Ueshiba</footer></blockquote>**
