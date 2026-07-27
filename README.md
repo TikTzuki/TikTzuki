@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;There are no contests in the Art of Peace. A true warrior is invincible because he or she contests with nothing.&rdquo; &mdash; <footer>Morihei Ueshiba</footer></blockquote>**
+**<blockquote>&ldquo;It&#039;s only after you&#039;ve stepped outside your comfort zone that you begin to change, grow, and transform.&rdquo; &mdash; <footer>Roy T. Bennett</footer></blockquote>**
