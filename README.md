@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;It&#039;s only after you&#039;ve stepped outside your comfort zone that you begin to change, grow, and transform.&rdquo; &mdash; <footer>Roy T. Bennett</footer></blockquote>**
+**<blockquote>&ldquo;Life is a series of choices and all we can do is make them.&rdquo; &mdash; <footer>Kamal Ravikant</footer></blockquote>**
