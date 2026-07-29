@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;Life is a series of choices and all we can do is make them.&rdquo; &mdash; <footer>Kamal Ravikant</footer></blockquote>**
+**<blockquote>&ldquo;Be brave. Take risks. Nothing can substitute experience.&rdquo; &mdash; <footer>Paulo Coelho</footer></blockquote>**
