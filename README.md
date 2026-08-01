@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;Work as though you would live forever, and live as though you would die today. Go another mile.&rdquo; &mdash; <footer>Og Mandino</footer></blockquote>**
+**<blockquote>&ldquo;Fiction is the truth inside the lie.&rdquo; &mdash; <footer>Stephen King</footer></blockquote>**
