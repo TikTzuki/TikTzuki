@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;Fiction is the truth inside the lie.&rdquo; &mdash; <footer>Stephen King</footer></blockquote>**
+**<blockquote>&ldquo;Everyone has oceans to fly, if they have the heart to do it. Is it reckless? Maybe. But what do dreams know of boundaries.&rdquo; &mdash; <footer>Amelia Earhart</footer></blockquote>**
