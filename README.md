@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;It is not as important how we start, but how we finish.&rdquo; &mdash; <footer>Joyce Meyer</footer></blockquote>**
+**<blockquote>&ldquo;Believe nothing you hear, and only one half that you see.&rdquo; &mdash; <footer>Edgar Allan Poe</footer></blockquote>**
