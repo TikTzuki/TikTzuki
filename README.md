@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;You can&#039;t stay in your corner of the Forest waiting for others to come to you. You have to go to them sometimes.&rdquo; &mdash; <footer>A.A. Milne</footer></blockquote>**
+**<blockquote>&ldquo;Find something you love and do it better than everyone else.&rdquo; &mdash; <footer>Gurbaksh Chahal</footer></blockquote>**
