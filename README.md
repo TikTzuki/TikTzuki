@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;Find something you love and do it better than everyone else.&rdquo; &mdash; <footer>Gurbaksh Chahal</footer></blockquote>**
+**<blockquote>&ldquo;The less you respond to negative people, the more positive your life will become.&rdquo; &mdash; <footer>Paulo Coelho</footer></blockquote>**
