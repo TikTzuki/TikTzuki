@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;The less you respond to negative people, the more positive your life will become.&rdquo; &mdash; <footer>Paulo Coelho</footer></blockquote>**
+**<blockquote>&ldquo;It is not the knowing that is difficult, but the doing.&rdquo; &mdash; <footer>Chinese Proverb</footer></blockquote>**
