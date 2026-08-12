@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;The biggest adventure you can ever take is to live the life of your dreams.&rdquo; &mdash; <footer>Oprah Winfrey</footer></blockquote>**
+**<blockquote>&ldquo;The whole world is a series of miracles, but we&#039;re so used to them we call them ordinary things.&rdquo; &mdash; <footer>Hans Christian Andersen</footer></blockquote>**
