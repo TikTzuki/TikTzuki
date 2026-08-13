@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;The whole world is a series of miracles, but we&#039;re so used to them we call them ordinary things.&rdquo; &mdash; <footer>Hans Christian Andersen</footer></blockquote>**
+**<blockquote>&ldquo;Stuff your eyes with wonder... live as if you&#039;d drop dead in ten seconds. See the world. It&#039;s more fantastic than any dream made or paid for in factories.&rdquo; &mdash; <footer>Ray Bradbury</footer></blockquote>**
