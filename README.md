@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;Stuff your eyes with wonder... live as if you&#039;d drop dead in ten seconds. See the world. It&#039;s more fantastic than any dream made or paid for in factories.&rdquo; &mdash; <footer>Ray Bradbury</footer></blockquote>**
+**<blockquote>&ldquo;It is your attitude, not your aptitude, that determines your altitude.&rdquo; &mdash; <footer>Zig Ziglar</footer></blockquote>**
