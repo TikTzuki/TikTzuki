@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;Growing up is losing some illusions, in order to acquire others.&rdquo; &mdash; <footer>Virginia Woolf</footer></blockquote>**
+**<blockquote>&ldquo;Wisdom consists not so much in knowing what to do in the ultimate as knowing what to do next.&rdquo; &mdash; <footer>Herbert Hoover</footer></blockquote>**
