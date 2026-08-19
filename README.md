@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;Wisdom consists not so much in knowing what to do in the ultimate as knowing what to do next.&rdquo; &mdash; <footer>Herbert Hoover</footer></blockquote>**
+**<blockquote>&ldquo;A dream doesn&#039;t become reality through magic it takes sweat, determination and hard work.&rdquo; &mdash; <footer>Colin Powell</footer></blockquote>**
