@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;A dream doesn&#039;t become reality through magic it takes sweat, determination and hard work.&rdquo; &mdash; <footer>Colin Powell</footer></blockquote>**
+**<blockquote>&ldquo;When it is dark enough, you can see the stars.&rdquo; &mdash; <footer>Ralph Waldo Emerson</footer></blockquote>**
