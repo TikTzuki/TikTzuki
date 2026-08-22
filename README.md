@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;Sometimes you have to travel a long way to find what is near.&rdquo; &mdash; <footer>Paulo Coelho</footer></blockquote>**
+**<blockquote>&ldquo;A good character is the best tombstone. Carve your name on hearts, not on marble.&rdquo; &mdash; <footer>Charles Spurgeon</footer></blockquote>**
