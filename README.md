@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;A good character is the best tombstone. Carve your name on hearts, not on marble.&rdquo; &mdash; <footer>Charles Spurgeon</footer></blockquote>**
+**<blockquote>&ldquo;Catch, then, O catch the transient hour; Improve each moment as it flies!&rdquo; &mdash; <footer>St. Jerome</footer></blockquote>**
