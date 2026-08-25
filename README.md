@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;Difficulties strengthen the mind, as labor does the body.&rdquo; &mdash; <footer>Seneca</footer></blockquote>**
+**<blockquote>&ldquo;The power of man has grown in every sphere, except over himself.&rdquo; &mdash; <footer>Winston Churchill</footer></blockquote>**
