@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;The power of man has grown in every sphere, except over himself.&rdquo; &mdash; <footer>Winston Churchill</footer></blockquote>**
+**<blockquote>&ldquo;It is ignorance that causes most mistakes.&rdquo; &mdash; <footer>Harry S. Truman</footer></blockquote>**
