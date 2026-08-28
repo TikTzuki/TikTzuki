@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;It is during our darkest moments that we must focus to see the light.&rdquo; &mdash; <footer>Aristotle</footer></blockquote>**
+**<blockquote>&ldquo;We are all faced with a series of great opportunities brilliantly disguised as impossible situations.&rdquo; &mdash; <footer>Charles Swindoll</footer></blockquote>**
