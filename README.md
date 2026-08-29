@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;We are all faced with a series of great opportunities brilliantly disguised as impossible situations.&rdquo; &mdash; <footer>Charles Swindoll</footer></blockquote>**
+**<blockquote>&ldquo;Friendship is like money, easier made than kept.&rdquo; &mdash; <footer>Samuel Butler</footer></blockquote>**
