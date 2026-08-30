@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;Friendship is like money, easier made than kept.&rdquo; &mdash; <footer>Samuel Butler</footer></blockquote>**
+**<blockquote>&ldquo;Over time, loneliness gets inside you and doesn&#039;t go away.&rdquo; &mdash; <footer>Carlos Ruiz Zafon</footer></blockquote>**
