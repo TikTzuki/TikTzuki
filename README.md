@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;Over time, loneliness gets inside you and doesn&#039;t go away.&rdquo; &mdash; <footer>Carlos Ruiz Zafon</footer></blockquote>**
+**<blockquote>&ldquo;Everything around us is made up of energy. To attract positive things in your life, start by giving off positive energy.&rdquo; &mdash; <footer>Celestine Chua</footer></blockquote>**
