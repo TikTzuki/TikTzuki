@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;Discipline yourself, and others won&#039;t need to.&rdquo; &mdash; <footer>John Wooden</footer></blockquote>**
+**<blockquote>&ldquo;The big thing is to make a winning effort. I&#039;m not obsessed with wins.&rdquo; &mdash; <footer>Morgan Wootten</footer></blockquote>**
