@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;Being ignorant is not so much a shame, as being unwilling to learn.&rdquo; &mdash; <footer>Benjamin Franklin</footer></blockquote>**
+**<blockquote>&ldquo;Remember that the best relationship is one in which your love for each other exceeds your need for each other.&rdquo; &mdash; <footer>Dalai Lama</footer></blockquote>**
