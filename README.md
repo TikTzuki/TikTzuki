@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;Remember that the best relationship is one in which your love for each other exceeds your need for each other.&rdquo; &mdash; <footer>Dalai Lama</footer></blockquote>**
+**<blockquote>&ldquo;Only to the extent that we expose ourselves over and over to annihilation can that which is indestructible in us be found.&rdquo; &mdash; <footer>Pema Chodron</footer></blockquote>**
