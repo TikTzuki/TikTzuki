@@ -149,10 +149,11 @@ const config: Config = {
                     label: 'Docs',
                 },
                 {to: '/blog', label: 'Blog', position: 'left'},
-                {
-                    type: 'localeDropdown',
-                    position: 'right',
-                },
+                // No localeDropdown: 'vi' is still built and /vi/** still resolves, but
+                // only one of ~90 pages is actually translated, so a language switcher
+                // offers a choice the content cannot honour — 89 of them would just be
+                // the same English page at a different URL. Restore this when vi
+                // coverage is real. See ../TECH_DEBT.md 6.1.
                 {
                     href: 'https://github.com/TikTzuki',
                     label: 'GitHub',

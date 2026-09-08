@@ -155,17 +155,26 @@ two other repositories. Worth being explicit about in the deploy runbook.
 
 ## 6. Content and i18n
 
-### 6.1 The `vi` locale has exactly one translated page
+### 6.1 The `vi` locale has exactly one translated page — switcher removed
 
-Translation has restarted rather than being dropped: `production-patterns/session-consistency.md`
-is a full Vietnamese translation. Everything else under `/vi/` still falls back to English, so the
-language switcher remains mostly misleading — one page in, ~90 to go.
+`production-patterns/session-consistency.md` is a full Vietnamese translation. The other ~89
+pages under `/vi/` fall back to English, so the locale is 1/90 translated.
 
-The decision from the original entry (repopulate vs. drop `vi`) is now settled in favour of
-repopulating, but incrementally. Each new translation costs a file and nothing else, because §6.2
-is solved.
+Settled: **keep building `vi`, but do not advertise it.** The `localeDropdown` is removed from
+the navbar (see `docusaurus.config.ts`), because a switcher on 89 pages that are byte-identical
+English offers a choice the content cannot honour. Nothing is lost by this:
+
+- `/vi/**` is still built (209 pages) and every URL still resolves.
+- The translated lesson is still served at
+  `/vi/docs/production-patterns/session-consistency`.
+- `hreflang` alternates (`en-GB`, `vi`, `x-default`) come from the i18n config rather than the
+  navbar, so search engines still discover the translated page.
+
+Restore the dropdown when coverage is real. Adding translations is cheap now that §6.2 is
+solved — one file each, no machinery.
 
 - Verify: `find i18n/vi -name '*.md' -o -name '*.mdx' | wc -l`  (currently 1)
+- Verify no switcher: `grep -c dropdown__link build/docs/intro/index.html` → 0
 
 ### 6.2 Relative `.md` links break in a partially translated locale — solved for synced content
 
