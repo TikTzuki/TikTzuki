@@ -23,7 +23,9 @@ pnpm install          # Install dependencies
 pnpm sync             # Pull in docs owned by tiktuzki-gitops / senior-architect
 pnpm start            # Dev server with hot reload (runs sync first)
 pnpm build            # Production build (runs sync first)
+pnpm start:vi         # Dev server on the Vietnamese locale — browse /vi/..., not /...
 pnpm serve            # Serve production build locally
+pnpm serve:vi         # Serve the built vi locale
 pnpm typecheck        # TypeScript type checking (tsc)
 pnpm clear            # Clear Docusaurus cache
 ```

@@ -191,7 +191,35 @@ Two things this does not cover, and both bite silently:
 
 - Verify: `grep -rho '](\([a-z0-9-]*\)\.md)' docs/production-patterns/ | sort -u` → must be empty
 
-### 6.3 A blog post has no front matter
+### 6.3 The dev server serves a non-default locale at `/vi/` but answers at `/` too
+
+Running `pnpm start:vi` (`docusaurus start --locale vi`) sets `siteConfig.baseUrl` to `/vi/`,
+and that is where the CLI says the site is served. But webpack-dev-server's history fallback
+also returns **200 for the un-prefixed path**, so `http://localhost:3000/docs/...` loads and
+looks fine.
+
+It is not fine. `useAlternatePageUtils.createUrl` computes every locale-switch URL as
+`localeConfigs[target].baseUrl + pathname.replace(siteConfig.baseUrl, '')`. On the
+un-prefixed path the strip finds no `/vi/` to remove, so the suffix keeps its leading slash
+and the English link comes out as `//docs/category/pp-storage` — a protocol-relative URL,
+which Docusaurus's `Link` then treats as **external** and renders with
+`target="_self" rel="noopener noreferrer"`.
+
+| Dev running | You visit | English link |
+|---|---|---|
+| `pnpm start` (en) | `/docs/…` | `/docs/…` ✅ |
+| `pnpm start:vi` | `/vi/docs/…` | `/docs/…` ✅ |
+| `pnpm start:vi` | `/docs/…` | `//docs/…` ❌ |
+
+There is no config fix: the locale-segment behaviour is gated by
+`automaticBaseUrlLocalizationDisabled`, an internal `loadSite` parameter that is not exposed
+in user config. **Production builds are unaffected** — both `build/` and `build/vi/` were
+checked and emit correct hrefs, because there the served path and `baseUrl` always agree.
+
+So this is a dev-only trap. Mitigation is the explicit `start:vi` / `serve:vi` scripts plus
+the rule: **when running the vi locale, browse `/vi/…`**.
+
+### 6.4 A blog post has no front matter
 
 `blog/2025-10-26-mcp-atlassian-integration.md` has no front matter at all — no `title`, `authors`,
 `slug` or `tags` — and no `<!-- truncate -->` marker, which the build warns about on every run. Its

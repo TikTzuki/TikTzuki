@@ -5,12 +5,14 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "pnpm sync && docusaurus start",
+    "start:vi": "pnpm sync && docusaurus start --locale vi",
     "build": "pnpm sync && docusaurus build",
     "sync": "node ./scripts/sync-knowledge.mjs",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
+    "serve:vi": "docusaurus serve --locale vi",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
     "typecheck": "tsc"
