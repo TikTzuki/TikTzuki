@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;Exceptional thinkers ignore their critics and go about their business making history.&rdquo; &mdash; <footer>John Eliot</footer></blockquote>**
+**<blockquote>&ldquo;Winners don&#039;t Quit. That&#039;s why they Win.&rdquo; &mdash; <footer>Unknown</footer></blockquote>**
