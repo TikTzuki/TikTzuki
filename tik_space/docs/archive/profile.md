@@ -1,3 +1,8 @@
+---
+title: Profile (deprecated)
+sidebar_position: 2
+---
+
 # (Deprecate) Profile
 ## TikTuzki [![TikTuzki](./img/tik-badge.svg)](https://github.com/TikTzuki/TikTzuki)
 

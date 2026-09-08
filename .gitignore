@@ -1,2 +1,12 @@
 .idea
 node_modules
+
+# Docs synced in from the repos that own them — see tik_space/scripts/sync-knowledge.mjs.
+# Regenerated on every build; edit them in tiktuzki-gitops / senior-architect.
+tik_space/docs/operations/
+tik_space/docs/production-patterns/
+
+# Sync output: the lesson set -> sidebar group map read by sidebarItemsGenerator.ts
+tik_space/.lesson-groups.json
+
+.DS_Store

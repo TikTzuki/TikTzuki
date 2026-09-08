@@ -4,6 +4,14 @@ on:
   workflow_dispatch:
   push:
     branches: [ master ]
+  # Docs synced from tiktuzki-gitops / senior-architect change without a push
+  # here. The nightly run picks those up; the dispatch lets a source repo
+  # trigger a rebuild immediately via:
+  #   gh api repos/TikTzuki/TikTzuki/dispatches -f event_type=knowledge-updated
+  schedule:
+    - cron: '17 3 * * *'
+  repository_dispatch:
+    types: [ knowledge-updated ]
 permissions:
   contents: write
   pages: write
@@ -18,15 +26,28 @@ jobs:
         uses: actions/setup-node@v6
         with:
           node-version: 22
-          cache: 'yarn'
-          cache-dependency-path: '${{ github.workspace }}/tik_space/yarn.lock'
-          
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: latest
+
       - name: Install dependencies
-        run: |
-          cd ${{ github.workspace }}/tik_space
-          yarn install
-          yarn build
-          
+        run: pnpm install
+        working-directory: ${{ github.workspace }}/tik_space
+
+      # Docs owned by tiktuzki-gitops and senior-architect are pulled in here.
+      # `pnpm build` would run this anyway; it is a separate step so that a
+      # failure to reach a source repo is obvious in the log rather than
+      # buried in the build output.
+      - name: Sync knowledge from source repos
+        run: pnpm sync
+        working-directory: ${{ github.workspace }}/tik_space
+
+      - name: Build site
+        run: pnpm build
+        working-directory: ${{ github.workspace }}/tik_space
+
       - name: Deploy to tiktuzki.com
         uses: peaceiris/actions-gh-pages@v4
         with:

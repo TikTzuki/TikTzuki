@@ -1,0 +1,110 @@
+.section {
+  max-width: var(--ifm-container-width);
+  margin: 0 auto;
+  padding: 3rem 1rem 5rem;
+}
+
+.sectionTitle {
+  font-size: clamp(1.4rem, 3.4vw, 2rem);
+  margin-bottom: 1.5rem;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 2px solid var(--p4-surface-border);
+}
+
+.item {
+  border-bottom: 2px solid var(--p4-surface-border);
+}
+
+.link {
+  display: grid;
+  grid-template-columns: minmax(9rem, 12rem) 1fr auto;
+  grid-template-areas:
+    'area title arrow'
+    'area note  arrow';
+  align-items: baseline;
+  column-gap: 1.5rem;
+  padding: 1.1rem 0.75rem;
+  color: inherit;
+  text-decoration: none;
+  transition: background-color 0.12s ease, padding-left 0.12s ease;
+}
+
+.link:hover,
+.link:focus-visible {
+  color: inherit;
+  text-decoration: none;
+  background: var(--ifm-menu-color-background-hover);
+  padding-left: 1.25rem;
+}
+
+.area {
+  grid-area: area;
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.title {
+  grid-area: title;
+  font-family: var(--p4-display);
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+}
+
+.link:hover .title {
+  color: var(--ifm-color-primary);
+}
+
+.note {
+  grid-area: note;
+  margin-top: 0.3rem;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.arrow {
+  grid-area: arrow;
+  align-self: center;
+  font-size: 1.3rem;
+  color: var(--ifm-color-primary);
+}
+
+.more {
+  display: inline-block;
+  margin-top: 1.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+}
+
+@media (max-width: 768px) {
+  .link {
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      'area  arrow'
+      'title arrow'
+      'note  arrow';
+    row-gap: 0.25rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .link {
+    transition: none;
+  }
+
+  .link:hover,
+  .link:focus-visible {
+    padding-left: 0.75rem;
+  }
+}

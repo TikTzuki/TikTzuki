@@ -1,3 +1,8 @@
+---
+title: Java Bitwise Operators
+sidebar_position: 1
+---
+
 Assume variable A = 2 and B = 3.
 A = 0010
 B = 0011

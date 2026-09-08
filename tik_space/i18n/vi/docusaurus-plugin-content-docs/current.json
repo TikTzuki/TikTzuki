@@ -3,76 +3,112 @@
     "message": "Next",
     "description": "The label for version current"
   },
+  "sidebar.docSidebar.category.How it works": {
+    "message": "How it works",
+    "description": "The label for category 'How it works' in sidebar 'docSidebar'"
+  },
   "sidebar.docSidebar.category.Cryptography": {
     "message": "Cryptography",
     "description": "The label for category 'Cryptography' in sidebar 'docSidebar'"
   },
-  "sidebar.docSidebar.category.Elliptic Curve": {
-    "message": "Elliptic Curve",
-    "description": "The label for category 'Elliptic Curve' in sidebar 'docSidebar'"
+  "sidebar.docSidebar.category.Consensus": {
+    "message": "Consensus",
+    "description": "The label for category 'Consensus' in sidebar 'docSidebar'"
   },
-  "sidebar.docSidebar.category.K8s Cluster for Development": {
-    "message": "K8s Cluster for Development",
-    "description": "The label for category 'K8s Cluster for Development' in sidebar 'docSidebar'"
+  "sidebar.docSidebar.category.libp2p": {
+    "message": "libp2p",
+    "description": "The label for category 'libp2p' in sidebar 'docSidebar'"
   },
-  "sidebar.docSidebar.category.Networking": {
-    "message": "Networking",
-    "description": "The label for category 'Networking' in sidebar 'docSidebar'"
+  "sidebar.docSidebar.category.Trading": {
+    "message": "Trading",
+    "description": "The label for category 'Trading' in sidebar 'docSidebar'"
   },
-  "sidebar.docSidebar.category.rust-libp2p": {
-    "message": "rust-libp2p",
-    "description": "The label for category 'rust-libp2p' in sidebar 'docSidebar'"
+  "sidebar.docSidebar.category.Production patterns": {
+    "message": "Production patterns",
+    "description": "The label for category 'Production patterns' in sidebar 'docSidebar'"
   },
-  "sidebar.docSidebar.category.System Design": {
-    "message": "System Design",
-    "description": "The label for category 'System Design' in sidebar 'docSidebar'"
+  "sidebar.docSidebar.category.production-patterns-runtime": {
+    "message": "Backend runtime",
+    "description": "The label for category 'Backend runtime' in sidebar 'docSidebar'"
   },
-  "sidebar.docSidebar.category.system-design-mpc": {
+  "sidebar.docSidebar.category.production-patterns-storage": {
+    "message": "Storage & databases",
+    "description": "The label for category 'Storage & databases' in sidebar 'docSidebar'"
+  },
+  "sidebar.docSidebar.category.production-patterns-transactions": {
+    "message": "Transactions & consistency",
+    "description": "The label for category 'Transactions & consistency' in sidebar 'docSidebar'"
+  },
+  "sidebar.docSidebar.category.production-patterns-data-modeling": {
+    "message": "Data modeling",
+    "description": "The label for category 'Data modeling' in sidebar 'docSidebar'"
+  },
+  "sidebar.docSidebar.category.production-patterns-api-design": {
+    "message": "API design",
+    "description": "The label for category 'API design' in sidebar 'docSidebar'"
+  },
+  "sidebar.docSidebar.category.production-patterns-distributed-systems": {
+    "message": "Distributed systems",
+    "description": "The label for category 'Distributed systems' in sidebar 'docSidebar'"
+  },
+  "sidebar.docSidebar.category.production-patterns-payments": {
+    "message": "Payments",
+    "description": "The label for category 'Payments' in sidebar 'docSidebar'"
+  },
+  "sidebar.docSidebar.category.System design": {
+    "message": "System design",
+    "description": "The label for category 'System design' in sidebar 'docSidebar'"
+  },
+  "sidebar.docSidebar.category.WebSocket Gateway": {
+    "message": "WebSocket Gateway",
+    "description": "The label for category 'WebSocket Gateway' in sidebar 'docSidebar'"
+  },
+  "sidebar.docSidebar.category.MPC": {
     "message": "MPC",
     "description": "The label for category 'MPC' in sidebar 'docSidebar'"
   },
-  "sidebar.docSidebar.category.Microservices": {
-    "message": "Microservices",
-    "description": "The label for category 'Microservices' in sidebar 'docSidebar'"
+  "sidebar.docSidebar.category.Templates": {
+    "message": "Templates",
+    "description": "The label for category 'Templates' in sidebar 'docSidebar'"
   },
-  "sidebar.docSidebar.category.connsensus": {
-    "message": "connsensus",
-    "description": "The label for category 'connsensus' in sidebar 'docSidebar'"
+  "sidebar.docSidebar.category.Operations": {
+    "message": "Operations",
+    "description": "The label for category 'Operations' in sidebar 'docSidebar'"
   },
-  "sidebar.docSidebar.category.microservices-mpc": {
-    "message": "MPC",
-    "description": "The label for category 'MPC' in sidebar 'docSidebar'"
+  "sidebar.docSidebar.category.Cluster": {
+    "message": "Cluster",
+    "description": "The label for category 'Cluster' in sidebar 'docSidebar'"
   },
-  "sidebar.docSidebar.category.Trading 101": {
-    "message": "Trading 101",
-    "description": "The label for category 'Trading 101' in sidebar 'docSidebar'"
+  "sidebar.docSidebar.category.Access": {
+    "message": "Access",
+    "description": "The label for category 'Access' in sidebar 'docSidebar'"
   },
-  "sidebar.docSidebar.category.Useful References": {
-    "message": "Useful References",
-    "description": "The label for category 'Useful References' in sidebar 'docSidebar'"
+  "sidebar.docSidebar.category.Backup & restore": {
+    "message": "Backup & restore",
+    "description": "The label for category 'Backup & restore' in sidebar 'docSidebar'"
+  },
+  "sidebar.docSidebar.category.Services": {
+    "message": "Services",
+    "description": "The label for category 'Services' in sidebar 'docSidebar'"
+  },
+  "sidebar.docSidebar.category.Observability": {
+    "message": "Observability",
+    "description": "The label for category 'Observability' in sidebar 'docSidebar'"
+  },
+  "sidebar.docSidebar.category.Secrets": {
+    "message": "Secrets",
+    "description": "The label for category 'Secrets' in sidebar 'docSidebar'"
+  },
+  "sidebar.docSidebar.category.Interview prep": {
+    "message": "Interview prep",
+    "description": "The label for category 'Interview prep' in sidebar 'docSidebar'"
+  },
+  "sidebar.docSidebar.category.Reference": {
+    "message": "Reference",
+    "description": "The label for category 'Reference' in sidebar 'docSidebar'"
   },
   "sidebar.docSidebar.category.Archive": {
     "message": "Archive",
     "description": "The label for category 'Archive' in sidebar 'docSidebar'"
-  },
-  "sidebar.docSidebar.category.Tutorial - Basics": {
-    "message": "Tutorial - Basics",
-    "description": "The label for category 'Tutorial - Basics' in sidebar 'docSidebar'"
-  },
-  "sidebar.docSidebar.category.Tutorial - Basics.link.generated-index.description": {
-    "message": "5 minutes to learn the most important Docusaurus concepts.",
-    "description": "The generated-index page description for category 'Tutorial - Basics' in sidebar 'docSidebar'"
-  },
-  "sidebar.docSidebar.category.Tutorial - Extras": {
-    "message": "Tutorial - Extras",
-    "description": "The label for category 'Tutorial - Extras' in sidebar 'docSidebar'"
-  },
-  "sidebar.docSidebar.category.interview-question-bank": {
-    "message": "interview-question-bank",
-    "description": "The label for category 'interview-question-bank' in sidebar 'docSidebar'"
-  },
-  "sidebar.docSidebar.category.subscription-docs": {
-    "message": "subscription-docs",
-    "description": "The label for category 'subscription-docs' in sidebar 'docSidebar'"
   }
 }

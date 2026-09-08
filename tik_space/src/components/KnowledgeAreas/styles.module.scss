@@ -1,0 +1,182 @@
+.section {
+  max-width: var(--ifm-container-width);
+  margin: 0 auto;
+  padding: 4rem 1rem 1rem;
+}
+
+.sectionTitle {
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  margin-bottom: 0.5rem;
+}
+
+.sectionLede {
+  max-width: 62ch;
+  color: var(--ifm-color-emphasis-700);
+  font-size: 1.05rem;
+  margin-bottom: 2.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Hard-edged panel with a solid offset shadow on hover, matching the theme's
+   buttons and pagination links. */
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem 1.5rem 1.25rem;
+  background: var(--ifm-background-surface-color);
+  border: 2px solid var(--p4-surface-border);
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.card:hover,
+.card:focus-within {
+  transform: translate(-3px, -3px);
+  box-shadow: var(--p4-hard-shadow);
+}
+
+.index {
+  font-family: var(--p4-display);
+  font-size: 2.25rem;
+  line-height: 1;
+  /* Pure yellow is 1.3:1 on the light surface. Tracking the primary ramp keeps
+     the poster-numeral look while staying legible in both modes. */
+  color: var(--ifm-color-primary);
+  -webkit-text-stroke: 1px var(--p4-surface-border);
+  margin-bottom: 0.5rem;
+}
+
+.cardTitle {
+  font-size: 1.35rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Stretched link: the whole card is the hit target, but only the title is the
+   accessible link name. */
+.cardLink {
+  color: inherit;
+  text-decoration: none;
+}
+
+.cardLink::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+
+.cardLink:hover {
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+}
+
+.blurb {
+  color: var(--ifm-color-emphasis-800);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+.topics {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.topic {
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  padding: 0.2rem 0.5rem;
+  border: 1px solid var(--p4-surface-border);
+  color: var(--ifm-color-emphasis-800);
+}
+
+/* Sits above the stretched link so it stays independently clickable. */
+.highlight {
+  position: relative;
+  z-index: 1;
+  align-self: flex-start;
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: var(--p4-yellow);
+  color: var(--p4-ink);
+  padding: 0.35rem 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.highlight:hover {
+  color: var(--p4-ink);
+  text-decoration: none;
+  background: #ffffff;
+  outline: 2px solid var(--p4-ink);
+}
+
+.count {
+  margin: auto 0 0;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--p4-surface-border);
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.also {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem 1.25rem;
+  margin: 2rem 0 0;
+  padding-top: 1.25rem;
+  border-top: 2px solid var(--p4-surface-border);
+}
+
+.alsoLabel {
+  font-family: var(--p4-body);
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.alsoLink {
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.alsoCount {
+  margin-left: 0.4rem;
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: var(--ifm-color-emphasis-700);
+}
+
+@media (max-width: 996px) {
+  .section {
+    padding-top: 2.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card {
+    transition: none;
+  }
+
+  .card:hover,
+  .card:focus-within {
+    transform: none;
+  }
+}

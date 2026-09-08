@@ -1,39 +1,41 @@
+# Blog tag vocabulary.
+#
+# Docusaurus keeps blog tags in a separate namespace from doc tags, so this file is
+# necessarily separate from docs/tags.yml — but the WORDS should match wherever they
+# overlap, so the same subject is not called two things on one site. Keys here that also
+# exist in docs/tags.yml must keep the same key and label.
+
 ai:
   label: AI
   permalink: /ai
-  description: Notes and guides for integrating MCP with Atlassian tools.
+  description: Working with LLM tooling — MCP servers, agents and editor integrations.
 
-k8s:
+kubernetes:
   label: Kubernetes
-  permalink: /k8s
-  description: Kubernetes deployment, configuration and orchestration notes.
+  permalink: /kubernetes
+  description: Cluster operations, GitOps and workload configuration.
 
-microservices:
-  label: Microservices
-  permalink: /microservices
-  description: Microservices design patterns and implementation notes.
+distributed-systems:
+  label: Distributed systems
+  permalink: /distributed-systems
+  description: Service boundaries, partial failure and the patterns around them.
 
-decentralized-network:
-  label: Decentralized Network
-  permalink: /de-network
-  description: Decentralized network protocols, architectures and implementations.
-
-system-design:
-  label: System Design
-  permalink: /system-design
-  description: System design templates, patterns and case studies.
+networking:
+  label: Networking
+  permalink: /networking
+  description: Protocols, transports and peer-to-peer networks.
 
 cryptography:
   label: Cryptography
   permalink: /cryptography
-  description: Cryptography notes, papers and reference material.
+  description: Curves, signatures and key handling.
 
 trading:
-  label: Trading
+  label: Trading & markets
   permalink: /trading
-  description: Introductory resources for trading concepts and strategies.
+  description: Market mechanics and on-chain yield.
 
 archive:
   label: Archive
   permalink: /archive
-  description: Older guides, experiments and archived notes.
+  description: Older posts kept for the record.

@@ -1,0 +1,133 @@
+# Controlled tag vocabulary for the docs.
+#
+# docusaurus.config.ts sets `docs.onInlineTags: 'throw'`, so a tag that is not
+# defined here FAILS THE BUILD. That is deliberate: the directory tree answers
+# "what will reading this do for me" (genre), and these tags answer "what is it
+# about" (topic) and "when should I read it" (tier). A vocabulary nobody enforces
+# decays into decoration.
+#
+# Adding a term is a real decision. The bar:
+#   - topic: at least 3 documents are ABOUT it, not merely mentioning it
+#   - tier:  only where the roadmap in senior-architect defines a series
+#
+# The first seven topics are inherited verbatim from the lesson "sets" in
+# senior-architect, so the site and the review skill use one vocabulary.
+
+# ---------------------------------------------------------------------------
+# TOPIC — the primary facet. What the document is about.
+# ---------------------------------------------------------------------------
+
+payments:
+  label: Payments
+  permalink: /payments
+  description: Payment state, ledgers, settlement, refunds, reconciliation and fraud.
+
+transactions:
+  label: Transactions & consistency
+  permalink: /transactions
+  description: Atomicity, isolation, locking and consistency boundaries.
+
+data-modeling:
+  label: Data modeling
+  permalink: /data-modeling
+  description: Retention, history, temporal data, event sourcing and projections.
+
+storage:
+  label: Storage & databases
+  permalink: /storage
+  description: Storage engines, indexes, query plans, replication and sharding.
+
+runtime:
+  label: Backend runtime
+  permalink: /runtime
+  description: Concurrency models, memory, garbage collection, caching and pools.
+
+api-design:
+  label: API design
+  permalink: /api-design
+  description: Contracts, versioning, resource modeling, pagination and rate limits.
+
+distributed-systems:
+  label: Distributed systems
+  permalink: /distributed-systems
+  description: Partial failure, latency, retries, circuit breakers and designing for failure.
+
+messaging:
+  label: Messaging & delivery
+  permalink: /messaging
+  description: Queues, delivery guarantees, webhooks and event transport.
+
+consensus:
+  label: Consensus & replication
+  permalink: /consensus
+  description: Leader election, quorum and replicated state machines.
+
+cryptography:
+  label: Cryptography
+  permalink: /cryptography
+  description: Elliptic curves, signatures, AEAD and multi-party computation.
+
+security:
+  label: Security & access
+  permalink: /security
+  description: Authentication, SSO, credentials, secrets and key custody.
+
+networking:
+  label: Networking
+  permalink: /networking
+  description: Protocols, transports, NAT traversal and peer-to-peer networks.
+
+kubernetes:
+  label: Kubernetes
+  permalink: /kubernetes
+  description: Cluster build, GitOps, workloads and platform operations.
+
+observability:
+  label: Observability
+  permalink: /observability
+  description: Metrics, dashboards, alerting and health signals.
+
+realtime:
+  label: Realtime & streaming
+  permalink: /realtime
+  description: WebSocket gateways, subscriptions, fan-out and backpressure.
+
+trading:
+  label: Trading & markets
+  permalink: /trading
+  description: Market mechanics, price action and on-chain yield.
+
+# ---------------------------------------------------------------------------
+# TIER — the learning-sequence facet, from senior-architect/ROADMAP.md.
+#
+# Tag the EARLIEST tier at which a document is readable, not every tier it
+# touches. The roadmap's own thesis is that learning the right thing at the
+# wrong time is what stalls people, so this facet only means something if it
+# marks entry points. Applies only where the roadmap defines a series, so
+# cryptography, trading, MPC and all of operations/ carry no tier.
+# ---------------------------------------------------------------------------
+
+tier-1-foundations:
+  label: Tier 1 — Foundations
+  permalink: /tier-1-foundations
+  description: Runtime, storage and correctness inside one process and one database.
+
+tier-2-distributed:
+  label: Tier 2 — Distributed thinking
+  permalink: /tier-2-distributed
+  description: What changes once a call can cross a network and fail halfway.
+
+tier-3-production-data:
+  label: Tier 3 — Production data systems
+  permalink: /tier-3-production-data
+  description: Operating data systems under load, migration and growth.
+
+tier-4-system-design:
+  label: Tier 4 — Production system design
+  permalink: /tier-4-system-design
+  description: Whole-domain designs where the invariants are the hard part.
+
+tier-5-leadership:
+  label: Tier 5 — Technical leadership
+  permalink: /tier-5-leadership
+  description: Judgment, decision-making and scaling engineering rather than systems.

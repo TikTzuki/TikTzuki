@@ -1,8 +1,10 @@
-import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
+import {persona4PrismDark, persona4PrismLight,} from './src/themes/persona4/prism';
+import {sidebarItemsGenerator} from './sidebarItemsGenerator';
+import docsRedirects from './redirects.json';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -15,8 +17,24 @@ const config: Config = {
     // you also need to enable the Remark plugin with this option
     markdown: {
         mermaid: true,
+        hooks: {
+            // Default is 'warn'. A relative .md link to a moved file would only warn and
+            // then render a raw href, which is exactly the breakage a restructure causes.
+            onBrokenMarkdownLinks: 'throw',
+        },
     },
-    plugins: ['docusaurus-plugin-sass'],
+    plugins: [
+        'docusaurus-plugin-sass',
+        [
+            '@docusaurus/plugin-client-redirects',
+            {
+                // Generated from a build-to-build sitemap diff, not written by hand.
+                // See redirects.json; every URL the restructure removed is listed there.
+                // Paths are relative to baseUrl, so one entry covers en and vi.
+                redirects: docsRedirects,
+            },
+        ],
+    ],
     // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
     future: {
         v4: true, // Improve compatibility with the upcoming Docusaurus v4
@@ -30,10 +48,11 @@ const config: Config = {
 
     // GitHub pages deployment config.
     // If you aren't using GitHub pages, you don't need these.
-    organizationName: 'facebook', // Usually your GitHub org/user name.
-    projectName: 'docusaurus', // Usually your repo name.
+    organizationName: 'TikTzuki', // GitHub org/user name.
+    projectName: 'tiktzuki.github.io', // Repo the built site is pushed to.
     deploymentBranch: 'master',
     onBrokenLinks: 'throw',
+    onBrokenAnchors: 'throw', // default is 'warn'
 
     // Even if you don't use internationalization, you can use this field to set
     // useful metadata like html lang. For example, if your site is Chinese, you
@@ -53,6 +72,13 @@ const config: Config = {
             {
                 docs: {
                     sidebarPath: './sidebars.ts',
+                    // Regroups the flat 41-lesson category into its seven sets in memory.
+                    // See sidebars.ts for why the files themselves must not move.
+                    sidebarItemsGenerator,
+                    // Controlled vocabulary. 'throw' means an undefined tag fails the
+                    // build, which is what stops the taxonomy decaying into decoration.
+                    tags: 'tags.yml',
+                    onInlineTags: 'throw',
                     // Please change this to your repo.
                     // Remove this to remove the "edit this page" links.
                     editUrl:
@@ -81,7 +107,23 @@ const config: Config = {
             } satisfies Preset.Options,
         ],
     ],
+    headTags: [
+        {
+            tagName: 'link',
+            attributes: {rel: 'preconnect', href: 'https://fonts.googleapis.com'},
+        },
+        {
+            tagName: 'link',
+            attributes: {
+                rel: 'preconnect',
+                href: 'https://fonts.gstatic.com',
+                crossorigin: 'anonymous',
+            },
+        },
+    ],
     stylesheets: [
+        // Archivo Black for display type, Inter for body and UI.
+        'https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600;700;800&display=swap',
         {
             href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
             type: 'text/css',
@@ -92,7 +134,7 @@ const config: Config = {
     ],
     themeConfig: {
         // Replace with your project's social card
-        image: 'img/docusaurus-social-card.jpg',
+        image: 'img/social-card.png',
         navbar: {
             title: 'Tiktuzki\'s space',
             logo: {
@@ -122,49 +164,51 @@ const config: Config = {
             style: 'dark',
             links: [
                 {
-                    title: 'Docs',
+                    title: 'Learn',
                     items: [
-                        {
-                            label: 'Docs',
-                            to: '/docs/intro',
-                        },
+                        {label: 'How it works', to: '/docs/category/how-it-works'},
+                        {label: 'Production patterns', to: '/docs/category/production-patterns'},
+                        {label: 'Interview prep', to: '/docs/category/interview-prep'},
                     ],
                 },
                 {
-                    title: 'Community',
+                    title: 'Build & run',
                     items: [
-                        {
-                            label: 'Stack Overflow',
-                            href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-                        },
-                        {
-                            label: 'Discord',
-                            href: 'https://discordapp.com/invite/docusaurus',
-                        },
+                        {label: 'System design', to: '/docs/category/system-design'},
+                        {label: 'Operations', to: '/docs/category/operations'},
+                        {label: 'Reference', to: '/docs/category/reference'},
                     ],
                 },
                 {
                     title: 'More',
                     items: [
-                        {
-                            label: 'Blog',
-                            to: '/blog',
-                        },
-                        {
-                            label: 'GitHub',
-                            href: 'https://github.com/TikTzuki',
-                        },
+                        {label: 'Browse by tag', to: '/docs/tags'},
+                        {label: 'Blog', to: '/blog'},
+                        {label: 'GitHub', href: 'https://github.com/TikTzuki'},
                     ],
                 },
             ],
-            copyright: `Copyright © ${new Date().getFullYear()} TikTuzki, Inc. Built with Docusaurus.`,
+            copyright: `Copyright © ${new Date().getFullYear()} TikTuzki. Built with Docusaurus.`,
         },
         prism: {
-            theme: prismThemes.github,
-            darkTheme: prismThemes.dracula,
+            theme: persona4PrismLight,
+            darkTheme: persona4PrismDark,
         },
         mermaid: {
-            theme: {light: 'neutral', dark: 'forest'},
+            // 'base' is the only Mermaid theme that honours themeVariables in
+            // full, which is what lets diagrams inherit the P4 palette.
+            theme: {light: 'base', dark: 'base'},
+            options: {
+                themeVariables: {
+                    fontFamily: "'Inter', system-ui, sans-serif",
+                    primaryColor: '#ffe100',
+                    primaryTextColor: '#0a0a0b',
+                    primaryBorderColor: '#0a0a0b',
+                    lineColor: '#8c6a00',
+                    secondaryColor: '#fff5c2',
+                    tertiaryColor: '#fffbe8',
+                },
+            },
         },
         colorMode: {
             defaultMode: 'dark'

@@ -1,0 +1,230 @@
+[
+  {
+    "from": "/docs/cryptography/elliptic-curve/ecc",
+    "to": "/docs/how-it-works/cryptography/elliptic-curve-cryptography"
+  },
+  {
+    "from": "/docs/cryptography/elliptic-curve/ecdsa",
+    "to": "/docs/how-it-works/cryptography/ecdsa"
+  },
+  {
+    "from": "/docs/cryptography/elliptic-curve/secp256k1",
+    "to": "/docs/how-it-works/cryptography/secp256k1"
+  },
+  {
+    "from": "/docs/cryptography/modular-inverse",
+    "to": "/docs/how-it-works/cryptography/modular-inverse"
+  },
+  {
+    "from": "/docs/microservices/consensus/raft",
+    "to": "/docs/how-it-works/consensus/raft"
+  },
+  {
+    "from": "/docs/microservices/consensus/viewstamped-replication-vsr/intro",
+    "to": "/docs/how-it-works/consensus/viewstamped-replication"
+  },
+  {
+    "from": "/docs/networking/rust-libp2p/network",
+    "to": "/docs/how-it-works/libp2p/network-protocols"
+  },
+  {
+    "from": "/docs/networking/rust-libp2p/protocols",
+    "to": "/docs/how-it-works/libp2p/protocol-negotiation"
+  },
+  {
+    "from": "/docs/networking/rust-libp2p/turning",
+    "to": "/docs/how-it-works/libp2p/stream-multiplexing"
+  },
+  {
+    "from": "/docs/networking/rust-libp2p/playing-with-decentralized-p2p",
+    "to": "/docs/how-it-works/libp2p/decentralized-p2p-playground"
+  },
+  {
+    "from": "/docs/trading-101/what-happening-on-the-f*cking-chart",
+    "to": "/docs/how-it-works/trading/candlestick-price-action"
+  },
+  {
+    "from": "/docs/system-design/sdd-template",
+    "to": "/docs/system-design/templates/sdd-template"
+  },
+  {
+    "from": "/docs/system-design/mpc/AEAD-for-MPC-over-NATS",
+    "to": "/docs/system-design/mpc/aead-over-nats"
+  },
+  {
+    "from": "/docs/system-design/mpc/MPC-Rust",
+    "to": "/docs/system-design/mpc/mpc-custody-design"
+  },
+  {
+    "from": "/docs/system-design/mpc/mpc-cluster-ssd",
+    "to": "/docs/system-design/mpc/mpc-custody-design"
+  },
+  {
+    "from": "/docs/system-design/websocket-gateway-cluster",
+    "to": "/docs/system-design/websocket-gateway/cluster-sdd"
+  },
+  {
+    "from": "/docs/system-design/websocket-gateway-api-design",
+    "to": "/docs/system-design/websocket-gateway/api-design"
+  },
+  {
+    "from": "/docs/system-design/high-performance-websocket-broker",
+    "to": "/docs/system-design/websocket-gateway/broker-requirements"
+  },
+  {
+    "from": "/docs/subscription-docs/Temporal",
+    "to": "/docs/reference/temporal-cli"
+  },
+  {
+    "from": "/docs/interview-question-bank/java-core",
+    "to": "/docs/interview-prep/java-core"
+  },
+  {
+    "from": "/docs/interview-question-bank/redis-caching-strategy",
+    "to": "/docs/interview-prep/redis-caching-strategy"
+  },
+  {
+    "from": "/docs/interview-question-bank/tech-lead",
+    "to": "/docs/interview-prep/tech-lead"
+  },
+  {
+    "from": "/docs/useful-references/fundamentals",
+    "to": "/docs/reference/backend-and-spring"
+  },
+  {
+    "from": "/docs/useful-references/system-design",
+    "to": "/docs/reference/system-design-links"
+  },
+  {
+    "from": "/docs/useful-references/networking-devops",
+    "to": "/docs/reference/networking-and-devops"
+  },
+  {
+    "from": "/docs/dev-cluster/how-to-build",
+    "to": "/docs/operations/cluster/publish-private-server"
+  },
+  {
+    "from": "/docs/dev-cluster/publish-private-server",
+    "to": "/docs/operations/cluster/publish-private-server"
+  },
+  {
+    "from": "/docs/dev-cluster/static-ip-netplan",
+    "to": "/docs/operations/cluster/static-ip-netplan"
+  },
+  {
+    "from": "/docs/dev-cluster/cluster-rebuild",
+    "to": "/docs/operations/cluster/cluster-rebuild"
+  },
+  {
+    "from": "/docs/dev-cluster/kubectl-credentials",
+    "to": "/docs/operations/access/kubectl-credentials"
+  },
+  {
+    "from": "/docs/dev-cluster/backup-flow",
+    "to": "/docs/operations/backup-restore/backup-flow"
+  },
+  {
+    "from": "/docs/dev-cluster/available-dev-service",
+    "to": "/docs/operations/services/available-dev-service"
+  },
+  {
+    "from": "/docs/category/k8s-cluster-for-development",
+    "to": "/docs/category/operations"
+  },
+  {
+    "from": "/docs/category/elliptic-curve",
+    "to": "/docs/category/cryptography"
+  },
+  {
+    "from": "/docs/category/microservices",
+    "to": "/docs/category/consensus"
+  },
+  {
+    "from": "/docs/category/networking",
+    "to": "/docs/category/libp2p"
+  },
+  {
+    "from": "/docs/category/trading-101",
+    "to": "/docs/category/trading"
+  },
+  {
+    "from": "/docs/category/interview-question-bank",
+    "to": "/docs/category/interview-prep"
+  },
+  {
+    "from": "/docs/category/useful-references",
+    "to": "/docs/category/reference"
+  },
+  {
+    "from": "/docs/category/subscription-service",
+    "to": "/docs/system-design/subscription-service"
+  },
+  {
+    "from": "/docs/greetings",
+    "to": "/docs/intro"
+  },
+  {
+    "from": "/docs/my-custom-url",
+    "to": "/docs/intro"
+  },
+  {
+    "from": "/docs/category/tutorial---basics",
+    "to": "/docs/intro"
+  },
+  {
+    "from": "/docs/category/tutorial---extras",
+    "to": "/docs/intro"
+  },
+  {
+    "from": "/docs/archive/tutorial-basics/intro",
+    "to": "/docs/intro"
+  },
+  {
+    "from": "/docs/archive/tutorial-basics/create-a-page",
+    "to": "/docs/intro"
+  },
+  {
+    "from": "/docs/archive/tutorial-basics/create-a-document",
+    "to": "/docs/intro"
+  },
+  {
+    "from": "/docs/archive/tutorial-basics/create-a-blog-post",
+    "to": "/docs/intro"
+  },
+  {
+    "from": "/docs/archive/tutorial-basics/markdown-features",
+    "to": "/docs/intro"
+  },
+  {
+    "from": "/docs/archive/tutorial-basics/deploy-your-site",
+    "to": "/docs/intro"
+  },
+  {
+    "from": "/docs/archive/tutorial-basics/congratulations",
+    "to": "/docs/intro"
+  },
+  {
+    "from": "/docs/archive/tutorial-extras/manage-docs-versions",
+    "to": "/docs/intro"
+  },
+  {
+    "from": "/docs/archive/tutorial-extras/translate-your-site",
+    "to": "/docs/intro"
+  },
+  {
+    "from": "/docs/trading-101/staking",
+    "to": "/docs/category/trading"
+  },
+  {
+    "from": "/docs/trading-101/yield-farming",
+    "to": "/docs/category/trading"
+  },
+  {
+    "from": "/docs/trading-101/liquidity-provider",
+    "to": "/docs/category/trading"
+  },
+  {
+    "from": "/docs/operations/cluster/how-to-build",
+    "to": "/docs/operations/cluster/publish-private-server"
+  }
+]

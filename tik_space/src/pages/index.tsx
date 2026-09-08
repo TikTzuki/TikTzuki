@@ -3,9 +3,9 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import PageTree from '@site/src/components/PageTree';
 import Heading from '@theme/Heading';
+import KnowledgeAreas from '@site/src/components/KnowledgeAreas';
+import RecentWork from '@site/src/components/RecentWork';
 
 import styles from './index.module.css';
 
@@ -19,9 +19,10 @@ function HomepageHeader() {
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
-            <Link
-                className="button button--secondary button--lg"
-                to="https://github.com/TikTzuki">
+            <Link className="button button--secondary button--lg" to="/docs/category/production-patterns">
+                Start reading
+            </Link>
+            <Link className="button button--outline button--lg" to="https://github.com/TikTzuki">
                 About me
             </Link>
         </div>
@@ -34,13 +35,12 @@ export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+        title={siteConfig.title}
+        description="Working notes on distributed backends: Kubernetes operations, WebSocket and MPC system design, elliptic-curve cryptography, libp2p networking and consensus protocols.">
       <HomepageHeader />
       <main>
-        <div className="container">
-          <HomepageFeatures />
-        </div>
+          <KnowledgeAreas/>
+          <RecentWork/>
       </main>
     </Layout>
   );

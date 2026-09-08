@@ -1,3 +1,8 @@
+---
+title: Spring Boot 2 PropertiesLauncher
+sidebar_position: 4
+---
+
 Spring Boot 2 and external libs with the PropertiesLauncher
 ===============================================================
 
