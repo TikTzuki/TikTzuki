@@ -57,12 +57,15 @@ const config: Config = {
     // Even if you don't use internationalization, you can use this field to set
     // useful metadata like html lang. For example, if your site is Chinese, you
     // may want to replace "en" with "zh-Hans".
+    // English only. A `vi` locale existed but reached 1 translated page out of ~90, so
+    // /vi/** was 89 English pages at Vietnamese URLs. It was never deployed (gh-pages had
+    // no vi/ paths), so nothing broke by removing it. The Vietnamese translation of the
+    // session-consistency lesson is recoverable from commit fe5b474 if it is ever wanted.
     i18n: {
         defaultLocale: 'en',
-        locales: ['en', 'vi'],
+        locales: ['en'],
         localeConfigs: {
             en: {label: 'English', htmlLang: 'en-GB'},
-            vi: {label: 'Tiếng Việt', direction: 'ltr'},
         },
     },
 

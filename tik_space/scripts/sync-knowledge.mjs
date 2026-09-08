@@ -23,15 +23,15 @@
  */
 import {execFileSync} from 'node:child_process';
 import {
-  cpSync,
-  existsSync,
-  mkdirSync,
-  mkdtempSync,
-  readdirSync,
-  readFileSync,
-  rmSync,
-  statSync,
-  writeFileSync
+    cpSync,
+    existsSync,
+    mkdirSync,
+    mkdtempSync,
+    readdirSync,
+    readFileSync,
+    rmSync,
+    statSync,
+    writeFileSync
 } from 'node:fs';
 import {dirname, join, relative, resolve} from 'node:path';
 import {tmpdir} from 'node:os';
@@ -42,6 +42,10 @@ const SITE = resolve(import.meta.dirname, '..');            // .../TikTzuki/tik_
 const REPO = resolve(SITE, '..');                            // .../TikTzuki
 const DOCS = join(SITE, 'docs');
 const WORKSPACE = resolve(REPO, '..');                       // .../knowledge
+// Dormant: the site is English-only since the `vi` locale was removed, so this path
+// does not exist and checkTranslationShadows() returns immediately. Kept because it
+// costs nothing and protects the moment any locale is re-added — a translation whose
+// English source gets renamed in a sibling repo would otherwise silently orphan.
 const I18N = join(SITE, 'i18n', 'vi', 'docusaurus-plugin-content-docs', 'current');
 const TMP = mkdtempSync(join(tmpdir(), 'sync-knowledge-'));
 process.on('exit', () => rmSync(TMP, {recursive: true, force: true}));

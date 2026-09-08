@@ -155,80 +155,50 @@ two other repositories. Worth being explicit about in the deploy runbook.
 
 ## 6. Content and i18n
 
-### 6.1 The `vi` locale has exactly one translated page — switcher removed
+### 6.1 The `vi` locale was removed — the site is English-only
 
-`production-patterns/session-consistency.md` is a full Vietnamese translation. The other ~89
-pages under `/vi/` fall back to English, so the locale is 1/90 translated.
+`locales: ['en']`. The `vi` locale reached **1 translated page out of ~90**, so `/vi/**` was
+89 English pages served at Vietnamese URLs, plus a language switcher offering a choice the
+content could not honour.
 
-Settled: **keep building `vi`, but do not advertise it.** The `localeDropdown` is removed from
-the navbar (see `docusaurus.config.ts`), because a switcher on 89 pages that are byte-identical
-English offers a choice the content cannot honour. Nothing is lost by this:
+Nothing broke by removing it: the deploy had **never published `/vi/`** (the gh-pages tree
+contained 328 paths, none under `vi/`), so no live URL was lost and no redirects were needed.
 
-- `/vi/**` is still built (209 pages) and every URL still resolves.
-- The translated lesson is still served at
-  `/vi/docs/production-patterns/session-consistency`.
-- `hreflang` alternates (`en-GB`, `vi`, `x-default`) come from the i18n config rather than the
-  navbar, so search engines still discover the translated page.
+Two facts worth keeping, because they are what made the locale unfixable at 1% coverage
+rather than merely incomplete:
 
-Restore the dropdown when coverage is real. Adding translations is cheap now that §6.2 is
-solved — one file each, no machinery.
+- **The homepage and its components cannot be translated as written.** `src/pages/index.tsx`,
+  `KnowledgeAreas/index.tsx` and `RecentWork/index.tsx` contain zero `<Translate>` calls, so
+  their strings never enter `code.json` and would render English in any locale. "What's in
+  here", "Start reading", "Backend runtime" — all absent from the translation catalogue.
+- **`siteConfig.tagline` is never localized by Docusaurus.** It is global config, so the hero
+  subtitle is English in every locale by design.
 
-- Verify: `find i18n/vi -name '*.md' -o -name '*.mdx' | wc -l`  (currently 1)
-- Verify no switcher: `grep -c dropdown__link build/docs/intro/index.html` → 0
+The Vietnamese translation of the `session-consistency` lesson (≈250 lines) is recoverable
+from commit `fe5b474` if it is ever wanted:
+`git show fe5b474:tik_space/i18n/vi/docusaurus-plugin-content-docs/current/production-patterns/session-consistency.md`
 
-### 6.2 Relative `.md` links break in a partially translated locale — solved for synced content
+To reintroduce a locale, budget for the two points above first, not just for translating
+markdown.
 
-The hazard this entry predicted materialised the moment the first translation landed: translating
-`production-patterns/session-consistency.md` broke the `vi` build, because the four untranslated
-storage-set siblings link to it by relative `.md` path and a translated file replaces its English
-original in the locale's resolvable file set.
+### 6.2 Synced `.md` links are rewritten to URLs — motivation now dormant, keep the behaviour
 
-It is **not** fixable by editing the lessons: they must keep relative `.md` links, since
-`production-review/SKILL.md` and the lessons themselves are followed on disk through
-`${CLAUDE_PLUGIN_ROOT}`, and 347 such links run between the 42 files.
+`scripts/sync-knowledge.mjs` rewrites `](name.md)` to `](/docs/<dest>/name)` in the copies it
+makes, skipping fenced code blocks. This was introduced because a partially translated locale
+breaks relative `.md` links: a translated file replaces its English original in that locale's
+resolvable set, so untranslated siblings linking to it fail to resolve and the build dies.
 
-`scripts/sync-knowledge.mjs` therefore rewrites `](name.md)` to `](/docs/<dest>/name)` **in the
-copies only**, skipping fenced code blocks. Sources stay file-relative for the plugin; published
-copies are URL-linked and so translation-state independent.
+With one locale that failure mode cannot occur, so the rewrite is no longer load-bearing.
+**Keep it anyway** — URL links are the more robust form, and it is the thing that makes adding
+a locale cheap later. The sources stay file-relative, which is required: `production-review/
+SKILL.md` and the 42 lessons are followed on disk through `${CLAUDE_PLUGIN_ROOT}`, with 347
+relative links between them.
 
-Two things this does not cover, and both bite silently:
+`checkTranslationShadows()` in the same script is likewise dormant and annotated as such.
 
-- **Site-native files are not rewritten.** Anything authored directly under `i18n/vi/` or `docs/`
-  (as opposed to synced in) must use URL-style links by hand. The `vi` translation does.
-- The rewrite only matches links whose target is a **sibling in the same synced directory**.
-  A cross-directory `.md` link would be left alone and would fail the same way.
+- Verify: `grep -rho '](\([a-z0-9-]*\)\.md)' docs/production-patterns/ | sort -u` → empty
 
-- Verify: `grep -rho '](\([a-z0-9-]*\)\.md)' docs/production-patterns/ | sort -u` → must be empty
-
-### 6.3 The dev server serves a non-default locale at `/vi/` but answers at `/` too
-
-Running `pnpm start:vi` (`docusaurus start --locale vi`) sets `siteConfig.baseUrl` to `/vi/`,
-and that is where the CLI says the site is served. But webpack-dev-server's history fallback
-also returns **200 for the un-prefixed path**, so `http://localhost:3000/docs/...` loads and
-looks fine.
-
-It is not fine. `useAlternatePageUtils.createUrl` computes every locale-switch URL as
-`localeConfigs[target].baseUrl + pathname.replace(siteConfig.baseUrl, '')`. On the
-un-prefixed path the strip finds no `/vi/` to remove, so the suffix keeps its leading slash
-and the English link comes out as `//docs/category/pp-storage` — a protocol-relative URL,
-which Docusaurus's `Link` then treats as **external** and renders with
-`target="_self" rel="noopener noreferrer"`.
-
-| Dev running | You visit | English link |
-|---|---|---|
-| `pnpm start` (en) | `/docs/…` | `/docs/…` ✅ |
-| `pnpm start:vi` | `/vi/docs/…` | `/docs/…` ✅ |
-| `pnpm start:vi` | `/docs/…` | `//docs/…` ❌ |
-
-There is no config fix: the locale-segment behaviour is gated by
-`automaticBaseUrlLocalizationDisabled`, an internal `loadSite` parameter that is not exposed
-in user config. **Production builds are unaffected** — both `build/` and `build/vi/` were
-checked and emit correct hrefs, because there the served path and `baseUrl` always agree.
-
-So this is a dev-only trap. Mitigation is the explicit `start:vi` / `serve:vi` scripts plus
-the rule: **when running the vi locale, browse `/vi/…`**.
-
-### 6.4 A blog post has no front matter
+### 6.3 A blog post has no front matter
 
 `blog/2025-10-26-mcp-atlassian-integration.md` has no front matter at all — no `title`, `authors`,
 `slug` or `tags` — and no `<!-- truncate -->` marker, which the build warns about on every run. Its
