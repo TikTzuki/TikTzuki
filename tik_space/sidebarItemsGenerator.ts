@@ -56,6 +56,14 @@ function regroupLessons(items: any[], lg: LessonGroups): any[] {
                     label: lg.groups[g],
                     key: `production-patterns-${g}`, // stable key for i18n across relabels
                     collapsed: true,
+                    // Without a link the group has no page of its own, so the card on
+                    // /docs/category/production-patterns jumps straight into the group's
+                    // first lesson and the rest are reachable only from the sidebar.
+                    // An explicit slug keeps the URL stable if the label is ever reworded.
+                    link: {
+                        type: 'generated-index' as const,
+                        slug: `/category/pp-${g}`,
+                    },
                     items: buckets.get(g)!,
                 })),
                 ...loose, // anything the manifest does not name stays visible, not dropped
