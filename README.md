@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;Winners don&#039;t Quit. That&#039;s why they Win.&rdquo; &mdash; <footer>Unknown</footer></blockquote>**
+**<blockquote>&ldquo;Open your mind before your mouth.&rdquo; &mdash; <footer>Aristophanes</footer></blockquote>**
