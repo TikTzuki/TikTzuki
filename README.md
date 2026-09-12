@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;The prettiest eyes have cried the most.&rdquo; &mdash; <footer>Unknown</footer></blockquote>**
+**<blockquote>&ldquo;Nothing you do is going to matter that much in the long run. Don&#039;t take yourself so seriously.&rdquo; &mdash; <footer>Naval Ravikant</footer></blockquote>**
