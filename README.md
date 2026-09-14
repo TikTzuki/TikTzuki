@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;Always do your best. What you plant now, you will harvest later.&rdquo; &mdash; <footer>Og Mandino</footer></blockquote>**
+**<blockquote>&ldquo;To think is easy. To act is hard. But the hardest thing in the world is to act in accordance with your thinking.&rdquo; &mdash; <footer>Johann Wolfgang von Goethe</footer></blockquote>**
