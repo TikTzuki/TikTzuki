@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;Be royal in your own fashion: act like a king to be treated like one.&rdquo; &mdash; <footer>Robert Greene</footer></blockquote>**
+**<blockquote>&ldquo;When everything seems to be going against you, remember that the airplane takes off against the wind, not with it.&rdquo; &mdash; <footer>Henry Ford</footer></blockquote>**
