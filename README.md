@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;When everything seems to be going against you, remember that the airplane takes off against the wind, not with it.&rdquo; &mdash; <footer>Henry Ford</footer></blockquote>**
+**<blockquote>&ldquo;Life is filled with secrets. You can&#039;t learn them all at once.&rdquo; &mdash; <footer>Dan Brown</footer></blockquote>**
