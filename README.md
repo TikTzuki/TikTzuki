@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;Don&#039;t try to be young. Just open your mind. Stay interested in stuff.&rdquo; &mdash; <footer>Betty White</footer></blockquote>**
+**<blockquote>&ldquo;Throw your heart over the fence and the rest will follow&rdquo; &mdash; <footer>Norman Vincent Peale</footer></blockquote>**
