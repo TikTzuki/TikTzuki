@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;Enjoy life. There&#039;s plenty of time to be dead.&rdquo; &mdash; <footer>Hans Christian Andersen</footer></blockquote>**
+**<blockquote>&ldquo;To injure an opponent is to injure yourself. To control aggression without inflicting injury is the Art of Peace.&rdquo; &mdash; <footer>Morihei Ueshiba</footer></blockquote>**
