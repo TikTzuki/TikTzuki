@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;To injure an opponent is to injure yourself. To control aggression without inflicting injury is the Art of Peace.&rdquo; &mdash; <footer>Morihei Ueshiba</footer></blockquote>**
+**<blockquote>&ldquo;Don&#039;t hate the player. Change the game.&rdquo; &mdash; <footer>Steve Harvey</footer></blockquote>**
