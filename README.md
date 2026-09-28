@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;We tend to live up to our expectations.&rdquo; &mdash; <footer>Earl Nightingale</footer></blockquote>**
+**<blockquote>&ldquo;All happiness depends on courage and work.&rdquo; &mdash; <footer>Honore de Balzac</footer></blockquote>**
