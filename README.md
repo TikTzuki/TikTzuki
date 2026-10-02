@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;If you do not change direction, you may end up where you are heading.&rdquo; &mdash; <footer>Lao Tzu</footer></blockquote>**
+**<blockquote>&ldquo;What we learn from history is that people don&#039;t learn from history.&rdquo; &mdash; <footer>Warren Buffett</footer></blockquote>**
