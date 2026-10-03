@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;What we learn from history is that people don&#039;t learn from history.&rdquo; &mdash; <footer>Warren Buffett</footer></blockquote>**
+**<blockquote>&ldquo;The glow of one warm thought is to me worth more than money.&rdquo; &mdash; <footer>Thomas Jefferson</footer></blockquote>**
