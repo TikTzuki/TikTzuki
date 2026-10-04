@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;The glow of one warm thought is to me worth more than money.&rdquo; &mdash; <footer>Thomas Jefferson</footer></blockquote>**
+**<blockquote>&ldquo;Help others and give something back.&rdquo; &mdash; <footer>Arnold Schwarzenegger</footer></blockquote>**
