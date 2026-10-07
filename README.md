@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;Great deeds are usually wrought at great risks.&rdquo; &mdash; <footer>Herodotus</footer></blockquote>**
+**<blockquote>&ldquo;You can&#039;t get to a place that you don&#039;t believe exists.&rdquo; &mdash; <footer>Unknown</footer></blockquote>**
