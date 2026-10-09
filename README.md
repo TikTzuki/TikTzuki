@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;Never be afraid to raise your voice for honesty and truth and compassion against injustice and lying and greed.&rdquo; &mdash; <footer>William Faulkner</footer></blockquote>**
+**<blockquote>&ldquo;Try all things, hold fast that which is good.&rdquo; &mdash; <footer>John Locke</footer></blockquote>**
