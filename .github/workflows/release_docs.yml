@@ -43,9 +43,18 @@ jobs:
       - name: Sync knowledge from source repos
         run: pnpm sync
         working-directory: ${{ github.workspace }}/tik_space
+        env:
+          # tiktuzki-gitops is private. The script clones https://github.com/TikTzuki/<repo>
+          # anonymously; this rewrite (scoped to this step via GIT_CONFIG_*, nothing written
+          # to disk) makes those clones authenticate with PERSONAL_TOKEN.
+          GIT_CONFIG_COUNT: "1"
+          GIT_CONFIG_KEY_0: url.https://x-access-token:${{ secrets.PERSONAL_TOKEN }}@github.com/TikTzuki/.insteadOf
+          GIT_CONFIG_VALUE_0: https://github.com/TikTzuki/
 
+      # `docusaurus build`, not `pnpm build`: the latter re-runs the sync, which would need
+      # the token too — this keeps it out of the build step and its dependencies.
       - name: Build site
-        run: pnpm build
+        run: pnpm exec docusaurus build
         working-directory: ${{ github.workspace }}/tik_space
 
       - name: Deploy to tiktuzki.com
