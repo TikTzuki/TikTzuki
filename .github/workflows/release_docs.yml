@@ -34,7 +34,9 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v4
         with:
-          version: latest
+          # Version comes from tik_space/package.json "packageManager". `latest` pulled
+          # pnpm 12, which fails the install on unapproved build scripts.
+          package_json_file: tik_space/package.json
 
       - name: Install dependencies
         run: pnpm install
@@ -47,10 +49,16 @@ jobs:
       - name: Sync knowledge from source repos
         run: pnpm sync
         working-directory: ${{ github.workspace }}/tik_space
+        env:
+          # tiktuzki-gitops is private. Fine-grained PAT: only that repo, Contents: read-only.
+          KNOWLEDGE_TOKEN: ${{ secrets.KNOWLEDGE_TOKEN }}
 
       - name: Build site
         run: pnpm build
         working-directory: ${{ github.workspace }}/tik_space
+        env:
+          # `pnpm build` runs `pnpm sync` again, so it needs the same token.
+          KNOWLEDGE_TOKEN: ${{ secrets.KNOWLEDGE_TOKEN }}
 
       - name: Deploy to tiktuzki.com
         uses: peaceiris/actions-gh-pages@v4
@@ -59,5 +67,8 @@ jobs:
           publish_dir: ${{ github.workspace }}/tik_space/build
           personal_token: ${{ secrets.PERSONAL_TOKEN }}
           publish_branch: gh-pages
+          # Without this the deploy replaces gh-pages with a tree that has no CNAME, and GitHub
+          # Pages drops the custom domain. The hand-made CNAME commit on gh-pages does not survive.
+          cname: www.tiktuzki.com
           user_name: github-actions[bot]
           user_email: github-actions[bot]@users.noreply.github.com

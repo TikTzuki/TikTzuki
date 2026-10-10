@@ -61,13 +61,34 @@ const warn = (msg) => {
     else console.log(`  warning: ${msg}`);
 };
 
-/** Resolve a repo to a local path, cloning only if no sibling checkout exists. */
+/**
+ * Resolve a repo to a local path, cloning only if no sibling checkout exists.
+ *
+ * tiktuzki-gitops is private, so an anonymous clone fails ("could not read Username"). CI passes
+ * a read-only token in KNOWLEDGE_TOKEN. It travels as an HTTP header rather than in the URL, so
+ * it never lands in .git/config or in git's error output. The clone runs with cwd=TMP so git
+ * cannot pick up the Authorization header actions/checkout persisted in this repo's config.
+ */
 function resolveRepo(repo) {
     const local = join(WORKSPACE, repo);
     if (existsSync(join(local, '.git'))) return local;
     const dest = join(TMP, repo);
-    execFileSync('git', ['clone', '--depth', '1', '--quiet',
-        `https://github.com/TikTzuki/${repo}.git`, dest], {stdio: ['ignore', 'ignore', 'inherit']});
+    const token = process.env.KNOWLEDGE_TOKEN;
+    const auth = token
+        ? ['-c', `http.https://github.com/.extraheader=AUTHORIZATION: basic ${
+            Buffer.from(`x-access-token:${token}`).toString('base64')}`]
+        : [];
+    try {
+        execFileSync('git', [...auth, 'clone', '--depth', '1', '--quiet',
+            `https://github.com/TikTzuki/${repo}.git`, dest], {
+            cwd: TMP,
+            env: {...process.env, GIT_TERMINAL_PROMPT: '0'},
+            stdio: ['ignore', 'ignore', 'inherit'],
+        });
+    } catch {
+        die(`could not clone TikTzuki/${repo}` + (token ? ''
+            : ' — it is private; set KNOWLEDGE_TOKEN to a token with read access to it'));
+    }
     return dest;
 }
 

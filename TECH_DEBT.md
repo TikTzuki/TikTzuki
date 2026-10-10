@@ -89,6 +89,16 @@ native compiler port and Docusaurus has not validated `@docusaurus/tsconfig` aga
 Docusaurus states support.
 ===>  Use TypeScript 6.0 for newly initialized sites. However, it requires "ignoreDeprecations": "6.0" for now.
 
+### 2.6 pnpm is pinned to 10.x on purpose
+
+`package.json` pins `"packageManager": "pnpm@10.29.3"`, and `release_docs.yml` reads it through
+`package_json_file`. pnpm 12 turns *"Ignored build scripts: @parcel/watcher, @swc/core, core-js"*
+from a warning into a failed install. That is what broke every deploy from 2025-11-05 to
+2026-10-10, while the committed workflow still said `version: latest`.
+
+- Before raising the pin: decide which build scripts may run (`pnpm approve-builds`), commit that
+  config, then bump.
+
 ---
 
 ## 3. Docusaurus 3.10 migration hazards
@@ -150,6 +160,12 @@ produces nothing will fail** rather than degrade — for example if a sibling re
 
 That is arguably the right failure mode, but it means the homepage cannot be built independently of
 two other repositories. Worth being explicit about in the deploy runbook.
+
+**`tiktuzki-gitops` is private (since 2026-10).** CI's clone authenticates with the repo secret
+`KNOWLEDGE_TOKEN` — a fine-grained PAT scoped to `tiktuzki-gitops` only, Contents read-only — passed
+to both the sync and build steps (`pnpm build` re-runs the sync). **When that token expires, the
+nightly build fails** with `could not clone TikTzuki/tiktuzki-gitops`. Rotate it before its expiry
+date.
 
 ---
 
@@ -217,6 +233,10 @@ four-line change whenever it is wanted.
 
 ## Resolved (kept so they are not re-raised)
 
+- **Site frozen 2025-11-05 → 2026-10-10** — every deploy failed at `pnpm install` (§2.6). Fixed
+  together with two problems hiding behind it: `pnpm sync` could not clone the now-private
+  `tiktuzki-gitops` (§5), and a successful deploy would have deleted the hand-made `CNAME` on
+  `gh-pages`, dropping www.tiktuzki.com. `CNAME` now comes from `cname:` on the deploy step.
 - **Titled admonitions across the tree** — 42 occurrences converted to `:::tip[Title]` during the
   3.10 upgrade. The hazard for *incoming synced* content remains; see §3.1.
 - **`pnpm typecheck` failing on `.module.scss` imports** — fixed by `src/scss.d.ts`.
