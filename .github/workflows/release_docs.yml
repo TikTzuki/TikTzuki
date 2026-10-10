@@ -18,7 +18,11 @@ permissions:
   id-token: write
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    # node1's ARC runner when the repo variable CI_RUNNER is set to `node1`, GitHub-hosted
+    # otherwise. Clearing the variable (`gh variable delete CI_RUNNER`) is the escape hatch
+    # when node1 is down — which matters here, because this job also runs on a nightly
+    # schedule with nobody watching. See tiktuzki-gitops/infra/arc-runners/README.md.
+    runs-on: ${{ vars.CI_RUNNER || 'ubuntu-latest' }}
     steps:
       - uses: actions/checkout@v5
         

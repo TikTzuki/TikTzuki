@@ -13,7 +13,9 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     name: Update README.md with daily quote
-    runs-on: ubuntu-latest
+    # See the note in release_docs.yml. Clear the CI_RUNNER repo variable to fall back
+    # to GitHub-hosted runners.
+    runs-on: ${{ vars.CI_RUNNER || 'ubuntu-latest' }}
 
     steps:
       - uses: actions/checkout@v5
