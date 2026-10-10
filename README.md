@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;Try all things, hold fast that which is good.&rdquo; &mdash; <footer>John Locke</footer></blockquote>**
+**<blockquote>&ldquo;Everything is in your own heart.&rdquo; &mdash; <footer>Thich Nhat Hanh</footer></blockquote>**
