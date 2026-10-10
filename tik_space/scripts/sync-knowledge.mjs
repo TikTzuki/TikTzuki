@@ -61,33 +61,45 @@ const warn = (msg) => {
     else console.log(`  warning: ${msg}`);
 };
 
+// Private source repos are cloned over SSH with a read-only deploy key; public ones anonymously.
+// Deploy keys instead of a token because tokens expire, and an expired PERSONAL_TOKEN is what
+// kept the deploy dead from 2025-11. Maps repo -> env var holding that repo's private key.
+const DEPLOY_KEYS = {'tiktuzki-gitops': 'GITOPS_READ_KEY'};
+// GitHub's ed25519 host key, pinned. Taken from `gh api meta` and matched against ssh-keyscan
+// on 2026-10-10. Accepting whatever answers first would let a man-in-the-middle serve the docs.
+const GITHUB_HOST_KEY =
+    'github.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOMqqnkVzrm0SdG6UOoqKLsabgH5C9okWi0dh2l9GKJl';
+
 /**
  * Resolve a repo to a local path, cloning only if no sibling checkout exists.
  *
- * tiktuzki-gitops is private, so an anonymous clone fails ("could not read Username"). CI passes
- * a read-only token in KNOWLEDGE_TOKEN. It travels as an HTTP header rather than in the URL, so
- * it never lands in .git/config or in git's error output. The clone runs with cwd=TMP so git
- * cannot pick up the Authorization header actions/checkout persisted in this repo's config.
+ * The key is written to TMP (0600, removed on exit) because ssh only reads keys from files.
+ * IdentitiesOnly keeps ssh-agent keys out of it, and cwd=TMP keeps git away from the
+ * credentials actions/checkout persisted in this repo's own config.
  */
 function resolveRepo(repo) {
     const local = join(WORKSPACE, repo);
     if (existsSync(join(local, '.git'))) return local;
     const dest = join(TMP, repo);
-    const token = process.env.KNOWLEDGE_TOKEN;
-    const auth = token
-        ? ['-c', `http.https://github.com/.extraheader=AUTHORIZATION: basic ${
-            Buffer.from(`x-access-token:${token}`).toString('base64')}`]
-        : [];
+    const keyVar = DEPLOY_KEYS[repo];
+    const key = keyVar && process.env[keyVar];
+    const env = {...process.env, GIT_TERMINAL_PROMPT: '0'};
+    let url = `https://github.com/TikTzuki/${repo}.git`;
+    if (key) {
+        const keyFile = join(TMP, `${repo}.key`);
+        const hostsFile = join(TMP, 'known_hosts');
+        writeFileSync(keyFile, key.trimEnd() + '\n', {mode: 0o600});   // ssh needs the newline
+        writeFileSync(hostsFile, GITHUB_HOST_KEY + '\n');
+        env.GIT_SSH_COMMAND = `ssh -i '${keyFile}' -o IdentitiesOnly=yes -o BatchMode=yes`
+            + ` -o UserKnownHostsFile='${hostsFile}' -o StrictHostKeyChecking=yes`;
+        url = `git@github.com:TikTzuki/${repo}.git`;
+    }
     try {
-        execFileSync('git', [...auth, 'clone', '--depth', '1', '--quiet',
-            `https://github.com/TikTzuki/${repo}.git`, dest], {
-            cwd: TMP,
-            env: {...process.env, GIT_TERMINAL_PROMPT: '0'},
-            stdio: ['ignore', 'ignore', 'inherit'],
-        });
+        execFileSync('git', ['clone', '--depth', '1', '--quiet', url, dest],
+            {cwd: TMP, env, stdio: ['ignore', 'ignore', 'inherit']});
     } catch {
-        die(`could not clone TikTzuki/${repo}` + (token ? ''
-            : ' — it is private; set KNOWLEDGE_TOKEN to a token with read access to it'));
+        die(`could not clone TikTzuki/${repo}` + (keyVar && !key
+            ? ` — it is private; set ${keyVar} to its read-only deploy key` : ''));
     }
     return dest;
 }

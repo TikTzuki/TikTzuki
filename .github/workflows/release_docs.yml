@@ -50,15 +50,16 @@ jobs:
         run: pnpm sync
         working-directory: ${{ github.workspace }}/tik_space
         env:
-          # tiktuzki-gitops is private. Fine-grained PAT: only that repo, Contents: read-only.
-          KNOWLEDGE_TOKEN: ${{ secrets.KNOWLEDGE_TOKEN }}
+          # tiktuzki-gitops is private: cloned over SSH with a read-only deploy key on that
+          # repo. A key, not a token, so it cannot silently expire the nightly build.
+          GITOPS_READ_KEY: ${{ secrets.GITOPS_READ_KEY }}
 
       - name: Build site
         run: pnpm build
         working-directory: ${{ github.workspace }}/tik_space
         env:
-          # `pnpm build` runs `pnpm sync` again, so it needs the same token.
-          KNOWLEDGE_TOKEN: ${{ secrets.KNOWLEDGE_TOKEN }}
+          # `pnpm build` runs `pnpm sync` again, so it needs the same key.
+          GITOPS_READ_KEY: ${{ secrets.GITOPS_READ_KEY }}
 
       - name: Deploy to tiktuzki.com
         uses: peaceiris/actions-gh-pages@v4

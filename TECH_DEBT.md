@@ -161,11 +161,12 @@ produces nothing will fail** rather than degrade — for example if a sibling re
 That is arguably the right failure mode, but it means the homepage cannot be built independently of
 two other repositories. Worth being explicit about in the deploy runbook.
 
-**`tiktuzki-gitops` is private (since 2026-10).** CI's clone authenticates with the repo secret
-`KNOWLEDGE_TOKEN` — a fine-grained PAT scoped to `tiktuzki-gitops` only, Contents read-only — passed
-to both the sync and build steps (`pnpm build` re-runs the sync). **When that token expires, the
-nightly build fails** with `could not clone TikTzuki/tiktuzki-gitops`. Rotate it before its expiry
-date.
+**`tiktuzki-gitops` is private (since 2026-10).** CI clones it over SSH with a read-only deploy key
+on that repo, stored here as `GITOPS_READ_KEY` and passed to both the sync and build steps
+(`pnpm build` re-runs the sync). Keys do not expire, so this cannot quietly break the nightly
+build the way an expiring token would. If the key is ever removed from `tiktuzki-gitops`, the build
+fails at `pnpm sync` with `could not clone TikTzuki/tiktuzki-gitops`. To rotate it, replace the
+deploy key and this secret together.
 
 ---
 
@@ -238,7 +239,9 @@ four-line change whenever it is wanted.
   `tiktuzki-gitops` (§5), and a successful deploy would have deleted the hand-made `CNAME` on
   `gh-pages`, dropping www.tiktuzki.com. `CNAME` now comes from `cname:` on the deploy step.
   Behind all three, the push to `gh-pages` itself failed: `PERSONAL_TOKEN` had expired. Replaced
-  by a non-expiring SSH deploy key (`ACTIONS_DEPLOY_KEY`, write access to `tiktzuki.github.io` only).
+  by a non-expiring SSH deploy key (`ACTIONS_DEPLOY_KEY`, write access to `tiktzuki.github.io` only). The
+  interim `KNOWLEDGE_TOKEN` PAT for the gitops clone was likewise replaced by a read-only deploy key
+  (`GITOPS_READ_KEY`), so no step of the deploy depends on an expiring token.
 - **Titled admonitions across the tree** — 42 occurrences converted to `:::tip[Title]` during the
   3.10 upgrade. The hazard for *incoming synced* content remains; see §3.1.
 - **`pnpm typecheck` failing on `.module.scss` imports** — fixed by `src/scss.d.ts`.
