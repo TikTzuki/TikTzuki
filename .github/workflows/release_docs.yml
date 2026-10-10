@@ -65,7 +65,11 @@ jobs:
         with:
           external_repository: TikTzuki/tiktzuki.github.io
           publish_dir: ${{ github.workspace }}/tik_space/build
-          personal_token: ${{ secrets.PERSONAL_TOKEN }}
+          # SSH deploy key with write access to tiktzuki.github.io only. A key, not a PAT,
+          # because PATs expire: PERSONAL_TOKEN expiring is what kept this deploy failing from
+          # 2025-11 even after every other step was fixed. Rotate by replacing the deploy key
+          # on that repo and this secret together.
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           publish_branch: gh-pages
           # Without this the deploy replaces gh-pages with a tree that has no CNAME, and GitHub
           # Pages drops the custom domain. The hand-made CNAME commit on gh-pages does not survive.

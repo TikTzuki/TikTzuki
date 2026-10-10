@@ -237,6 +237,8 @@ four-line change whenever it is wanted.
   together with two problems hiding behind it: `pnpm sync` could not clone the now-private
   `tiktuzki-gitops` (§5), and a successful deploy would have deleted the hand-made `CNAME` on
   `gh-pages`, dropping www.tiktuzki.com. `CNAME` now comes from `cname:` on the deploy step.
+  Behind all three, the push to `gh-pages` itself failed: `PERSONAL_TOKEN` had expired. Replaced
+  by a non-expiring SSH deploy key (`ACTIONS_DEPLOY_KEY`, write access to `tiktzuki.github.io` only).
 - **Titled admonitions across the tree** — 42 occurrences converted to `:::tip[Title]` during the
   3.10 upgrade. The hazard for *incoming synced* content remains; see §3.1.
 - **`pnpm typecheck` failing on `.module.scss` imports** — fixed by `src/scss.d.ts`.
