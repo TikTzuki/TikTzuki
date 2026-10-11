@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;True love stories never have endings.&rdquo; &mdash; <footer>Richard Bach</footer></blockquote>**
+**<blockquote>&ldquo;Distant water does not put out a nearby fire.&rdquo; &mdash; <footer>Chinese Proverb</footer></blockquote>**
