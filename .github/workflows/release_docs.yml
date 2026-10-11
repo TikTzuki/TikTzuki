@@ -12,6 +12,12 @@ on:
         default: false
   push:
     branches: [ master ]
+    # Only what the site is built from. TECH_DEBT.md, CLAUDE.md and the profile README's
+    # assets (archive/, img/, update_profile/) are not site inputs — nothing outside
+    # tik_space/ is read by the build except the sibling repos sync-knowledge clones.
+    paths:
+      - 'tik_space/**'
+      - '.github/workflows/release_docs.yml'
   # Docs synced from tiktuzki-gitops / senior-architect change without a push
   # here. The nightly run picks those up; the dispatch lets a source repo
   # trigger a rebuild immediately via:
@@ -20,6 +26,14 @@ on:
     - cron: '17 3 * * *'
   repository_dispatch:
     types: [ knowledge-updated ]
+# One deploy at a time. With merges arriving from three repos, a burst should collapse into one
+# deploy of the latest content: GitHub keeps at most one run going and one pending, and a newer
+# run replaces the pending one. cancel-in-progress stays false so an in-flight push to gh-pages
+# is never killed halfway.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
 permissions:
   contents: write
   pages: write
