@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;Everything is in your own heart.&rdquo; &mdash; <footer>Thich Nhat Hanh</footer></blockquote>**
+**<blockquote>&ldquo;True love stories never have endings.&rdquo; &mdash; <footer>Richard Bach</footer></blockquote>**
