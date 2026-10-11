@@ -102,6 +102,10 @@ Published markdown is processed as MDX, so void tags must be self-closed (`<br /
 Docs deploy to `tiktzuki.github.io` via `peaceiris/actions-gh-pages` on push to `master`. The build output from
 `tik_space/build` is pushed to the `gh-pages` branch of the external repo `TikTzuki/tiktzuki.github.io`.
 
+A failed deploy opens a `deploy-failure` issue assigned to the owner (the `report` job), and the
+next successful deploy closes it — an open one means the live site is stale. Test the alert without
+publishing anything: `gh workflow run release_docs.yml -f alert_drill=true`.
+
 ## Conventions
 
 - Documentation is written in Markdown/MDX with KaTeX for math notation and Mermaid for diagrams

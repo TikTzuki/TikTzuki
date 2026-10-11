@@ -2,6 +2,14 @@ name: Release Docs to www.tiktuzki.com
 
 on:
   workflow_dispatch:
+    inputs:
+      alert_drill:
+        # Fire drill for the failure alert: fails `deploy` before checkout, so nothing is built
+        # or published, and lets `report` open its issue. Run a normal dispatch afterwards to
+        # see it close.  gh workflow run release_docs.yml -f alert_drill=true
+        description: "Fail on purpose to test the failure alert (publishes nothing)"
+        type: boolean
+        default: false
   push:
     branches: [ master ]
   # Docs synced from tiktuzki-gitops / senior-architect change without a push
@@ -24,6 +32,12 @@ jobs:
     # schedule with nobody watching. See tiktuzki-gitops/infra/arc-runners/README.md.
     runs-on: ${{ vars.CI_RUNNER || 'ubuntu-latest' }}
     steps:
+      - name: Alert drill
+        if: inputs.alert_drill
+        run: |
+          echo "::error::alert_drill=true — failing on purpose, before anything is built or published."
+          exit 1
+
       - uses: actions/checkout@v5
         
       - name: Set up Node.js
@@ -77,3 +91,58 @@ jobs:
           cname: www.tiktuzki.com
           user_name: github-actions[bot]
           user_email: github-actions[bot]@users.noreply.github.com
+
+  # A failed deploy opens one issue (label `deploy-failure`, assigned to the owner); further
+  # failures comment on it; the next successful deploy closes it. So an open `deploy-failure`
+  # issue means "the site is broken right now". This exists because the nightly build failed
+  # ~40 times from 2025-11 to 2026-10 and nobody heard about it.
+  report:
+    needs: deploy
+    # always() so this runs after a failure too. Cancelled or skipped runs are not news.
+    if: always() && (needs.deploy.result == 'success' || needs.deploy.result == 'failure')
+    # GitHub-hosted on purpose: the alert must not depend on node1, which may be what broke.
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - uses: actions/github-script@v9
+        env:
+          RESULT: ${{ needs.deploy.result }}
+        with:
+          script: |
+            const label = 'deploy-failure';
+            const run = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            const what = `\`${context.eventName}\` at \`${context.sha.slice(0, 7)}\``;
+            const {data: open} = await github.rest.issues.listForRepo({
+              ...context.repo, state: 'open', labels: label, per_page: 10,
+            });
+
+            if (process.env.RESULT === 'success') {
+              for (const issue of open) {
+                await github.rest.issues.createComment({...context.repo, issue_number: issue.number,
+                  body: `Recovered: ${what} deployed successfully.\n\n${run}`});
+                await github.rest.issues.update({...context.repo, issue_number: issue.number,
+                  state: 'closed', state_reason: 'completed'});
+              }
+              return;
+            }
+
+            if (open.length) {
+              await github.rest.issues.createComment({...context.repo, issue_number: open[0].number,
+                body: `Still failing: ${what}.\n\n${run}`});
+              return;
+            }
+            await github.rest.issues.create({...context.repo,
+              title: 'www.tiktuzki.com is not deploying',
+              labels: [label],
+              assignees: [context.repo.owner],
+              body: [
+                `The deploy failed on ${what}. Until a run succeeds, www.tiktuzki.com keeps`,
+                'serving its last good build.',
+                '',
+                `Run: ${run}`,
+                '',
+                'Closed automatically by the next successful deploy. Further failures are added',
+                'below as comments.',
+              ].join('\n'),
+            });
