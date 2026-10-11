@@ -60,7 +60,7 @@ jobs:
           node-version: 22
 
       - name: Install pnpm
-        uses: pnpm/action-setup@v4
+        uses: pnpm/action-setup@v6
         with:
           # Version comes from tik_space/package.json "packageManager". `latest` pulled
           # pnpm 12, which fails the install on unapproved build scripts.
