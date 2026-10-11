@@ -111,6 +111,11 @@ jobs:
         with:
           script: |
             const label = 'deploy-failure';
+            // The @mention is what notifies, not the assignment: GitHub records the assignment as
+            // the owner's own action (actor = owner) and never notifies you of your own actions.
+            // The mention is authored by github-actions[bot], so it does. It still needs the repo
+            // not to be on Watch → Ignore, which suppresses mentions too.
+            const ping = `@${context.repo.owner}`;
             const run = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
             const what = `\`${context.eventName}\` at \`${context.sha.slice(0, 7)}\``;
             const {data: open} = await github.rest.issues.listForRepo({
@@ -129,7 +134,7 @@ jobs:
 
             if (open.length) {
               await github.rest.issues.createComment({...context.repo, issue_number: open[0].number,
-                body: `Still failing: ${what}.\n\n${run}`});
+                body: `${ping} still failing: ${what}.\n\n${run}`});
               return;
             }
             await github.rest.issues.create({...context.repo,
@@ -137,7 +142,7 @@ jobs:
               labels: [label],
               assignees: [context.repo.owner],
               body: [
-                `The deploy failed on ${what}. Until a run succeeds, www.tiktuzki.com keeps`,
+                `${ping} the deploy failed on ${what}. Until a run succeeds, www.tiktuzki.com keeps`,
                 'serving its last good build.',
                 '',
                 `Run: ${run}`,
