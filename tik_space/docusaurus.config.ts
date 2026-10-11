@@ -40,8 +40,10 @@ const config: Config = {
         v4: true, // Improve compatibility with the upcoming Docusaurus v4
     },
 
-    // Set the production url of your site here
-    url: 'https://tiktzuki.github.io',
+    // The canonical address. It feeds sitemap.xml, <link rel="canonical"> and og:url, so it must
+    // be the host visitors actually land on — not tiktzuki.github.io, which redirects twice
+    // (via http://www) and made search engines index the redirect rather than the page.
+    url: 'https://www.tiktuzki.com',
     // Set the /<baseUrl>/ pathname under which your site is served
     // For GitHub pages deployment, it is often '/<projectName>/'
     baseUrl: '/',
@@ -50,7 +52,7 @@ const config: Config = {
     // If you aren't using GitHub pages, you don't need these.
     organizationName: 'TikTzuki', // GitHub org/user name.
     projectName: 'tiktzuki.github.io', // Repo the built site is pushed to.
-    deploymentBranch: 'master',
+    deploymentBranch: 'gh-pages', // only read by `docusaurus deploy`; CI deploys with peaceiris
     onBrokenLinks: 'throw',
     onBrokenAnchors: 'throw', // default is 'warn'
 
