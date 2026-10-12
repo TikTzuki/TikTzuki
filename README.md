@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;Distant water does not put out a nearby fire.&rdquo; &mdash; <footer>Chinese Proverb</footer></blockquote>**
+**<blockquote>&ldquo;Life&#039;s too mysterious to take too serious.&rdquo; &mdash; <footer>Mary Engelbreit</footer></blockquote>**
