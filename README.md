@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;Life&#039;s too mysterious to take too serious.&rdquo; &mdash; <footer>Mary Engelbreit</footer></blockquote>**
+**<blockquote>&ldquo;Men trust their ears less than their eyes.&rdquo; &mdash; <footer>Herodotus</footer></blockquote>**
