@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;Men trust their ears less than their eyes.&rdquo; &mdash; <footer>Herodotus</footer></blockquote>**
+**<blockquote>&ldquo;The busy man is never wise and the wise man is never busy.&rdquo; &mdash; <footer>Lin Yutang</footer></blockquote>**
