@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;The busy man is never wise and the wise man is never busy.&rdquo; &mdash; <footer>Lin Yutang</footer></blockquote>**
+**<blockquote>&ldquo;Life is ours to be spent, not to be saved.&rdquo; &mdash; <footer>D. H. Lawrence</footer></blockquote>**
