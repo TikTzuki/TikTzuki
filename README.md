@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;Life is ours to be spent, not to be saved.&rdquo; &mdash; <footer>D. H. Lawrence</footer></blockquote>**
+**<blockquote>&ldquo;Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time.&rdquo; &mdash; <footer>Thomas Edison</footer></blockquote>**
