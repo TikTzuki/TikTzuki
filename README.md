@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;The way to get started is to quit talking and begin doing.&rdquo; &mdash; <footer>Walt Disney</footer></blockquote>**
+**<blockquote>&ldquo;Unexpressed emotions will never die. They are buried alive and will come forth later in uglier ways.&rdquo; &mdash; <footer>Sigmund Freud</footer></blockquote>**
