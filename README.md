@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;Unexpressed emotions will never die. They are buried alive and will come forth later in uglier ways.&rdquo; &mdash; <footer>Sigmund Freud</footer></blockquote>**
+**<blockquote>&ldquo;People tend to complicate their own lives, as if living weren&#039;t already complicated enough.&rdquo; &mdash; <footer>Carlos Ruiz Zafon</footer></blockquote>**
