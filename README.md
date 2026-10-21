@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;People tend to complicate their own lives, as if living weren&#039;t already complicated enough.&rdquo; &mdash; <footer>Carlos Ruiz Zafon</footer></blockquote>**
+**<blockquote>&ldquo;Being wrong brings the opportunity for growth.&rdquo; &mdash; <footer>Mark Manson</footer></blockquote>**
