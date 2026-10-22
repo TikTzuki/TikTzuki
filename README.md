@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;Being wrong brings the opportunity for growth.&rdquo; &mdash; <footer>Mark Manson</footer></blockquote>**
+**<blockquote>&ldquo;A different result requires doing something different.&rdquo; &mdash; <footer>Gary Keller</footer></blockquote>**
