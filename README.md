@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;A different result requires doing something different.&rdquo; &mdash; <footer>Gary Keller</footer></blockquote>**
+**<blockquote>&ldquo;Sometimes you will never know the value of something, until it becomes a memory.&rdquo; &mdash; <footer>Dr. Seuss</footer></blockquote>**
