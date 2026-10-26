@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;People tend to complicate their own lives, as if living weren&#039;t already complicated enough.&rdquo; &mdash; <footer>Carlos Ruiz Zafon</footer></blockquote>**
+**<blockquote>&ldquo;The time is now, the place is here. Stay in the present.&rdquo; &mdash; <footer>Dan Millman</footer></blockquote>**
