@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;The time is now, the place is here. Stay in the present.&rdquo; &mdash; <footer>Dan Millman</footer></blockquote>**
+**<blockquote>&ldquo;Meanings are not determined by situations, but we determine ourselves by the meanings we give to situations.&rdquo; &mdash; <footer>Alfred Adler</footer></blockquote>**
