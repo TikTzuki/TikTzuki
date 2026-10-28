@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;Meanings are not determined by situations, but we determine ourselves by the meanings we give to situations.&rdquo; &mdash; <footer>Alfred Adler</footer></blockquote>**
+**<blockquote>&ldquo;Unless you change how you are, you will always have what you got.&rdquo; &mdash; <footer>Jim Rohn</footer></blockquote>**
