@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;It is secondary whether we choose belief or defiance. What is precious is that we are always able to choose.&rdquo; &mdash; <footer>Ming-Dao Deng</footer></blockquote>**
+**<blockquote>&ldquo;The journey, not the destination matters.&rdquo; &mdash; <footer>T.S. Eliot</footer></blockquote>**
