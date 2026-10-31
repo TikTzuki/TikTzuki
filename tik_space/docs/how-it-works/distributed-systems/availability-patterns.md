@@ -42,7 +42,7 @@ Two 99.9% components in sequence give **99.8%**. Ten of them give **99.0%** — 
 downtime a year to three and a half days, without any single component getting worse.
 
 This is why a request path crossing many services is fragile in a way no individual service owner
-can see. [The network & latency](../../production-patterns/network-and-latency.md) works the same
+can see. [The network & latency](/docs/production-patterns/network-and-latency) works the same
 example from the latency side; it is the same arithmetic.
 
 ### In parallel, unavailability multiplies
@@ -90,7 +90,7 @@ carry the whole load alone, or the failover simply moves the outage from availab
   tested code in the system.
 - **Split brain.** Two nodes both believing they are active. This is the failure that corrupts data
   rather than merely stopping service, and avoiding it is precisely what quorum protocols are for —
-  see [consensus & leader election](../../production-patterns/consensus-and-leader-election.md) and
+  see [consensus & leader election](/docs/production-patterns/consensus-and-leader-election) and
   [Raft](../consensus/raft.md).
 
 ## Replication
@@ -111,10 +111,10 @@ should be a response to a demonstrated write-throughput or write-locality proble
 point — you are trading a solved problem for an unsolved one.
 
 Depth on the trade-offs, including sharding, is in
-[replication & sharding](../../production-patterns/replication-and-sharding.md).
+[replication & sharding](/docs/production-patterns/replication-and-sharding).
 
 ## Sources
 
-- [Designing for failure](../../production-patterns/designing-for-failure.md) — the prescriptive
+- [Designing for failure](/docs/production-patterns/designing-for-failure) — the prescriptive
   companion to this page.
 - [The System Design Primer — availability patterns](https://github.com/donnemartin/system-design-primer#availability-patterns).

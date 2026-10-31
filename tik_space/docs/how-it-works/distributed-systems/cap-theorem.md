@@ -26,7 +26,7 @@ The theorem: **when a partition occurs, you cannot have both consistency and ava
 
 Partition tolerance is not a property you choose. It is a property of the network, and the network
 is not reliable — see the first fallacy in
-[the network & latency](../../production-patterns/network-and-latency.md). If nodes talk over a
+[the network & latency](/docs/production-patterns/network-and-latency). If nodes talk over a
 network, partitions will happen. Choosing "CA" means choosing to be a single machine.
 
 So the real choice is narrower and far more useful:
@@ -77,7 +77,7 @@ Two further limits worth knowing:
 - **It is not per-system, it is per-operation.** A payments platform is CP on the ledger write and
   AP on the transaction-history read. Classifying the whole system is a category error — draw the
   boundary per invariant, which is the argument in
-  [consistency boundaries](../../production-patterns/consistency-boundaries.md).
+  [consistency boundaries](/docs/production-patterns/consistency-boundaries).
 - **Availability in CAP is not uptime.** CAP-availability means *every* node answers *every*
   request. A system with 99.99% uptime can be CP: see
   [availability patterns](availability-patterns.md) for the operational meaning.

@@ -5,6 +5,7 @@ node_modules
 # Regenerated on every build; edit them in tiktuzki-gitops / senior-architect.
 tik_space/docs/operations/
 tik_space/docs/production-patterns/
+tik_space/i18n/vi/docusaurus-plugin-content-docs/current/production-patterns/
 
 # Sync output: the lesson set -> sidebar group map read by sidebarItemsGenerator.ts
 tik_space/.lesson-groups.json

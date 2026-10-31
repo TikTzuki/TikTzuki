@@ -172,46 +172,53 @@ deploy key and this secret together.
 
 ## 6. Content and i18n
 
-### 6.1 The `vi` locale was removed — the site is English-only
+### 6.1 The `vi` locale — removed, then reintroduced for the lessons (2026-10-31)
 
-`locales: ['en']`. The `vi` locale reached **1 translated page out of ~90**, so `/vi/**` was
-89 English pages served at Vietnamese URLs, plus a language switcher offering a choice the
-content could not honour.
+**History.** The first `vi` locale reached **1 translated page out of ~90**, so `/vi/**` was 89
+English pages at Vietnamese URLs plus a language switcher offering a choice the content could not
+honour. It was removed, and nothing broke: the deploy had never published `/vi/`.
 
-Nothing broke by removing it: the deploy had **never published `/vi/`** (the gh-pages tree
-contained 328 paths, none under `vi/`), so no live URL was lost and no redirects were needed.
+**What it now is.** `locales: ['en', 'vi']`, scoped to what is actually translated: the
+production-patterns lessons and the homepage. The three problems that made the first attempt
+unfixable were addressed before any page was translated:
 
-Two facts worth keeping, because they are what made the locale unfixable at 1% coverage
-rather than merely incomplete:
+- **The homepage could not be translated.** `src/pages/index.tsx`, `KnowledgeAreas` and
+  `RecentWork` now use `translate()`/`<Translate>`; their data arrays are functions so the strings
+  resolve in the reader's locale. The tagline is rendered by the hero itself, because
+  `siteConfig.tagline` is never localized by Docusaurus.
+- **Untranslated pages pretended to be Vietnamese.** `src/theme/DocItem/Content` wraps every doc
+  under `/vi/` with a notice — "Chưa có bản tiếng Việt" for untranslated pages, "Bản dịch có thể chưa
+  cập nhật" for stale ones. The flags come from front matter set by `sync-knowledge.mjs`.
+- **Translations rotted silently.** Each translation records the hash of the English lesson it was
+  made from (`senior-architect/scripts/i18n-stamp.py`). A changed English lesson publishes the vi page
+  with the stale notice; a changed heading structure stops publishing it, because its anchors would
+  break the build. Both are build warnings, never failures.
 
-- **The homepage and its components cannot be translated as written.** `src/pages/index.tsx`,
-  `KnowledgeAreas/index.tsx` and `RecentWork/index.tsx` contain zero `<Translate>` calls, so
-  their strings never enter `code.json` and would render English in any locale. "What's in
-  here", "Start reading", "Backend runtime" — all absent from the translation catalogue.
-- **`siteConfig.tagline` is never localized by Docusaurus.** It is global config, so the hero
-  subtitle is English in every locale by design.
+Two couplings worth knowing, both enforced by `sync-knowledge.mjs`:
 
-The Vietnamese translation of the `session-consistency` lesson (≈250 lines) is recoverable
-from commit `fe5b474` if it is ever wanted:
-`git show fe5b474:tik_space/i18n/vi/docusaurus-plugin-content-docs/current/production-patterns/session-consistency.md`
+- **Heading ids are inherited by position.** Each translated heading gets the English heading's slug
+  as an MDX-comment id (`## Tiêu đề {/* #english-slug */}`). The `{#id}` form fails in this build as
+  a JSX expression. This is what keeps `lesson.md#section` links valid in the vi build.
+- **Site docs must link into lessons by URL.** A relative `../production-patterns/x.md` link breaks in
+  the vi build once `x` is translated; the sync script refuses to run with one.
 
-To reintroduce a locale, budget for the two points above first, not just for translating
-markdown.
+The original Vietnamese `session-consistency` translation (≈250 lines) is still recoverable from
+commit `fe5b474`, though it predates the current lesson.
 
-### 6.2 Synced `.md` links are rewritten to URLs — motivation now dormant, keep the behaviour
+### 6.2 Synced `.md` links are rewritten to URLs — load-bearing again with `vi`
 
 `scripts/sync-knowledge.mjs` rewrites `](name.md)` to `](/docs/<dest>/name)` in the copies it
-makes, skipping fenced code blocks. This was introduced because a partially translated locale
-breaks relative `.md` links: a translated file replaces its English original in that locale's
-resolvable set, so untranslated siblings linking to it fail to resolve and the build dies.
+makes, skipping fenced code blocks, for both the English lessons and their vi translations. It
+exists because a partially translated locale breaks relative `.md` links: a translated file
+replaces its English original in that locale's resolvable set, so untranslated siblings linking to
+it fail to resolve and the build dies. With `vi` back (6.1) this is load-bearing — **do not remove
+it**. The sources stay file-relative, which is required: `production-review/SKILL.md` and the
+lessons are followed on disk through `${CLAUDE_PLUGIN_ROOT}`.
 
-With one locale that failure mode cannot occur, so the rewrite is no longer load-bearing.
-**Keep it anyway** — URL links are the more robust form, and it is the thing that makes adding
-a locale cheap later. The sources stay file-relative, which is required: `production-review/
-SKILL.md` and the 42 lessons are followed on disk through `${CLAUDE_PLUGIN_ROOT}`, with 347
-relative links between them.
-
-`checkTranslationShadows()` in the same script is likewise dormant and annotated as such.
+The same failure applies to the site's *own* docs: a relative `../production-patterns/x.md` link
+breaks in the vi build once `x` is translated. Those 22 links were changed to URLs on 2026-10-31,
+and `checkLinksIntoLessons()` refuses to sync if one comes back. `checkTranslationShadows()` is
+active again too.
 
 - Verify: `grep -rho '](\([a-z0-9-]*\)\.md)' docs/production-patterns/ | sort -u` → empty
 

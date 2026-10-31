@@ -63,6 +63,9 @@ importers:
       '@docusaurus/types':
         specifier: 3.10.2
         version: 3.10.2(@swc/core@1.16.1)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+      github-slugger:
+        specifier: 1.5.0
+        version: 1.5.0
       js-yaml:
         specifier: ^4.1.1
         version: 4.1.1

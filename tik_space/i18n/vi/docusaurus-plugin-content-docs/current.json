@@ -1,0 +1,122 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.docSidebar.category.How it works": {
+    "message": "Cách hoạt động",
+    "description": "The label for category 'How it works' in sidebar 'docSidebar'"
+  },
+  "sidebar.docSidebar.category.Cryptography": {
+    "message": "Mật mã học",
+    "description": "The label for category 'Cryptography' in sidebar 'docSidebar'"
+  },
+  "sidebar.docSidebar.category.Consensus": {
+    "message": "Đồng thuận",
+    "description": "The label for category 'Consensus' in sidebar 'docSidebar'"
+  },
+  "sidebar.docSidebar.category.libp2p": {
+    "message": "libp2p",
+    "description": "The label for category 'libp2p' in sidebar 'docSidebar'"
+  },
+  "sidebar.docSidebar.category.Trading": {
+    "message": "Trading",
+    "description": "The label for category 'Trading' in sidebar 'docSidebar'"
+  },
+  "sidebar.docSidebar.category.Distributed systems": {
+    "message": "Hệ phân tán",
+    "description": "The label for category 'Distributed systems' in sidebar 'docSidebar'"
+  },
+  "sidebar.docSidebar.category.Estimation": {
+    "message": "Ước lượng",
+    "description": "The label for category 'Estimation' in sidebar 'docSidebar'"
+  },
+  "sidebar.docSidebar.category.Production patterns": {
+    "message": "Production patterns",
+    "description": "The label for category 'Production patterns' in sidebar 'docSidebar'"
+  },
+  "sidebar.docSidebar.category.production-patterns-runtime": {
+    "message": "Backend runtime",
+    "description": "The label for category 'Backend runtime' in sidebar 'docSidebar'"
+  },
+  "sidebar.docSidebar.category.production-patterns-storage": {
+    "message": "Storage & database",
+    "description": "The label for category 'Storage & databases' in sidebar 'docSidebar'"
+  },
+  "sidebar.docSidebar.category.production-patterns-transactions": {
+    "message": "Transaction & tính nhất quán",
+    "description": "The label for category 'Transactions & consistency' in sidebar 'docSidebar'"
+  },
+  "sidebar.docSidebar.category.production-patterns-data-modeling": {
+    "message": "Data modeling",
+    "description": "The label for category 'Data modeling' in sidebar 'docSidebar'"
+  },
+  "sidebar.docSidebar.category.production-patterns-api-design": {
+    "message": "Thiết kế API",
+    "description": "The label for category 'API design' in sidebar 'docSidebar'"
+  },
+  "sidebar.docSidebar.category.production-patterns-distributed-systems": {
+    "message": "Hệ phân tán",
+    "description": "The label for category 'Distributed systems' in sidebar 'docSidebar'"
+  },
+  "sidebar.docSidebar.category.production-patterns-payments": {
+    "message": "Thanh toán",
+    "description": "The label for category 'Payments' in sidebar 'docSidebar'"
+  },
+  "sidebar.docSidebar.category.System design": {
+    "message": "Thiết kế hệ thống",
+    "description": "The label for category 'System design' in sidebar 'docSidebar'"
+  },
+  "sidebar.docSidebar.category.WebSocket Gateway": {
+    "message": "WebSocket Gateway",
+    "description": "The label for category 'WebSocket Gateway' in sidebar 'docSidebar'"
+  },
+  "sidebar.docSidebar.category.MPC": {
+    "message": "MPC",
+    "description": "The label for category 'MPC' in sidebar 'docSidebar'"
+  },
+  "sidebar.docSidebar.category.Templates": {
+    "message": "Template",
+    "description": "The label for category 'Templates' in sidebar 'docSidebar'"
+  },
+  "sidebar.docSidebar.category.Operations": {
+    "message": "Vận hành",
+    "description": "The label for category 'Operations' in sidebar 'docSidebar'"
+  },
+  "sidebar.docSidebar.category.Cluster": {
+    "message": "Cluster",
+    "description": "The label for category 'Cluster' in sidebar 'docSidebar'"
+  },
+  "sidebar.docSidebar.category.Access": {
+    "message": "Truy cập",
+    "description": "The label for category 'Access' in sidebar 'docSidebar'"
+  },
+  "sidebar.docSidebar.category.Backup & restore": {
+    "message": "Backup & khôi phục",
+    "description": "The label for category 'Backup & restore' in sidebar 'docSidebar'"
+  },
+  "sidebar.docSidebar.category.Services": {
+    "message": "Services",
+    "description": "The label for category 'Services' in sidebar 'docSidebar'"
+  },
+  "sidebar.docSidebar.category.Observability": {
+    "message": "Observability",
+    "description": "The label for category 'Observability' in sidebar 'docSidebar'"
+  },
+  "sidebar.docSidebar.category.Secrets": {
+    "message": "Secret",
+    "description": "The label for category 'Secrets' in sidebar 'docSidebar'"
+  },
+  "sidebar.docSidebar.category.Interview prep": {
+    "message": "Luyện phỏng vấn",
+    "description": "The label for category 'Interview prep' in sidebar 'docSidebar'"
+  },
+  "sidebar.docSidebar.category.Reference": {
+    "message": "Tham khảo",
+    "description": "The label for category 'Reference' in sidebar 'docSidebar'"
+  },
+  "sidebar.docSidebar.category.Archive": {
+    "message": "Lưu trữ",
+    "description": "The label for category 'Archive' in sidebar 'docSidebar'"
+  }
+}

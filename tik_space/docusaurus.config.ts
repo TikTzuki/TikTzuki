@@ -56,18 +56,16 @@ const config: Config = {
     onBrokenLinks: 'throw',
     onBrokenAnchors: 'throw', // default is 'warn'
 
-    // Even if you don't use internationalization, you can use this field to set
-    // useful metadata like html lang. For example, if your site is Chinese, you
-    // may want to replace "en" with "zh-Hans".
-    // English only. A `vi` locale existed but reached 1 translated page out of ~90, so
-    // /vi/** was 89 English pages at Vietnamese URLs. It was never deployed (gh-pages had
-    // no vi/ paths), so nothing broke by removing it. The Vietnamese translation of the
-    // session-consistency lesson is recoverable from commit fe5b474 if it is ever wanted.
+    // `vi` covers the production-patterns lessons and the homepage. Lesson translations are
+    // owned by senior-architect (i18n/vi/) and synced in like the English lessons; every other
+    // page falls back to English under /vi/ with a notice (src/theme/DocItem/Content). See
+    // ../TECH_DEBT.md 6.1 for why the previous vi locale was removed, and what changed.
     i18n: {
         defaultLocale: 'en',
-        locales: ['en'],
+        locales: ['en', 'vi'],
         localeConfigs: {
             en: {label: 'English', htmlLang: 'en-GB'},
+            vi: {label: 'Tiếng Việt', htmlLang: 'vi'},
         },
     },
 
@@ -154,11 +152,7 @@ const config: Config = {
                     label: 'Docs',
                 },
                 {to: '/blog', label: 'Blog', position: 'left'},
-                // No localeDropdown: 'vi' is still built and /vi/** still resolves, but
-                // only one of ~90 pages is actually translated, so a language switcher
-                // offers a choice the content cannot honour — 89 of them would just be
-                // the same English page at a different URL. Restore this when vi
-                // coverage is real. See ../TECH_DEBT.md 6.1.
+                {type: 'localeDropdown', position: 'right'},
                 {
                     href: 'https://github.com/TikTzuki',
                     label: 'GitHub',

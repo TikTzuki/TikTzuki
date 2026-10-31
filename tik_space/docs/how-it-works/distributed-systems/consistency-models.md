@@ -22,7 +22,7 @@ availability, or both.
 
 They are orthogonal. A single Postgres node gives you ACID-C and has no CAP-C problem, because
 there is nothing to replicate. This page is about the CAP sense.
-[Consistency boundaries](../../production-patterns/consistency-boundaries.md) makes the
+[Consistency boundaries](/docs/production-patterns/consistency-boundaries) makes the
 prescriptive version of the same argument.
 
 ## The three broad levels

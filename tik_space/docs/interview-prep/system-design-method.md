@@ -51,17 +51,17 @@ you. Sketch it, then walk one request through it end to end and one write throug
 Pick the two or three pieces that carry the actual difficulty and go deep. Typically:
 
 - **Data model.** Tables or collections, key fields, and the access patterns each index serves.
-  Index choices follow from the queries — [indexes & query plans](../production-patterns/indexes-and-query-plans.md).
+  Index choices follow from the queries — [indexes & query plans](/docs/production-patterns/indexes-and-query-plans).
 - **API surface.** A handful of endpoints with their parameters. Get the resource modelling and
   pagination right; the reviewer's version of this is
-  [API contracts](../production-patterns/api-contracts.md) and
-  [list endpoints](../production-patterns/api-list-endpoints.md).
+  [API contracts](/docs/production-patterns/api-contracts) and
+  [list endpoints](/docs/production-patterns/api-list-endpoints).
 - **The one hard invariant.** Every interesting system has one thing that must not go wrong —
   a balance that must not go negative, an order that must not double-charge, a timeline that must
   not lose a post. Name it and say how it is enforced. This is the single highest-signal thing you
   can do in the whole interview. See
-  [consistency boundaries](../production-patterns/consistency-boundaries.md) and
-  [payment state & idempotency](../production-patterns/payment-state-and-idempotency.md).
+  [consistency boundaries](/docs/production-patterns/consistency-boundaries) and
+  [payment state & idempotency](/docs/production-patterns/payment-state-and-idempotency).
 
 ## Step 4 — Scale it
 
@@ -73,15 +73,15 @@ Use the estimates from step 1 to say where it breaks first, then reach for the a
 
 | Bottleneck                    | Tool                                | Depth                                                                                                                                              |
 |-------------------------------|-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| Read throughput               | Cache, read replicas                | [caching](../production-patterns/caching.md)                                                                                                       |
-| Write throughput / data size  | Sharding                            | [replication & sharding](../production-patterns/replication-and-sharding.md)                                                                       |
-| Slow work on the request path | Queue, async workers                | [async operations](../production-patterns/api-async-operations.md)                                                                                 |
-| Abusive or bursty clients     | Rate limiting                       | [rate limiting](../production-patterns/rate-limiting.md)                                                                                           |
-| Dependency failure            | Timeouts, retries, circuit breakers | [timeouts & retries](../production-patterns/timeouts-and-retries.md), [circuit breakers](../production-patterns/circuit-breakers-and-bulkheads.md) |
+| Read throughput               | Cache, read replicas                | [caching](/docs/production-patterns/caching)                                                                                                       |
+| Write throughput / data size  | Sharding                            | [replication & sharding](/docs/production-patterns/replication-and-sharding)                                                                       |
+| Slow work on the request path | Queue, async workers                | [async operations](/docs/production-patterns/api-async-operations)                                                                                 |
+| Abusive or bursty clients     | Rate limiting                       | [rate limiting](/docs/production-patterns/rate-limiting)                                                                                           |
+| Dependency failure            | Timeouts, retries, circuit breakers | [timeouts & retries](/docs/production-patterns/timeouts-and-retries), [circuit breakers](/docs/production-patterns/circuit-breakers-and-bulkheads) |
 
 For each one, state the cost as well as the benefit. Caching introduces invalidation and staleness;
 sharding breaks cross-shard queries and transactions; queues turn a synchronous error into a
-delivery-semantics problem ([message delivery semantics](../production-patterns/message-delivery-semantics.md)).
+delivery-semantics problem ([message delivery semantics](/docs/production-patterns/message-delivery-semantics)).
 Naming the cost is what shows the choice was made rather than pattern-matched.
 
 ## What is being assessed

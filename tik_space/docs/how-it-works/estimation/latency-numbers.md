@@ -85,7 +85,7 @@ What has *not* changed, and will not: main memory around 100 ns, a datacenter ro
 1. **Memory, disk and network are decades apart, not percentages apart.** Optimising the wrong
    layer by 20% is noise next to removing one round trip.
 2. **Sequential beats random by a lot, at every layer.** This is why storage engines are shaped the
-   way they are — see [storage engines](../../production-patterns/storage-engines.md).
+   way they are — see [storage engines](/docs/production-patterns/storage-engines).
 3. **Distance is a hard floor.** No amount of caching, threading or protocol cleverness gets a
    packet across the Atlantic faster than ~75 ms each way. If a design needs a synchronous
    cross-region hop on the critical path, the latency budget is already spent.
@@ -93,9 +93,9 @@ What has *not* changed, and will not: main memory around 100 ns, a datacenter ro
 ## Where this gets used
 
 - [Back-of-the-envelope estimation](back-of-the-envelope.md) — turning these into a capacity number.
-- [The network & latency](../../production-patterns/network-and-latency.md) — how latency composes
+- [The network & latency](/docs/production-patterns/network-and-latency) — how latency composes
   across services, and why sequential dependencies add up faster than people expect.
-- [Connection pools & latency](../../production-patterns/connection-pools-and-latency.md) — where
+- [Connection pools & latency](/docs/production-patterns/connection-pools-and-latency) — where
   the round-trip cost actually shows up in application code.
 
 ## Sources
