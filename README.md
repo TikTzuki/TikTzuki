@@ -82,4 +82,4 @@ serves as a central hub for technical documentation, architectural references, a
 
 **Stare at the abyss long enough, and it starts to stare back at you...**
 
-**<blockquote>&ldquo;The journey, not the destination matters.&rdquo; &mdash; <footer>T.S. Eliot</footer></blockquote>**
+**<blockquote>&ldquo;If ever you feel like an animal among men, be a lion.&rdquo; &mdash; <footer>Criss Jami</footer></blockquote>**
