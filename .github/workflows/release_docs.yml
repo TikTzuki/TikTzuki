@@ -13,7 +13,7 @@ on:
   push:
     branches: [ master ]
     # Only what the site is built from. TECH_DEBT.md, CLAUDE.md and the profile README's
-    # assets (archive/, img/, update_profile/) are not site inputs — nothing outside
+    # assets (archive/, img/) are not site inputs — nothing outside
     # tik_space/ is read by the build except the sibling repos sync-knowledge clones.
     paths:
       - 'tik_space/**'

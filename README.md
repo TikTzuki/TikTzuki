@@ -1,85 +1,70 @@
-# TikTzuki [![TikTuzki](./img/tik-badge.svg)](https://github.com/TikTzuki/TikTzuki)
+# TikTzuki [![TikTuzki](./img/tik-badge.svg)](https://www.tiktuzki.com)
 
-**Software Architect | Backend Engineer**
+**Backend & platform engineer** — distributed systems, Postgres, Kubernetes. I write down what breaks in
+production and how to review for it at **[tiktuzki.com](https://www.tiktuzki.com)**.
 
----
-
-## About
-
-Backend Engineer with 5+ years of experience designing and scaling distributed systems, APIs, and event-driven
-architectures. Core competencies include microservices design, concurrent processing, and workflow automation, grounded
-in domain-driven design and clean architecture principles.
-
-Actively contributing to open-source projects across **Java**, **Kotlin**, **Rust**, and **Python**. This repository
-serves as a central hub for technical documentation, architectural references, and engineering knowledge.
+Backend engineer with 5+ years designing and scaling distributed systems, APIs and event-driven architectures,
+grounded in domain-driven design. Lately: production failure modes, platform reliability, and AI-assisted
+engineering workflows.
 
 ---
 
-## Featured Projects
+## What I'm building
 
-| Project                                                                 | Description                                                                          |
-|-------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
-| [**IoT Greenhouse**](https://github.com/TikTzuki/prometheus-greenhouse) | Environmental monitoring and control system for smart agriculture and indoor farming |
-| [**Telegram TDLib**](https://github.com/TikTzuki/telegram-tdlib)        | Client library for the Telegram Database Library (TDLib)                             |
-| [**Learning Lab**](https://github.com/TikTzuki/learning-lab)            | Algorithm practice, language exploration, and system-level experimentation           |
+### [tiktuzki.com](https://www.tiktuzki.com) — a production-engineering knowledge base
 
-<details>
-<summary>Other repositories</summary>
+Documentation organised by what reading it does for you, in English and [Tiếng Việt](https://www.tiktuzki.com/vi/).
 
-- nvim
-- nio-lab
-- mvc-store
-- room-manager-lite
-- money-bag
-- tik-scripts
-- tiktuzki-charts
-- sgu-project
+- **[Production patterns](https://www.tiktuzki.com/docs/category/production-patterns/)** — 47 lessons on failure
+  modes that pass local testing and code review, then break under concurrency, retries and partial failure.
+  Each ends in a review checklist.
+- **[System design](https://www.tiktuzki.com/docs/category/system-design/)** — design docs, e.g.
+  [service-to-service auth with Keycloak client credentials](https://www.tiktuzki.com/docs/system-design/service-auth/keycloak-client-credentials-sdd/)
+  and [mTLS and workload identity with a service mesh](https://www.tiktuzki.com/docs/system-design/service-auth/mtls-service-mesh-sdd/).
+- **[Operations](https://www.tiktuzki.com/docs/category/operations/)** — runbooks for the cluster below.
 
-</details>
+Source: this repo ([`tik_space/`](./tik_space)), built and deployed by GitHub Actions.
+
+### [senior-architect](https://github.com/TikTzuki/senior-architect) — Claude Code plugins
+
+A plugin marketplace for AI-assisted engineering. The main one,
+**production-patterns**, turns the lessons above into review skills: check a diff against known production
+failure modes, run a pre-deploy checklist with a GO / NO-GO verdict, or work through a system design.
+Others scaffold projects (Next.js, Rust, Spring Boot), drive tmux sessions, and sync docs to Confluence or Notion.
+
+### A production-grade platform on one node
+
+A single-node Kubernetes homelab run like production, all of it in GitOps:
+
+- **Postgres HA** — 3-node Patroni cluster with a connection pooler, failsafe mode for API outages, and
+  **point-in-time recovery** from continuous WAL archiving to S3. The restore is drilled:
+  [43 seconds](https://www.tiktuzki.com/docs/operations/backup-restore/dr-plan/) from S3 to a writable cluster.
+- **Backups** — nightly, age-encrypted, to an S3 bucket with Object Lock; the host can write backups but
+  never read or delete them.
+- **Delivery & security** — Argo CD, Sealed Secrets, Google SSO with per-email RBAC for Grafana and Argo CD,
+  Linkerd mTLS, cert-manager.
+- **Observability** — Prometheus and Grafana with alerting to Telegram, from Postgres replication to backup
+  freshness.
+
+### [tiktuzki-scripts](https://github.com/TikTzuki/tiktuzki-scripts) — Rust tools
+
+Small, sharp CLIs, released as static binaries for six targets — including **cluster-backup**, which archives,
+encrypts (age) and ships the cluster's backups to S3.
 
 ---
 
-## Tech Stack
+## Stack
 
-**Languages:** Java, Kotlin, Rust, Python, JavaScript
+**Languages** — Java, Kotlin, Rust, Python, TypeScript
 
-**Frameworks:** Spring, Axon Framework, FastAPI
+**Backend** — Spring, Axon Framework, FastAPI · REST, gRPC, GraphQL, WebSocket, MQTT
 
-**Tech:** Keycloak, Prometheus, Grafana, ELK Stack
+**Data & messaging** — PostgreSQL, Redis, Cassandra, MongoDB, Oracle · Kafka, RabbitMQ, NATS
 
-**Data Stores:** PostgreSQL, Cassandra, MongoDB, OracleDB, Redis, MySQL
-
-**Protocols:** HTTP, WebSocket, MQTT, GraphQL, mDNS, Gossip, gRPC
-
-**Messaging:** RabbitMQ, Kafka, NATS
-
-**Infrastructure:** Docker, Kubernetes, Jenkins, Helm
-
----
-
-## Automation
-
-- CI/CD pipelines via GitHub Actions for testing, deployment, and documentation
-- README auto-generation via code heuristics
-- Scheduled workflows for consistent build and release cycles
+**Platform** — Kubernetes, Helm, Argo CD, Docker, GitHub Actions · Prometheus, Grafana, ELK · Keycloak
 
 ---
 
 ## Contact
 
-[LinkedIn](https://www.linkedin.com/in/tiktuzki/) &middot; tiktuzki@gmail.com
-
----
-
-> *"If they wrote it to make money, don't read it."* — Naval Ravikant
-
-
-**Stare at the abyss long enough, and it starts to stare back at you...**
-
-**Stare at the abyss long enough, and it starts to stare back at you...**
-
-**Stare at the abyss long enough, and it starts to stare back at you...**
-
-**Stare at the abyss long enough, and it starts to stare back at you...**
-
-**<blockquote>&ldquo;If ever you feel like an animal among men, be a lion.&rdquo; &mdash; <footer>Criss Jami</footer></blockquote>**
+[tiktuzki.com](https://www.tiktuzki.com) · [LinkedIn](https://www.linkedin.com/in/tiktuzki/) · tiktuzki@gmail.com

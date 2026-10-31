@@ -5,7 +5,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Repository Overview
 
 Personal knowledge hub and documentation site for TikTzuki (Software Architect / Backend Engineer). Contains a
-Docusaurus-powered documentation/blog site and a GitHub profile auto-updater.
+Docusaurus-powered documentation/blog site, and `README.md` is the GitHub profile page (hand-written — the daily
+quote job that used to commit to it every night was removed 2026-10-31).
 
 ## Documentation Site Architecture
 
