@@ -118,5 +118,9 @@
   "sidebar.docSidebar.category.Archive": {
     "message": "Lưu trữ",
     "description": "The label for category 'Archive' in sidebar 'docSidebar'"
+  },
+  "sidebar.docSidebar.category.Service-to-service auth": {
+    "message": "Xác thực giữa các service",
+    "description": "The label for category 'Service-to-service auth' in sidebar 'docSidebar'"
   }
 }
