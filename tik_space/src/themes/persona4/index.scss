@@ -28,7 +28,9 @@
   --p4-blue: #1f4fa8; /* Velvet Room */
 
   --p4-skew: -8deg;
-  --p4-display: 'Archivo Black', 'Arial Black', 'Helvetica Neue', sans-serif;
+  /* Archivo 900, not Archivo Black: Archivo Black has no Vietnamese glyphs (see docusaurus.config.ts). */
+  --p4-display: 'Archivo', 'Arial Black', 'Helvetica Neue', sans-serif;
+  --p4-display-weight: 900;
   --p4-body: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
 
   /* Halftone and stripe fills, used as background-image layers. */
@@ -65,7 +67,7 @@
 
   --ifm-font-family-base: var(--p4-body);
   --ifm-heading-font-family: var(--p4-display);
-  --ifm-heading-font-weight: 400; /* Archivo Black only ships one weight */
+  --ifm-heading-font-weight: var(--p4-display-weight); /* only weight 900 is loaded */
   --ifm-global-radius: 0;
   --ifm-code-font-size: 92%;
 
@@ -240,6 +242,7 @@ article header h1 {
 
 .navbar__title {
   font-family: var(--p4-display);
+  font-weight: var(--p4-display-weight);
   text-transform: uppercase;
   letter-spacing: -0.02em;
   transform: skewX(var(--p4-skew));
@@ -329,6 +332,7 @@ article header h1 {
 
 .hero--primary .hero__title {
   font-family: var(--p4-display);
+  font-weight: var(--p4-display-weight);
   text-transform: uppercase;
   transform: skewX(var(--p4-skew));
   letter-spacing: -0.02em;
@@ -588,6 +592,7 @@ blockquote {
 
 .footer__title {
   font-family: var(--p4-display);
+  font-weight: var(--p4-display-weight);
   text-transform: uppercase;
   letter-spacing: 0.02em;
   font-size: 0.9rem;
